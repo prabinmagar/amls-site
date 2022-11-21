@@ -818,6 +818,7 @@ ul {
 
 .ms-ours {
   padding-top: 82px;
+  padding-bottom: 85px;
 }
 
 .ms-ours-cnt .ours-top-text {
@@ -825,7 +826,7 @@ ul {
   font-family: "Sinhala MN";
   font-size: 36px;
   text-align: center;
-  color: #fff;
+  color: #612e9e;
   text-transform: uppercase;
 }
 
@@ -865,5 +866,30 @@ ul {
   color: #fff;
   font-size: 22px;
   line-height: 1.4;
+}
+
+.ms-loc {
+  background-color: #e3dfd2;
+  padding-top: 45px;
+}
+
+.ms-loc-cnt .loc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.ms-loc-cnt .loc-list .loc-item-img {
+  width: 247px;
+  height: 247px;
+  overflow: hidden;
+  margin-bottom: 23px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ms-loc-cnt .loc-list .loc-item-text p {
+  color: #612e9e;
+  text-align: center;
+  font-size: 20px;
 }
 /*# sourceMappingURL=main.css.map */

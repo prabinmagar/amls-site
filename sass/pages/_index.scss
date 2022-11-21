@@ -393,13 +393,14 @@
 
 .ms-ours{
     padding-top: 82px;
+    padding-bottom: 85px;
     &-cnt{
         .ours-top-text{
             margin-bottom: 68px;
             font-family: $sinhala;
             font-size: 36px;
             text-align: center;
-            color: $clr-white;
+            color: $clr-purple;
             text-transform: uppercase;
         }
     }
@@ -437,6 +438,34 @@
                     color: $clr-white;
                     font-size: 22px;
                     line-height: 1.4;
+                }
+            }
+        }
+    }
+}
+
+.ms-loc{
+    background-color: $clr-black-haze;
+    padding-top: 45px;
+    &-cnt{
+        .loc-list{
+            display: flex;
+            justify-content: center;
+            .loc-item{
+                &-img{
+                    width: 247px;
+                    height: 247px;
+                    overflow: hidden;
+                    margin-bottom: 23px;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+                &-text{
+                    p{
+                        color: $clr-purple;
+                        text-align: center;
+                        font-size: 20px;
+                    }
                 }
             }
         }
