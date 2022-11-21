@@ -1,0 +1,869 @@
+/* GLOBAL COLOR PALETTE */
+/* ==== Generic colors ==== */
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Mansalva&display=swap");
+@font-face {
+  font-family: 'BlissBold';
+  src: url("/assets/fonts/Bliss-Bold.otf");
+}
+
+@font-face {
+  font-family: 'BlissExtBol';
+  src: url("/assets/fonts/Bliss-ExtraBold.bmap");
+}
+
+@font-face {
+  font-family: 'BlissMd';
+  src: url("/assets/fonts/Bliss-Medium.bmap");
+}
+
+@font-face {
+  font-family: 'BlissReg';
+  src: url("/assets/fonts/Bliss-Regular.bmap");
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url("/assets/fonts/Helvetica.ttc");
+}
+
+@font-face {
+  font-family: 'MyriadPro-Bold';
+  src: url("/assets/fonts/MyriadPro-Bold.otf");
+}
+
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url("/assets/fonts/MyriadPro-Regular.otf");
+}
+
+@font-face {
+  font-family: 'Sinhala MN';
+  src: url("/assets/fonts/Sinhala MN.ttc");
+}
+
+@font-face {
+  font-family: 'Tajawal-Medium';
+  src: url("/assets/fonts/Tajawal-Medium.ttf");
+}
+
+.ms-menu {
+  display: -moz-flex;
+  display: flex;
+}
+
+.container {
+  display: block;
+}
+
+/* #### Adding Vendor Prefixes to the CSS #### */
+/* ########## Fonts ######### */
+/* ########### font weights ########## */
+/* ########### Breakpoints ########## */
+/* ########### Background ########## */
+/* ########### Forms ########## */
+/* ########### Animation ########## */
+/* ########### Transition ########## */
+/* ########### Box sizing ########## */
+/* ########### Opacity ########## */
+/* ###### Border and Border Radius ####### */
+/* ########### Positioning ########## */
+/* ########### Grid ########## */
+/* ########### Flexbox ########## */
+/* ########### Gradient ########## */
+/* #### Truncate text on text overflow ### */
+/* ########### Pseudo stylings ########## */
+/* ########### Visibility & Display ########## */
+/* ###########  padding & margins ########## */
+/* ########### Misc ########## */
+/* ########### list ########## */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  transition: all ease-in-out 300ms;
+}
+
+a:focus, a:hover {
+  color: unset;
+}
+
+img, picture, video, canvas, svg {
+  max-width: 100%;
+  display: block;
+}
+
+img {
+  width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  outline: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  overflow-wrap: break-word;
+}
+
+textarea {
+  resize: none;
+}
+
+img, object, embed, video {
+  max-width: 100%;
+}
+
+button {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+
+body {
+  font-family: "BlissBold";
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-black {
+  color: #fff;
+}
+
+.text-purple {
+  color: #612e9e;
+}
+
+.text-harmonies {
+  color: #797b77;
+}
+
+.text-black-haze {
+  color: #e3dfd2;
+}
+
+.text-lime {
+  color: #9cd600;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-black {
+  background-color: #fff;
+}
+
+.bg-purple {
+  background-color: #612e9e;
+}
+
+.bg-harmonies {
+  background-color: #797b77;
+}
+
+.bg-black-haze {
+  background-color: #e3dfd2;
+}
+
+.bg-lime {
+  background-color: #9cd600;
+}
+
+.bliss-bold {
+  font-family: "BlissBold";
+}
+
+.bliss-ext-bold {
+  font-family: "BlissExtBol";
+}
+
+.bliss-md {
+  font-family: "BlissMd";
+}
+
+.bliss-reg {
+  font-family: "BlissReg";
+}
+
+.helvetica {
+  font-family: "Helvetica";
+}
+
+.my-bold {
+  font-family: "MyriadPro-Bold";
+}
+
+.my-reg {
+  font-family: "MyriadPro-Regular";
+}
+
+.sinhala {
+  font-family: "Sinhala MN";
+}
+
+.tajawal {
+  font-family: "Tajawal-Medium";
+}
+
+.fw-1 {
+  font-weight: 100;
+}
+
+.fw-2 {
+  font-weight: 200;
+}
+
+.fw-3 {
+  font-weight: 300;
+}
+
+.fw-4 {
+  font-weight: 400;
+}
+
+.fw-5 {
+  font-weight: 500;
+}
+
+.fw-6 {
+  font-weight: 600;
+}
+
+.fw-7 {
+  font-weight: 700;
+}
+
+.fw-8 {
+  font-weight: 800;
+}
+
+.fw-9 {
+  font-weight: 900;
+}
+
+.fs-x-sm {
+  font-size: 15px;
+}
+
+.fs-sm {
+  font-size: 16px;
+}
+
+.fs-base {
+  font-size: 18px;
+}
+
+.fs-md {
+  font-size: 18px;
+}
+
+.fs-lg {
+  font-size: 20px;
+}
+
+.fs-x-lg {
+  font-size: 25px;
+}
+
+.fs-xx-lg {
+  font-size: 30px;
+}
+
+.fs-xxx-lg {
+  font-size: 35px;
+}
+
+.img-fit-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.op-09 {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.op-08 {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.op-07 {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+
+.op-06 {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+.op-05 {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.op-04 {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+.op-03 {
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+.op-02 {
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+.op-01 {
+  opacity: 0.1;
+  filter: alpha(opacity=10);
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.ls-1 {
+  letter-spacing: 1px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.container {
+  padding-right: 0;
+  padding-left: 0 !important;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.position-relative {
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  top: 0 !important;
+}
+
+.cntr {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.hdr-top {
+  height: 188px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hdr-top img {
+  width: 310px;
+}
+
+.hdr-banner {
+  height: 640px;
+  background: url("../../assets/images/banner-img-1.png") center/cover no-repeat;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hdr-banner-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hdr-banner-btn {
+  width: 348.309px;
+  height: 100px;
+  border-radius: 60px !important;
+  margin: 0 10px;
+  border: 2px solid #fff !important;
+  cursor: pointer;
+}
+
+.hdr-banner-btn span {
+  display: block;
+  font-family: "BlissBold";
+}
+
+.hdr-banner-btn:nth-child(1) {
+  background-color: #797b77 !important;
+}
+
+.hdr-banner-btn:nth-child(1) span {
+  color: #fff;
+  font-size: 27px;
+}
+
+.hdr-banner-btn:nth-child(2) {
+  background-color: #612e9e !important;
+}
+
+.hdr-banner-btn:nth-child(2) span {
+  color: #fff;
+}
+
+.hdr-banner-btn:nth-child(2) span:nth-child(1) {
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.hdr-banner-btn:nth-child(2) span:nth-child(3) {
+  font-size: 17px;
+}
+
+.hdr-banner-btn:nth-child(2) span:nth-child(2) {
+  font-size: 34px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+.hdr-banner-btn:nth-child(3) {
+  background-color: #bab9b5 !important;
+}
+
+.hdr-banner-btn:nth-child(3) span {
+  color: #612e9e;
+  font-size: 32px;
+}
+
+.ms-types {
+  padding-top: 116px;
+  padding-bottom: 94px;
+}
+
+.ms-types-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.ms-types-cards .ms-types-card {
+  background-color: #e3dfd2;
+  width: 347.333px;
+  margin: 0 11px;
+}
+
+.ms-types-cards .ms-types-card .card-head {
+  height: 141px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.ms-types-cards .ms-types-card .card-head h3 {
+  text-transform: uppercase;
+  color: #612e9e;
+  font-size: 28px;
+  position: relative;
+}
+
+.ms-types-cards .ms-types-card .card-head h3::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 2.6px;
+  width: 90.2px;
+  bottom: -17px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.ms-types-cards .ms-types-card .card-body {
+  position: relative;
+  height: 246px;
+}
+
+.ms-types-cards .ms-types-card .card-body img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.ms-types-cards .ms-types-card .card-body::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(97, 46, 158, 0.9);
+}
+
+.ms-types-cards .ms-types-card .card-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.ms-types-cards .ms-types-card .card-list li {
+  font-size: 22px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.ms-types-cards .ms-types-card .card-list li:last-child {
+  margin-bottom: 0;
+}
+
+.ms-types-btn {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.ms-types-btn .btn {
+  width: 400px;
+  height: 40px;
+  font-size: 26px;
+  color: #fff;
+  background-color: #9cd600 !important;
+  border-radius: 20px;
+}
+
+.ms-service {
+  height: 160px;
+  background-color: #e3dfd2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ms-service-cnt .service-top-text {
+  font-size: 35px;
+  color: #612e9e;
+}
+
+.ms-service-cnt .service-img {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.ms-service-cnt .service-img img {
+  width: 150px;
+}
+
+.ms-service-cnt .service-top-info-text {
+  font-size: 22px;
+  color: #612e9e;
+}
+
+.ms-service-cnt .service-btm-info {
+  margin-top: 8.6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #612e9e;
+}
+
+.ms-menu {
+  height: 160px;
+  background-color: #a6e00a;
+  -moz-align-items: center;
+  align-items: center;
+  -moz-justify-content: center;
+  justify-content: center;
+}
+
+.ms-menu-cnt .menu-top-text {
+  font-size: 35px;
+  color: #612e9e;
+}
+
+.ms-menu-cnt .menu-lang-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 17.5px;
+}
+
+.ms-menu-cnt .menu-lang-list li {
+  font-size: 22px;
+  color: #612e9e;
+}
+
+.ms-menu-cnt .menu-lang-list li.divider {
+  width: 1.2px;
+  height: 24px;
+  background-color: #612e9e;
+  margin-right: 37px;
+  margin-left: 37px;
+}
+
+.sc-divider {
+  height: 30px;
+  background-color: #fff;
+}
+
+.ms-sig {
+  padding-top: 83px;
+  padding-bottom: 87px;
+  background-color: #e3dfd2;
+}
+
+.ms-sig .sig-top-text {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #612e9e;
+  font-family: "Sinhala MN";
+}
+
+.ms-sig .ms-sig-cards {
+  margin-top: 65px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.ms-sig .ms-sig-cards .sig-card {
+  width: 275px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.ms-sig .ms-sig-cards .sig-card .card-img {
+  width: 250px;
+  height: 194px;
+  text-align: center;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ms-sig .ms-sig-cards .sig-card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.ms-sig .ms-sig-cards .sig-card .card-title {
+  text-align: center;
+  margin-top: 27.6px;
+  color: #612e9e;
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 1.38;
+}
+
+.ms-sig .ms-sig-cards .sig-card .card-body {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.ms-sig .ms-sig-cards .sig-card .card-body p {
+  font-size: 20px;
+  line-height: 1.27;
+}
+
+.ms-sig .ms-sig-cards .sig-card .divider-line {
+  margin-top: 17px;
+  margin-bottom: 12.5px;
+  height: 2.2px;
+  width: 107px;
+  background-color: #fff;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ms-sig .ms-sig-cards .sig-card .card-foot {
+  text-align: center;
+}
+
+.ms-sig .ms-sig-cards .sig-card .card-foot p {
+  font-size: 20px;
+}
+
+.ms-prebook {
+  background: linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)), url("../../assets/images/prebook-img.jpg") center/cover no-repeat;
+  padding-top: 81px;
+  padding-bottom: 84px;
+  min-height: 530px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ms-prebook-cnt .prebook-top-text {
+  font-size: 36px;
+  font-family: "Sinhala MN";
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.ms-prebook-cnt .prebook-mid-text {
+  margin-top: 51px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #9cd600;
+}
+
+.ms-prebook-cnt .prebook-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ms-prebook-cnt .prebook-list .prebook-item {
+  margin-right: 29px;
+  margin-left: 29px;
+}
+
+.ms-prebook-cnt .prebook-list .prebook-item-body {
+  width: 162px;
+  height: 162px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ms-prebook-cnt .prebook-list .prebook-item-body .prebook-item-text {
+  text-align: center;
+  color: #612e9e;
+}
+
+.ms-prebook-cnt .prebook-list .prebook-item-body .prebook-item-text-top {
+  font-size: 22px;
+}
+
+.ms-prebook-cnt .prebook-list .prebook-item-body .prebook-item-text-bottom {
+  font-size: 19px;
+}
+
+.ms-prebook-cnt .prebook-list .prebook-item-body .prebook-item-text .divider {
+  height: 3px;
+  width: 42px;
+  background-color: #e3dfd2;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 7px;
+  margin-bottom: 6px;
+}
+
+.ms-prebook-cnt .prebook-list .prebook-item-foot {
+  margin-top: 16px;
+}
+
+.ms-prebook-cnt .prebook-list .prebook-item-foot p {
+  font-size: 23px;
+  text-align: center;
+  color: #9cd600;
+}
+
+.ms-ours {
+  padding-top: 82px;
+}
+
+.ms-ours-cnt .ours-top-text {
+  margin-bottom: 68px;
+  font-family: "Sinhala MN";
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.ms-selection {
+  padding-top: 82px;
+  background: linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)), url("../../assets/images/selection.jpg") center/cover no-repeat;
+}
+
+.ms-selection-cnt .selection-top-text {
+  margin-bottom: 54px;
+  font-family: "Sinhala MN";
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.ms-selection-cnt .selection-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ms-selection-cnt .selection-list .sel-item {
+  width: calc(33.3333% - 112px);
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.ms-selection-cnt .selection-list .sel-item-title {
+  color: #9cd600;
+  font-size: 20px;
+}
+
+.ms-selection-cnt .selection-list .sel-item-text {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.4;
+}
+/*# sourceMappingURL=main.css.map */

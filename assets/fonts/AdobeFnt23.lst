@@ -1,0 +1,359 @@
+%!Adobe-FontList 1.23
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Volumes/TOSHIBA EXT/Client/Amla/Artwork/Amla/English Sever HD/Amla Web - Desktop - 17.11/Document fonts/AdobeFnt23.lst
+FileLength:9337
+FileModTime:690391487
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Bliss-Bold
+FamilyName:Bliss
+StyleName:Bold
+MenuName:Bliss
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Bliss Bold
+WritingScript:Roman
+OutlineFileName:/Volumes/TOSHIBA EXT/Client/Amla/Artwork/Amla/English Sever HD/Amla Web - Desktop - 17.11/Document fonts/Bliss-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:25684
+FileModTime:690391487
+NameArray:0,Mac,4,Bliss Bold
+NameArray:0,Win,1,Bliss
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Volumes/TOSHIBA EXT/Client/Amla/Artwork/Amla/English Sever HD/Amla Web - Desktop - 17.11/Document fonts/Bliss-ExtraBold.bmap
+FileModTime:690391487
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Volumes/TOSHIBA EXT/Client/Amla/Artwork/Amla/English Sever HD/Amla Web - Desktop - 17.11/Document fonts/Bliss-Medium.bmap
+FileModTime:690391487
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Volumes/TOSHIBA EXT/Client/Amla/Artwork/Amla/English Sever HD/Amla Web - Desktop - 17.11/Document fonts/Bliss-Regular.bmap
+FileModTime:690391487
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Volumes/TOSHIBA EXT/Client/Amla/Artwork/Amla/English Sever HD/Amla Web - Desktop - 17.11/Document fonts/BlissExtBol
+FileModTime:690391487
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Volumes/TOSHIBA EXT/Client/Amla/Artwork/Amla/English Sever HD/Amla Web - Desktop - 17.11/Document fonts/BlissMed
+FileModTime:690391487
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Volumes/TOSHIBA EXT/Client/Amla/Artwork/Amla/English Sever HD/Amla Web - Desktop - 17.11/Document fonts/BlissReg
+FileModTime:690391487
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MyriadPro-Bold
+FamilyName:Myriad Pro
+StyleName:Bold
+MenuName:Myriad Pro
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Myriad Pro Bold
+WritingScript:Roman
+OutlineFileName:/Volumes/TOSHIBA EXT/Client/Amla/Artwork/Amla/English Sever HD/Amla Web - Desktop - 17.11/Document fonts/MyriadPro-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:96484
+FileModTime:690391487
+NameArray:0,Mac,4,Myriad Pro Bold
+NameArray:0,Win,1,Myriad Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MyriadPro-Regular
+FamilyName:Myriad Pro
+StyleName:Regular
+MenuName:Myriad Pro
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Myriad Pro
+WritingScript:Roman
+OutlineFileName:/Volumes/TOSHIBA EXT/Client/Amla/Artwork/Amla/English Sever HD/Amla Web - Desktop - 17.11/Document fonts/MyriadPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:97072
+FileModTime:690391487
+DesignSize:110
+NameArray:0,Mac,4,Myriad Pro
+NameArray:0,Win,1,Myriad Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Tajawal-Medium
+FamilyName:Tajawal
+StyleName:Medium
+MenuName:Tajawal Medium
+StyleBits:0
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:Tajawal-Medium
+FamilyNameNative:
+StyleNameNative:Medium
+FullNameNative:
+WritingScript:Arabic
+OutlineFileName:/Volumes/TOSHIBA EXT/Client/Amla/Artwork/Amla/English Sever HD/Amla Web - Desktop - 17.11/Document fonts/Tajawal-Medium.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:57360
+FileModTime:690391487
+NameArray:0,Win,1,Tajawal Medium
+NameArray:0,Win,16,Tajawal
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Helvetica
+FamilyName:Helvetica
+StyleName:Regular
+MenuName:Helvetica
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Helvetica
+WritingScript:Roman
+OutlineFileName:/Volumes/TOSHIBA EXT/Client/Amla/Artwork/Amla/English Sever HD/Amla Web - Desktop - 17.11/Document fonts/Helvetica.ttc
+TTCOffset:48
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:2369376
+FileModTime:690391487
+NameArray:0,Mac,18,Helvetica
+NameArray:0,Mac,4,Helvetica
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Helvetica-Bold
+FamilyName:Helvetica
+StyleName:Bold
+MenuName:Helvetica
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Helvetica Bold
+WritingScript:Roman
+OutlineFileName:/Volumes/TOSHIBA EXT/Client/Amla/Artwork/Amla/English Sever HD/Amla Web - Desktop - 17.11/Document fonts/Helvetica.ttc
+TTCOffset:380
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:2369376
+FileModTime:690391487
+NameArray:0,Mac,4,Helvetica Bold
+NameArray:0,Mac,4,Helvetica lihava
+NameArray:0,Mac,4,Helvetica Gras
+NameArray:0,Mac,4,Helvetica Fett
+NameArray:0,Mac,4,Helvetica grassetto
+NameArray:0,Mac,4,Helvetica vet
+NameArray:0,Mac,4,Helvetica Fet
+NameArray:0,Mac,4,Helvetica Negrita
+NameArray:0,Mac,4,Helvetica Carregado
+NameArray:0,Mac,4,Helvetica Halvfet
+NameArray:0,Mac,18,Helvetica Bold
+NameArray:4,Mac,4,Helvetica‭ ‬أسود
+NameArray:4,Mac,4,Helvetica‭ ‬برجسته
+NameArray:5,Mac,4,Helvetica‭ ‬עבה
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Helvetica-BoldOblique
+FamilyName:Helvetica
+StyleName:Bold Oblique
+MenuName:Helvetica
+StyleBits:3
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Helvetica Bold Oblique
+WritingScript:Roman
+OutlineFileName:/Volumes/TOSHIBA EXT/Client/Amla/Artwork/Amla/English Sever HD/Amla Web - Desktop - 17.11/Document fonts/Helvetica.ttc
+TTCOffset:1028
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:2369376
+FileModTime:690391487
+NameArray:0,Mac,18,Helvetica Bold Oblique
+NameArray:0,Mac,4,Helvetica Bold Oblique
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Helvetica-Light
+FamilyName:Helvetica
+StyleName:Light
+MenuName:Helvetica
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Helvetica Light
+WritingScript:Roman
+OutlineFileName:/Volumes/TOSHIBA EXT/Client/Amla/Artwork/Amla/English Sever HD/Amla Web - Desktop - 17.11/Document fonts/Helvetica.ttc
+TTCOffset:1344
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:2369376
+FileModTime:690391487
+NameArray:0,Mac,18,Helvetica Light
+NameArray:0,Mac,4,Helvetica Light
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Helvetica-LightOblique
+FamilyName:Helvetica
+StyleName:Light Oblique
+MenuName:Helvetica
+StyleBits:1
+WeightClass:300
+WidthClass:5
+AngleClass:1
+FullName:Helvetica Light Oblique
+WritingScript:Roman
+OutlineFileName:/Volumes/TOSHIBA EXT/Client/Amla/Artwork/Amla/English Sever HD/Amla Web - Desktop - 17.11/Document fonts/Helvetica.ttc
+TTCOffset:1644
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:2369376
+FileModTime:690391487
+NameArray:0,Mac,18,Helvetica Light Oblique
+NameArray:0,Mac,4,Helvetica Light Oblique
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Helvetica-Oblique
+FamilyName:Helvetica
+StyleName:Oblique
+MenuName:Helvetica
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:1
+FullName:Helvetica Oblique
+WritingScript:Roman
+OutlineFileName:/Volumes/TOSHIBA EXT/Client/Amla/Artwork/Amla/English Sever HD/Amla Web - Desktop - 17.11/Document fonts/Helvetica.ttc
+TTCOffset:696
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:2369376
+FileModTime:690391487
+NameArray:0,Mac,18,Helvetica Oblique
+NameArray:0,Mac,4,Helvetica Oblique
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SinhalaMN
+FamilyName:Sinhala MN
+StyleName:Regular
+MenuName:Sinhala MN
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Sinhala MN
+WritingScript:Sinhalese
+OutlineFileName:/Volumes/TOSHIBA EXT/Client/Amla/Artwork/Amla/English Sever HD/Amla Web - Desktop - 17.11/Document fonts/Sinhala MN.ttc
+TTCOffset:32
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:780240
+FileModTime:690391487
+NameArray:0,Mac,4,Sinhala MN
+NameArray:0,Win,1,Sinhala MN
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SinhalaMN-Bold
+FamilyName:Sinhala MN
+StyleName:Bold
+MenuName:Sinhala MN
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Sinhala MN Bold
+WritingScript:Sinhalese
+OutlineFileName:/Volumes/TOSHIBA EXT/Client/Amla/Artwork/Amla/English Sever HD/Amla Web - Desktop - 17.11/Document fonts/Sinhala MN.ttc
+TTCOffset:316
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:780240
+FileModTime:690391487
+NameArray:0,Mac,4,Sinhala MN Bold
+NameArray:0,Win,1,Sinhala MN
+%EndFont
+

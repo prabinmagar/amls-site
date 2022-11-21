@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Mansalva&display=swap');
+
+// fonts
+@font-face {
+    font-family: 'BlissBold';
+    src: url('/assets/fonts/Bliss-Bold.otf');
+}
+@font-face {
+    font-family: 'BlissExtBol';
+    src: url('/assets/fonts/Bliss-ExtraBold.bmap');
+}
+@font-face {
+    font-family: 'BlissMd';
+    src: url('/assets/fonts/Bliss-Medium.bmap');
+}
+@font-face {
+    font-family: 'BlissReg';
+    src: url('/assets/fonts/Bliss-Regular.bmap');
+}
+@font-face{
+    font-family: 'Helvetica';
+    src: url('/assets/fonts/Helvetica.ttc');
+}
+@font-face{
+    font-family: 'MyriadPro-Bold';
+    src: url('/assets/fonts/MyriadPro-Bold.otf');
+}
+@font-face{
+    font-family: 'MyriadPro-Regular';
+    src: url('/assets/fonts/MyriadPro-Regular.otf');
+}
+@font-face{
+    font-family: 'Sinhala MN';
+    src: url('/assets/fonts/Sinhala\ MN.ttc');
+}
+@font-face{
+    font-family: 'Tajawal-Medium';
+    src: url('/assets/fonts/Tajawal-Medium.ttf');
+}
+
+$bliss-bold: 'BlissBold';
+$bliss-ext-bold: 'BlissExtBol';
+$bliss-md: 'BlissMd';
+$bliss-reg: 'BlissReg';
+$helvetica: 'Helvetica';
+$my-bold: 'MyriadPro-Bold';
+$my-reg: 'MyriadPro-Regular';
+$sinhala: 'Sinhala MN';
+$tajawal: 'Tajawal-Medium';

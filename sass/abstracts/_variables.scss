@@ -1,0 +1,60 @@
+// font sizes
+$font-size: (
+    'xxx-sm': 12px,
+    'xx-sm': 14px,
+    'x-sm': 15px,
+    'sm': 16px,
+    'base': 18px,
+    'md': 18px,
+    'lg': 20px,
+    'x-lg': 25px,
+    'xx-lg': 30px,
+    'xxx-lg': 35px
+);
+
+// FONT WEIGHTS
+$font-weights: (
+    'thin': 100,
+    'extra-light': 200,
+    'light': 300,
+    'regular': 400,
+    'medium': 500,
+    'semi-bold': 600,
+    'bold': 700,
+    'extra-bold': 800,
+    'ultra-bold': 900
+);
+
+
+
+// PATH VARIABLES
+$img-path: "/assets/images/"; // Usage: background: url('#{$img-path}/img.jpg') 0 0 no-repeat;
+
+// Z-INDEX 
+$z-low: 10;
+$z-mid: 100;
+$z-high: 1000;
+
+// TRANSITION
+$default-transition-timing: ease-in-out;
+$default-transition-duration: 300ms;
+$default-transition: all $default-transition-timing $default-transition-duration;
+
+// BREAKPOINTS
+$breakpoints-up: (
+    "xs": "480px",
+    "sm": "576px", 
+    "md": "768px", 
+    "lg": "992px", 
+    "xl": "1200px", 
+    "xxl": "1400px"
+);
+
+$breakpoints-down: (
+    "xs": "479.99px",
+    "sm": "575.99px", 
+    "md": "767.99px", 
+    "lg": "991.99px", 
+    "xl": "1199.99px", 
+    "xxl": "1399.99px"
+);
