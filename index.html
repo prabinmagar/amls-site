@@ -94,6 +94,94 @@
             </div>
         </section>
 
+        <section class = "ms-book bg-silver">
+            <div class = "cntr">
+                <div class = "ms-book-cnt">
+                    <p class = "book-top-text">make a booking</p>
+                    <p class = "book-mid-text">Customer details</p>
+                    <form>
+                        <div class = "form-elem center">
+                            <input type = "text" class = "form-control" placeholder="Customer name">
+                        </div>
+
+                        <div class = "form-elem-grid">
+                            <div class = "form-elem">
+                                <input type = "email" class = "form-control" placeholder="Email">
+                            </div>
+                            <div class = "form-elem bg-whisper">
+                                <label for = "" class = "form-label">Accomodation</label>
+                                <div class = "radio-container">
+                                    <div class = "radio-wrap">
+                                        <span>Hotel</span>
+                                        <input type = "radio" class = "form-radio" name = "accomodation" value = "hotel">
+                                    </div>
+                                    <div class = "radio-wrap">
+                                        <span>Villa</span>
+                                        <input type = "radio" class = "form-radio" name = "accomodation" value = "villa">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "form-elem-grid">
+                            <div class = "form-elem">
+                                <input type = "text" class = "form-control" placeholder="Whatsapp number">
+                            </div>
+                            <div class = "form-elem">
+                                <input type = "text" class = "form-control placeholder-purple" placeholder="Villa name">
+                            </div>
+                        </div>
+
+                        <div class = "form-elem-grid">
+                            <div class = "form-elem">
+                                <select name = "" class = "form-control">
+                                    <option selected disabled>Booking day</option>
+                                    <option value = "Morning">Morning</option>
+                                    <option value = "Morning">Morning</option>
+                                </select>
+                            </div>
+                            <div class = "form-elem">
+                                <input type = "text" class = "form-control placeholder-purple" placeholder="Villa address">
+                            </div>
+                        </div>
+                        <div class = "form-elem-grid">
+                            <div class = "form-elem">
+                                <select name = "" class = "form-control">
+                                    <option selected disabled>Booking time</option>
+                                    <option value = "Morning">Morning</option>
+                                    <option value = "Morning">Morning</option>
+                                </select>
+                            </div>
+                            <div class = "form-elem bg-whisper">
+                                <label for = "" class = "form-label">Do you need a free ride?</label>
+                                <div class = "radio-container">
+                                    <div class = "radio-wrap">
+                                        <span>Yes</span>
+                                        <input type = "radio" class = "form-radio" name = "ride" value = "yes">
+                                    </div>
+                                    <div class = "radio-wrap">
+                                        <span>No</span>
+                                        <input type = "radio" class = "form-radio" name = "ride" value = "no">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "form-elem center form-elem-purple">
+                            <select name = "" class = "form-control">
+                                <option selected>Location of your treatment</option>
+                                <option value = "Morning">Morning</option>
+                                <option value = "Morning">Morning</option>
+                            </select>
+                        </div>
+
+                        <div class = "form-elem-btn">
+                            <button type = "submit" class = "form-btn">Go to treatment details ></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
         <section class = "ms-service">
             <div class = "cntr">
                 <div class = "ms-service-cnt">
@@ -426,5 +514,14 @@
             </div>
         </footer>
 
+
+        <script>
+            const test = document.querySelectorAll('.form-checkbox');
+            test.forEach((item, idx) => {
+                item.addEventListener('change', function(){
+                    console.log('clicked');
+                });
+            })
+        </script>
     </body>
 </html>

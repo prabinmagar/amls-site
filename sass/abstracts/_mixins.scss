@@ -694,3 +694,7 @@
 @mixin d-none{
     display: none!important;
 }
+
+@mixin ptcon($pt){
+    font-size: ($pt * 0.3333) + "px";
+}

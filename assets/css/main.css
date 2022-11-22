@@ -190,6 +190,14 @@ body {
   background-color: #9cd600;
 }
 
+.bg-silver {
+  background-color: #c6c3bc;
+}
+
+.bg-whisper {
+  background-color: #e4e4e4 !important;
+}
+
 .bliss-bold {
   font-family: "BlissBold";
 }
@@ -392,6 +400,12 @@ ul {
   padding: 0 16px;
 }
 
+@media (max-width: 991.99px) {
+  .cntr {
+    padding: 0;
+  }
+}
+
 .hdr-top {
   height: 188px;
   display: flex;
@@ -418,6 +432,24 @@ ul {
   justify-content: center;
 }
 
+@media (max-width: 1199.99px) {
+  .hdr-banner-btns {
+    flex-wrap: wrap;
+  }
+  .hdr-banner-btns .hdr-banner-btn {
+    margin-bottom: 32px !important;
+  }
+  .hdr-banner-btns .hdr-banner-btn:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 1199.99px) {
+  .hdr-banner-btns {
+    flex-direction: column;
+  }
+}
+
 .hdr-banner-btn {
   width: 348.309px;
   height: 100px;
@@ -442,6 +474,12 @@ ul {
   font-family: "BlissReg";
 }
 
+@media (max-width: 991.99px) {
+  .hdr-banner-btn:nth-child(1) span {
+    font-size: "21.56451px";
+  }
+}
+
 .hdr-banner-btn:nth-child(2) {
   background-color: #612e9e !important;
 }
@@ -456,14 +494,32 @@ ul {
   letter-spacing: 1px;
 }
 
+@media (max-width: 991.99px) {
+  .hdr-banner-btn:nth-child(2) span:nth-child(1) {
+    font-size: "13.58197px";
+  }
+}
+
 .hdr-banner-btn:nth-child(2) span:nth-child(3) {
   font-size: 17px;
+}
+
+@media (max-width: 991.99px) {
+  .hdr-banner-btn:nth-child(2) span:nth-child(3) {
+    font-size: "27.16395px";
+  }
 }
 
 .hdr-banner-btn:nth-child(2) span:nth-child(2) {
   font-size: 34px;
   margin-top: 6px;
   margin-bottom: 4px;
+}
+
+@media (max-width: 991.99px) {
+  .hdr-banner-btn:nth-child(2) span:nth-child(2) {
+    font-size: "13.58197px";
+  }
 }
 
 .hdr-banner-btn:nth-child(3) {
@@ -491,6 +547,12 @@ ul {
   margin: 0 11px;
 }
 
+@media (max-width: 991.99px) {
+  .ms-types-cards .ms-types-card {
+    margin: 0 auto;
+  }
+}
+
 .ms-types-cards .ms-types-card .card-head {
   height: 141px;
   text-align: center;
@@ -505,6 +567,12 @@ ul {
   color: #612e9e;
   font-size: 28px;
   position: relative;
+}
+
+@media (max-width: 991.99px) {
+  .ms-types-cards .ms-types-card .card-head h3 {
+    font-size: "24.9975px";
+  }
 }
 
 .ms-types-cards .ms-types-card .card-head h3::after {
@@ -522,6 +590,12 @@ ul {
 .ms-types-cards .ms-types-card .card-body {
   position: relative;
   height: 246px;
+}
+
+@media (max-width: 1199.99px) {
+  .ms-types-cards .ms-types-card .card-body {
+    height: 300px;
+  }
 }
 
 .ms-types-cards .ms-types-card .card-body img {
@@ -554,6 +628,13 @@ ul {
   z-index: 5;
 }
 
+@media (max-width: 1199.99px) {
+  .ms-types-cards .ms-types-card .card-list {
+    padding-right: 19.5px;
+    padding-left: 19.5px;
+  }
+}
+
 .ms-types-cards .ms-types-card .card-list li {
   font-size: 22px;
   margin-bottom: 16px;
@@ -561,8 +642,20 @@ ul {
   font-family: "BlissReg";
 }
 
+@media (max-width: 991.99px) {
+  .ms-types-cards .ms-types-card .card-list li {
+    font-size: "19.3314px";
+  }
+}
+
 .ms-types-cards .ms-types-card .card-list li:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 991.99px) {
+  .ms-types-cards {
+    flex-direction: column;
+  }
 }
 
 .ms-types-btn {
@@ -580,11 +673,17 @@ ul {
   color: #fff;
   background-color: #9cd600 !important;
   border-radius: 20px;
-  font-family: "BlissReg";
+  font-family: "BlissMd";
+}
+
+@media (max-width: 991.99px) {
+  .ms-types-btn .btn {
+    font-size: "21.6645px";
+  }
 }
 
 .ms-service {
-  height: 160px;
+  min-height: 160px;
   background-color: #e3dfd2;
   display: flex;
   justify-content: center;
@@ -595,6 +694,7 @@ ul {
   font-size: 35px;
   color: #612e9e;
   font-family: "BlissReg";
+  text-align: center;
 }
 
 .ms-service-cnt .service-img {
@@ -611,6 +711,12 @@ ul {
   color: #612e9e;
 }
 
+@media (max-width: 991.99px) {
+  .ms-service-cnt .service-top-info-text {
+    font-size: "12.6654px";
+  }
+}
+
 .ms-service-cnt .service-btm-info {
   margin-top: 8.6px;
   display: flex;
@@ -623,7 +729,7 @@ ul {
 }
 
 .ms-menu {
-  height: 160px;
+  min-height: 160px;
   background-color: #a6e00a;
   -moz-align-items: center;
   align-items: center;
@@ -634,6 +740,13 @@ ul {
 .ms-menu-cnt .menu-top-text {
   font-size: 35px;
   color: #612e9e;
+  text-align: center;
+}
+
+@media (max-width: 991.99px) {
+  .ms-menu-cnt .menu-top-text {
+    font-size: "19.998px";
+  }
 }
 
 .ms-menu-cnt .menu-lang-list {
@@ -658,6 +771,24 @@ ul {
   margin-left: 37px;
 }
 
+@media (max-width: 991.99px) {
+  .ms-menu-cnt .menu-lang-list li.divider {
+    display: none;
+  }
+}
+
+@media (max-width: 991.99px) {
+  .ms-menu-cnt .menu-lang-list li {
+    font-size: "12.6654px";
+  }
+}
+
+@media (max-width: 991.99px) {
+  .ms-menu-cnt .menu-lang-list {
+    flex-direction: column;
+  }
+}
+
 .sc-divider {
   height: 30px;
   background-color: #fff;
@@ -677,6 +808,12 @@ ul {
   font-family: "Sinhala MN";
 }
 
+@media (max-width: 991.99px) {
+  .ms-sig .sig-top-text {
+    font-size: "29.997px";
+  }
+}
+
 .ms-sig .ms-sig-cards {
   margin-top: 65px;
   display: flex;
@@ -688,6 +825,13 @@ ul {
   width: 275px;
   margin-right: 40px;
   margin-left: 40px;
+}
+
+@media (max-width: 991.99px) {
+  .ms-sig .ms-sig-cards .sig-card {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }
 
 .ms-sig .ms-sig-cards .sig-card .card-img {
@@ -834,6 +978,12 @@ ul {
   font-size: 23px;
   text-align: center;
   color: #9cd600;
+}
+
+@media (max-width: 1199.99px) {
+  .ms-prebook-cnt .prebook-list {
+    flex-wrap: wrap;
+  }
 }
 
 .ms-ours {
@@ -993,5 +1143,158 @@ ul {
   font-size: 18px;
   text-align: center;
   opacity: 0.7;
+}
+
+.ms-book {
+  padding-top: 82px;
+  padding-bottom: 66.5px;
+  display: none;
+}
+
+.ms-book-cnt .book-top-text {
+  font-family: "Sinhala MN";
+  font-size: 36px;
+  text-align: center;
+  color: #612e9e;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.ms-book-cnt .book-mid-text {
+  color: #612e9e;
+  font-size: 33px;
+  text-align: center;
+}
+
+.ms-book-cnt form {
+  margin-top: 20px;
+}
+
+.ms-book-cnt form .form-elem {
+  width: 524px;
+  height: 34px;
+  border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 13px;
+  padding-left: 15px;
+}
+
+.ms-book-cnt form .form-elem.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ms-book-cnt form .form-control {
+  border: none;
+  margin-right: 15px;
+  color: #000;
+  width: 100%;
+}
+
+.ms-book-cnt form .form-control::placeholder {
+  color: #000;
+}
+
+.ms-book-cnt form .form-control.placeholder-purple::placeholder {
+  color: #612e9e;
+}
+
+.ms-book-cnt form .form-elem-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ms-book-cnt form .form-elem-grid .form-elem:first-child {
+  margin-right: 41px;
+}
+
+.ms-book-cnt form .radio-container {
+  display: flex;
+  align-items: center;
+}
+
+.ms-book-cnt form .radio-container .radio-wrap:first-child {
+  margin-right: 37px;
+}
+
+.ms-book-cnt form .radio-container .radio-wrap:last-child {
+  margin-right: 5px;
+}
+
+.ms-book-cnt form .radio-wrap {
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+}
+
+.ms-book-cnt form .radio-wrap span {
+  margin-right: 12px;
+}
+
+.ms-book-cnt form .form-radio {
+  width: 17px;
+  height: 17px;
+  position: relative;
+  margin-left: 12.5px;
+}
+
+.ms-book-cnt form .form-radio::after {
+  content: "";
+  position: absolute;
+  top: -8.5px;
+  left: -8.5px;
+  right: 0;
+  bottom: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  z-index: 5;
+  background-color: #fff;
+}
+
+.ms-book-cnt form .form-radio:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  background-color: #612e9e;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.ms-book-cnt form .form-elem-purple {
+  background-color: #612e9e !important;
+}
+
+.ms-book-cnt form .form-elem-purple select {
+  background-color: #612e9e !important;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.ms-book-cnt form .form-elem-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.ms-book-cnt form .form-elem-btn .form-btn {
+  cursor: pointer;
+  width: 400px;
+  height: 40px;
+  font-size: 26px;
+  color: #9cd600;
+  background-color: #fff !important;
+  border-radius: 20px;
+  font-family: "BlissMd";
 }
 /*# sourceMappingURL=main.css.map */

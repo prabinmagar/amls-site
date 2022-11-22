@@ -2,6 +2,10 @@
     max-width: 1366px;
     margin: 0 auto;
     padding: 0 16px;
+
+    @include breakpoint-down(lg){
+        padding: 0;
+    }
 }
 
 .hdr-top{
@@ -25,6 +29,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include breakpoint-down(xl){
+        flex-wrap: wrap;
+        .hdr-banner-btn{
+            margin-bottom: 32px!important;
+            &:last-child{
+                margin-bottom: 0!important;
+            }
+        }
+    }
+
+    @include breakpoint-down(xl){
+        flex-direction: column;
+    }
 }
 .hdr-banner-btn{
     width: 348.309px;
@@ -44,6 +62,10 @@
             color: $clr-white;
             font-size: 27px;
             font-family: $bliss-reg;
+
+            @include breakpoint-down(lg){
+                @include ptcon(64.7);
+            }
         }
     }
 
@@ -56,14 +78,23 @@
                 font-size: 17px;
                 text-transform: uppercase;
                 letter-spacing: 1px;
+                @include breakpoint-down(lg){
+                    @include ptcon(40.75);
+                }
             }
             &:nth-child(3){
                 font-size: 17px;
+                @include breakpoint-down(lg){
+                    @include ptcon(81.5);
+                }
             }
             &:nth-child(2){
                 font-size: 34px;
                 margin-top: 6px;
                 margin-bottom: 4px;
+                @include breakpoint-down(lg){
+                    @include ptcon(40.75);
+                }
             }
         }
     }
@@ -75,6 +106,7 @@
             font-size: 32px;
         }
     }
+
 }
 
 //  ms types
@@ -84,10 +116,16 @@
     &-cards{
         display: flex;
         justify-content: center;
+
         .ms-types-card{
             background-color: $clr-black-haze;
             width: 347.333px;
             margin: 0 11px;
+
+            @include breakpoint-down(lg){
+                margin: 0 auto;
+            }
+
             .card-head{
                 height: 141px;
                 text-align: center;
@@ -100,6 +138,10 @@
                     color: $clr-purple;
                     font-size: 28px;
                     position: relative;
+
+                    @include breakpoint-down(lg){
+                        @include ptcon(75);
+                    }
 
                     &::after{
                         content: "";
@@ -117,6 +159,9 @@
             .card-body{
                 position: relative;
                 height: 246px;
+                @include breakpoint-down(xl){
+                    height: 300px;
+                }
                 img{
                     @include img-cover;
                 }
@@ -143,17 +188,30 @@
                 justify-content: center;
                 z-index: 5;
 
+                @include breakpoint-down(xl){
+                    padding-right: 19.5px;
+                    padding-left: 19.5px;
+                }
+
                 li{
                     font-size: 22px;
                     margin-bottom: 16px;
                     text-align: center;
                     font-family: $bliss-reg;
 
+                    @include breakpoint-down(lg){
+                        @include ptcon(58);
+                    }
+
                     &:last-child{
                         margin-bottom: 0;
                     }
                 }
             }
+        }
+
+        @include breakpoint-down(lg){
+            flex-direction: column;
         }
     }
 
@@ -170,13 +228,17 @@
             color: $clr-white;
             background-color: $clr-lime!important;
             border-radius: 20px;
-            font-family: $bliss-reg;
+            font-family: $bliss-md;
+
+            @include breakpoint-down(lg){
+                @include ptcon(65);
+            }
         }
     }
 }
 
 .ms-service{
-    height: 160px;
+    min-height: 160px;
     background-color: $clr-black-haze;
     display: flex;
     justify-content: center;
@@ -187,6 +249,7 @@
             font-size: 35px;
             color: $clr-purple;
             font-family: $bliss-reg;
+            text-align: center;
         }
         .service-img{
             margin-right: 20px;
@@ -199,6 +262,10 @@
             &-text{
                 font-size: 22px;
                 color: $clr-purple;
+
+                @include breakpoint-down(lg){
+                    @include ptcon(38);
+                }
             }
         }
         .service-btm-info{
@@ -215,7 +282,7 @@
 }
 
 .ms-menu{
-    height: 160px;
+    min-height: 160px;
     background-color: #a6e00a;
     @include flex-center;
 
@@ -223,6 +290,11 @@
         .menu-top-text{
             font-size: 35px;
             color: $clr-purple;
+            text-align: center;
+
+            @include breakpoint-down(lg){
+                @include ptcon(60);
+            }
         }
 
         .menu-lang-list{
@@ -241,7 +313,19 @@
                     background-color: $clr-purple;
                     margin-right: 37px;
                     margin-left: 37px;
+
+                    @include breakpoint-down(lg){
+                        display: none;
+                    }
                 }
+
+                @include breakpoint-down(lg){
+                    @include ptcon(38);
+                }
+            }
+
+            @include breakpoint-down(lg){
+                flex-direction: column;
             }
         }
     }
@@ -262,6 +346,9 @@
         text-align: center;
         color: $clr-purple;
         font-family: $sinhala;
+        @include breakpoint-down(lg){
+            @include ptcon(90);
+        }
     }
 
     .ms-sig-cards{
@@ -273,6 +360,11 @@
             width: 275px;
             margin-right: 40px;
             margin-left: 40px;
+
+            @include breakpoint-down(lg){
+                margin-right: 20px;
+                margin-left: 20px;
+            }
             .card-img{
                 width: 250px;
                 height: 194px;
@@ -358,6 +450,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
             .prebook-item{
                 margin-right: 29px;
                 margin-left: 29px;
@@ -402,6 +495,10 @@
                         color: $clr-lime;
                     }
                 }
+            }
+
+            @include breakpoint-down(xl){
+                flex-wrap: wrap;
             }
         }
     }
@@ -562,5 +659,158 @@
         font-size: 18px;
         text-align: center;
         opacity: 0.7;
+    }
+}
+
+// booking form
+.ms-book{
+    padding-top: 82px;
+    padding-bottom: 66.5px;
+    display: none;
+    &-cnt{
+        .book-top-text{
+            font-family: $sinhala;
+            font-size: 36px;
+            text-align: center;
+            color: $clr-purple;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+        }
+        .book-mid-text{
+            color: $clr-purple;
+            font-size: 33px;
+            text-align: center;
+        }
+
+        form{
+            margin-top: 20px;
+            .form-elem{
+                width: 524px;
+                height: 34px;
+                border-radius: 20px;
+                background-color: $clr-white;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 13px;
+                padding-left: 15px;
+
+                &.center{
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+            }
+            .form-control{
+                border: none;
+                margin-right: 15px;
+                color: $clr-black;
+                width: 100%;
+
+                &::placeholder{
+                    color: $clr-black;
+                }
+
+                &.placeholder-purple{
+                    &::placeholder{
+                        color: $clr-purple;
+                    }
+                }
+            }
+
+            .form-elem-grid{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .form-elem{
+                    &:first-child{
+                        margin-right: 41px;
+
+                    }
+                }
+            }
+
+            .radio-container{
+                display: flex;
+                align-items: center;
+                .radio-wrap{
+                    &:first-child{
+                        margin-right: 37px;
+                    }
+                    &:last-child{
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            .radio-wrap{
+                display: flex;
+                align-items: center;
+                justify-self: flex-end;
+                span{
+                    margin-right: 12px;
+                }
+            }
+
+            .form-radio{
+                width: 17px;
+                height: 17px;
+                position: relative;
+                margin-left: 12.5px;
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: -8.5px;
+                    left: -8.5px;
+                    right: 0;
+                    bottom: 0;
+                    width: 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    z-index: 5;
+                    background-color: $clr-white;
+                }
+                &:checked::before{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 18px;
+                    height: 18px;
+                    background-color: $clr-purple;
+                    border-radius: 50%;
+                    z-index: 10;
+                }
+            }
+
+            .form-elem-purple{
+                background-color: $clr-purple!important;
+                select{
+                    background-color: $clr-purple!important;
+                    color: $clr-white;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .form-elem-btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+
+                .form-btn{
+                    cursor: pointer;
+                    width: 400px;
+                    height: 40px;
+                    font-size: 26px;
+                    color: $clr-lime;
+                    background-color: $clr-white!important;
+                    border-radius: 20px;
+                    font-family: $bliss-md;
+                }
+            }
+        }
     }
 }
