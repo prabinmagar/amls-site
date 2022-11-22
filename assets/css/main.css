@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'BlissReg';
-  src: url("/assets/fonts/Bliss-Regular.bmap");
+  src: url("/assets/fonts/Bliss Regular.ttf");
 }
 
 @font-face {
@@ -429,7 +429,7 @@ ul {
 
 .hdr-banner-btn span {
   display: block;
-  font-family: "BlissBold";
+  font-family: "BlissReg";
 }
 
 .hdr-banner-btn:nth-child(1) {
@@ -439,6 +439,7 @@ ul {
 .hdr-banner-btn:nth-child(1) span {
   color: #fff;
   font-size: 27px;
+  font-family: "BlissReg";
 }
 
 .hdr-banner-btn:nth-child(2) {
@@ -452,6 +453,7 @@ ul {
 .hdr-banner-btn:nth-child(2) span:nth-child(1) {
   font-size: 17px;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .hdr-banner-btn:nth-child(2) span:nth-child(3) {
@@ -509,7 +511,7 @@ ul {
   content: "";
   position: absolute;
   background-color: #fff;
-  height: 2.6px;
+  height: 3.5px;
   width: 90.2px;
   bottom: -17px;
   left: 50%;
@@ -556,6 +558,7 @@ ul {
   font-size: 22px;
   margin-bottom: 16px;
   text-align: center;
+  font-family: "BlissReg";
 }
 
 .ms-types-cards .ms-types-card .card-list li:last-child {
@@ -590,6 +593,7 @@ ul {
 .ms-service-cnt .service-top-text {
   font-size: 35px;
   color: #612e9e;
+  font-family: "BlissReg";
 }
 
 .ms-service-cnt .service-img {
@@ -613,6 +617,8 @@ ul {
   justify-content: center;
   text-transform: uppercase;
   color: #612e9e;
+  letter-spacing: 1px;
+  font-family: "BlissReg";
 }
 
 .ms-menu {
@@ -639,6 +645,8 @@ ul {
 .ms-menu-cnt .menu-lang-list li {
   font-size: 22px;
   color: #612e9e;
+  font-family: "BlissReg";
+  letter-spacing: 1px;
 }
 
 .ms-menu-cnt .menu-lang-list li.divider {
@@ -714,6 +722,7 @@ ul {
 .ms-sig .ms-sig-cards .sig-card .card-body p {
   font-size: 20px;
   line-height: 1.27;
+  font-family: "BlissReg";
 }
 
 .ms-sig .ms-sig-cards .sig-card .divider-line {
@@ -732,6 +741,14 @@ ul {
 
 .ms-sig .ms-sig-cards .sig-card .card-foot p {
   font-size: 20px;
+}
+
+.ms-sig .ms-sig-cards .sig-card:nth-child(1) {
+  width: 280px;
+}
+
+.ms-sig .ms-sig-cards .sig-card:nth-child(2) {
+  width: 290px;
 }
 
 .ms-prebook {
@@ -757,6 +774,8 @@ ul {
   margin-bottom: 30px;
   text-align: center;
   color: #9cd600;
+  font-size: 22px;
+  line-height: 1.58;
 }
 
 .ms-prebook-cnt .prebook-list {
@@ -832,6 +851,7 @@ ul {
 
 .ms-selection {
   padding-top: 82px;
+  padding-bottom: 34.3px;
   background: linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)), url("../../assets/images/selection.jpg") center/cover no-repeat;
 }
 
@@ -851,7 +871,9 @@ ul {
 }
 
 .ms-selection-cnt .selection-list .sel-item {
-  width: calc(33.3333% - 112px);
+  width: calc(33.3333% - 55px);
+  margin-right: 27.5px;
+  margin-left: 27.5px;
   margin-bottom: 45px;
   text-align: center;
 }
@@ -866,6 +888,7 @@ ul {
   color: #fff;
   font-size: 22px;
   line-height: 1.4;
+  font-family: "BlissReg";
 }
 
 .ms-loc {
@@ -893,10 +916,13 @@ ul {
   text-align: center;
   font-size: 20px;
   margin-bottom: 2px;
+  font-family: "BlissReg";
 }
 
 .ms-loc-cnt .loc-list .loc-item-text p:nth-child(1) {
   margin-bottom: 3px;
+  font-family: "BlissBold";
+  letter-spacing: 1px;
 }
 
 .ms-loc-cnt .loc-list .loc-item:nth-child(1) {
@@ -940,7 +966,7 @@ ul {
   justify-content: center;
   margin-right: 10px;
   margin-left: 10px;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .ftr .footer-p-text {
@@ -951,9 +977,11 @@ ul {
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
+  font-family: "BlissReg";
 }
 
 .ftr .footer-mail-text {
+  margin-top: 3.9;
   margin-bottom: 47px;
   text-align: center;
   font-size: 20px;

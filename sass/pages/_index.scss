@@ -36,25 +36,26 @@
 
     span{
         display: block;
-        font-family: $bliss-bold;
+        font-family: $bliss-reg;
     }
     &:nth-child(1){
         background-color: $clr-harmonies!important;
         span{
             color: $clr-white;
             font-size: 27px;
+            font-family: $bliss-reg;
         }
     }
 
     &:nth-child(2){
         background-color: $clr-purple!important;
         
-        
         span{
             color: $clr-white;
             &:nth-child(1){
                 font-size: 17px;
                 text-transform: uppercase;
+                letter-spacing: 1px;
             }
             &:nth-child(3){
                 font-size: 17px;
@@ -104,7 +105,7 @@
                         content: "";
                         position: absolute;
                         background-color: $clr-white;
-                        height: 2.6px;
+                        height: 3.5px;
                         width: 90.2px;
                         bottom: -17px;
                         left: 50%;
@@ -113,7 +114,6 @@
                     }
                 }
             }
-
             .card-body{
                 position: relative;
                 height: 246px;
@@ -147,14 +147,13 @@
                     font-size: 22px;
                     margin-bottom: 16px;
                     text-align: center;
+                    font-family: $bliss-reg;
 
                     &:last-child{
                         margin-bottom: 0;
                     }
                 }
             }
-
-            
         }
     }
 
@@ -186,6 +185,7 @@
         .service-top-text{
             font-size: 35px;
             color: $clr-purple;
+            font-family: $bliss-reg;
         }
         .service-img{
             margin-right: 20px;
@@ -207,6 +207,8 @@
             justify-content: center;
             text-transform: uppercase;
             color: $clr-purple;
+            letter-spacing: 1px;
+            font-family: $bliss-reg;
         }
     }
 }
@@ -230,6 +232,8 @@
             li{
                 font-size: 22px;
                 color: $clr-purple;
+                font-family: $bliss-reg;
+                letter-spacing: 1px;
                 &.divider{
                     width: 1.2px;
                     height: 24px;
@@ -293,6 +297,7 @@
                 p{
                     font-size: 20px;
                     line-height: 1.27;
+                    font-family: $bliss-reg;
                 }
             }
             .divider-line{
@@ -309,6 +314,14 @@
                 p{
                     font-size: 20px;
                 }
+            }
+
+            &:nth-child(1){
+                width: 280px;
+            }
+
+            &:nth-child(2){
+                width: 290px;
             }
         }
     }
@@ -336,6 +349,8 @@
             margin-bottom: 30px;
             text-align: center;
             color: $clr-lime;
+            font-size: 22px;
+            line-height: 1.58;
         }
 
         .prebook-list{
@@ -408,6 +423,7 @@
 
 .ms-selection{
     padding-top: 82px;
+    padding-bottom: 34.3px;
     background: linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)),  url('../../assets/images/selection.jpg') center/cover no-repeat;
     &-cnt{
         .selection-top-text{
@@ -424,7 +440,9 @@
             justify-content: center;
             flex-wrap: wrap;
             .sel-item{
-                width: calc(33.3333% - 112px);
+                width: calc(33.3333% - 55px);
+                margin-right: 27.5px;
+                margin-left: 27.5px;
                 margin-bottom: 45px;
                 text-align: center;
 
@@ -438,6 +456,7 @@
                     color: $clr-white;
                     font-size: 22px;
                     line-height: 1.4;
+                    font-family: $bliss-reg;
                 }
             }
         }
@@ -467,8 +486,11 @@
                         text-align: center;
                         font-size: 20px;
                         margin-bottom: 2px;
+                        font-family: $bliss-reg;
                         &:nth-child(1){
                             margin-bottom: 3px;
+                            font-family: $bliss-bold;
+                            letter-spacing: 1px;
                         }
                     }
                 }
@@ -513,7 +535,7 @@
             justify-content: center;
             margin-right: 10px;
             margin-left: 10px;
-            font-size: 24px;
+            font-size: 28px;
         }
     }
 
@@ -525,9 +547,11 @@
         max-width: 960px;
         margin-right: auto;
         margin-left: auto;
+        font-family: $bliss-reg;
     }
 
     .footer-mail-text{
+        margin-top: 3.9;
         margin-bottom: 47px;
         text-align: center;
         font-size: 20px;
