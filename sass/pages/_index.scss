@@ -8,6 +8,15 @@
     }
 }
 
+.header{
+    // height: 828px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
+
 .hdr-top{
     height: 188px; 
     display: flex;
@@ -924,14 +933,33 @@
                 justify-content: space-between;
                 padding-left: 15px;
                 margin-bottom: 21px;
+                overflow: hidden;
+                
+                @include breakpoint-down(mob){
+                    height: 47px;
+                    border-radius: 30px;
+                }
 
                 &.center{
                     margin-right: auto;
                     margin-left: auto;
+
+                    // changed
+                    @include breakpoint-down(mob){
+                        margin-left: auto!important;
+                        margin-right: auto!important;
+                    }
                 }
 
                 &.mb-13{
                     margin-bottom: 13px!important;
+                }
+
+                // changed
+                @include breakpoint-down(mob){
+                    width: 563px;
+                    margin-right: 0!important;
+                    margin-left: 0!important;
                 }
             }
             .form-control{
@@ -966,6 +994,10 @@
 
                     }
                 }
+
+                @include breakpoint-down(lg){
+                    flex-direction: column;
+                }
             }
 
             .radio-container{
@@ -997,6 +1029,10 @@
                 position: relative;
                 margin-left: 12.5px;
 
+                @include breakpoint-down(mob){
+                    margin-right: 10px;
+                }
+
                 &::after{
                     content: "";
                     position: absolute;
@@ -1009,6 +1045,13 @@
                     border-radius: 50%;
                     z-index: 5;
                     background-color: $clr-white;
+
+                    @include breakpoint-down(mob){
+                        top: -7px;
+                        left: -10px;
+                        width: 30px;
+                        height: 30px;
+                    }
                 }
                 &:checked::before{
                     content: "";
@@ -1052,6 +1095,12 @@
                     font-family: $bliss-md;
                 }
             }
+
+            select{
+                option{
+                    font-size: 20px;
+                }
+            }
         }
     }
 }
@@ -1077,11 +1126,11 @@
 }
 
 // js scripts related
-.show-booking{
-    .ms-types{
-        transform: translateX(-100%);
-    }
-    .ms-book{
-        transform: translateX(-100%);
-    }
-}
+// .show-booking{
+//     .ms-types{
+//         transform: translateX(-100%);
+//     }
+//     .ms-book{
+//         transform: translateX(-100%);
+//     }
+// }
