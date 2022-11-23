@@ -24,7 +24,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid red;
+
+    @include breakpoint-down(lg){
+        height: 1012px;
+    }
 }
 .hdr-banner-btns{
     display: flex;
@@ -123,6 +126,11 @@
 .ms-types{
     padding-top: 116px;
     padding-bottom: 94px;
+
+    @include breakpoint-down(mob){
+        padding-bottom: 0!important;
+    }
+    
     &-cards{
         display: flex;
         justify-content: center;
@@ -136,6 +144,11 @@
                 margin: 0 auto;
             }
 
+            @include breakpoint-down(mob){
+                width: 100%!important;
+            }
+            
+
             .card-head{
                 height: 141px;
                 text-align: center;
@@ -143,6 +156,10 @@
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+
+                @include breakpoint-down(mob){
+                    height: 200px!important;
+                }
                 h3{
                     text-transform: uppercase;
                     color: $clr-purple;
@@ -173,6 +190,12 @@
                 @include breakpoint-down(xl){
                     height: 300px;
                 }
+
+                @include breakpoint-down(mob){
+                    height: 350px!important;
+                }
+
+
                 img{
                     @include img-cover;
                 }
@@ -215,11 +238,17 @@
                         @include ptcon(58);
                     }
 
+                    @include breakpoint-down(mob){
+                        margin-bottom: 28px;
+                    }
+
                     &:last-child{
                         margin-bottom: 0;
                     }
                 }
             }
+
+            
         }
 
         @include breakpoint-down(lg){
@@ -247,7 +276,28 @@
             }
         }
     }
+
+    .mob-booking-btn{
+        display: none;
+        @include breakpoint-down(mob){
+            display: block;
+            width: 432px!important;
+            margin-bottom: 45.6px;
+            margin-top: -7.6px;
+        }
+        &.mb-0{
+            margin-bottom: 0;
+        }
+    }
+
+    .desk-booking-btn{
+        @include breakpoint-down(mob){
+            display: none;
+        }
+    }
 }
+
+
 
 .ms-service{
     background-color: $clr-black-haze;
@@ -258,6 +308,7 @@
     &-cnt{
         margin-top: 26px;
         margin-bottom: 25px;
+
         .service-top-text{
             font-size: 35px;
             color: $clr-purple;
@@ -329,18 +380,15 @@
                     margin-right: 37px;
                     margin-left: 37px;
 
-                    @include breakpoint-down(lg){
-                        display: none;
+                    @include breakpoint-down(mob){
+                        margin-right: 36px;
+                        margin-left: 36px;
                     }
                 }
 
                 @include breakpoint-down(lg){
                     @include ptcon(38);
                 }
-            }
-
-            @include breakpoint-down(lg){
-                flex-direction: column;
             }
         }
     }
@@ -351,10 +399,19 @@
     background-color: $clr-white;
 }
 
+.mob-d-none{
+    display: none;
+}
+
 .ms-sig{
     padding-top: 83px;
     padding-bottom: 83px;
     background-color: $clr-black-haze;
+
+    @include breakpoint-down(mob){
+        padding-bottom: 64px;
+    }
+
     .sig-top-text{
         font-size: 36px;
         text-transform: uppercase;
@@ -372,8 +429,18 @@
         display: flex;
         align-items: flex-start;
         justify-content: center;
+
+        @include breakpoint-down(mob){
+            margin-top: 80px;
+        }
+
         .sig-card{
             width: 300px;
+            @include breakpoint-down(mob){
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom: 47px;
+            }
 
             @include breakpoint-down(lg){
                 margin-right: 20px;
@@ -399,10 +466,19 @@
                 @include tracking(10);
                 text-transform: uppercase;
                 line-height: 1.38;
+
+                @include breakpoint-down(mob){
+                    margin-top: 33px;
+                }
             }
             .card-body{
                 margin-top: 9px;
                 text-align: center;
+
+                @include breakpoint-down(mob){
+                    margin-top: 17px;
+                }
+
                 p{
                     font-size: 20px;
                     @include lh(24px, 20px);
@@ -429,15 +505,28 @@
 
             &:nth-child(1){
                 margin-right: 36px;
+                @include breakpoint-down(mob){
+                    margin-right: auto;
+                    margin-left: auto;
+                }
             }
 
             &:nth-child(2){
                 margin-left: 36px;
                 margin-right: 40px;
+                @include breakpoint-down(mob){
+                    margin-right: auto;
+                    margin-left: auto;
+                }
             }
 
             &:nth-child(3){
                 margin-left: 40px;
+                @include breakpoint-down(mob){
+                    margin-right: auto;
+                    margin-left: auto;
+                    margin-bottom: 0;
+                }
             }
 
             .cta-btn{
@@ -450,6 +539,11 @@
                 }
             }
         }
+
+        @include breakpoint-down(mob){
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 
@@ -461,6 +555,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include breakpoint-down(mob){
+        padding-bottom: 106px;
+    }
 
     &-cnt{
         .prebook-top-text{
@@ -480,6 +578,12 @@
             @include tracking(10);
             font-family: $bliss-bold;
             line-height: 1.58;
+
+            @include breakpoint-down(mob){
+                max-width: 494px;
+                margin-right: auto;
+                margin-left: auto;
+            }
         }
 
         .prebook-list{
@@ -490,6 +594,12 @@
             .prebook-item{
                 margin-right: 29px;
                 margin-left: 29px;
+                position: relative;
+
+                @include breakpoint-down(mob){
+                    margin-bottom: 37px;
+                }
+
                 &-body{
                     width: 163px;
                     height: 163px;
@@ -543,11 +653,26 @@
                         color: $clr-lime;
                         font-family: $bliss-md;
                     }
+
+                    @include breakpoint-down(mob){
+                        position: absolute;
+                        top: 42%;
+                        transform: translateY(-50%);
+                        left: calc(100%  + 24px);
+                    }
+                }
+
+                &:last-child{
+                    margin-bottom: 0;
                 }
             }
 
             @include breakpoint-down(xl){
                 flex-wrap: wrap;
+            }
+
+            @include breakpoint-down(mob){
+                flex-direction: column;
             }
         }
     }
@@ -573,6 +698,12 @@
     padding-top: 82px;
     padding-bottom: 34.3px;
     background: linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)),  url('../../assets/images/selection.jpg') center/cover no-repeat;
+
+    @include breakpoint-down(mob){
+        padding-top: 125px;
+        padding-bottom: 135px;
+    }
+
     &-cnt{
         .selection-top-text{
             margin-bottom: 54px;
@@ -582,6 +713,10 @@
             color: $clr-white;
             text-transform: uppercase;
             @include tracking(40);
+
+            @include breakpoint-down(mob){
+                margin-bottom: 110px;
+            }
         }
         .selection-list{
             display: flex;
@@ -593,6 +728,13 @@
                 margin-left: 27.5px;
                 margin-bottom: 45px;
                 text-align: center;
+
+                @include breakpoint-down(mob){
+                    margin-right: 0;
+                    margin-left: 0;
+                    width: 100%;
+                    margin-bottom: 64px;
+                }
 
                 &-title{
                     color: $clr-lime;
@@ -611,6 +753,14 @@
                     margin-right: auto;
                     margin-left: auto;
                 }
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+
+            @include breakpoint-down(mob){
+                flex-direction: column;
             }
         }
     }
@@ -620,6 +770,11 @@
     background-color: $clr-black-haze;
     padding-top: 45px;
     padding-bottom: 24px;
+
+    @include breakpoint-down(mob){
+        padding-top: 88px;
+    }
+
     &-cnt{
         .loc-list{
             display: flex;
@@ -652,10 +807,23 @@
 
                 &:nth-child(1){
                     margin-right: 86.5px;
+
+                    @include breakpoint-down(mob){
+                        margin-right: 0;
+                        margin-bottom: 87px;
+                    }
                 }
                 &:nth-child(2){
                     margin-left: 86.5px;
+
+                    @include breakpoint-down(mob){
+                        margin-left: 0;
+                    }
                 }
+            }
+
+            @include breakpoint-down(mob){
+                flex-direction: column;
             }
         }
     }
