@@ -12,13 +12,13 @@
 }
 
 @font-face {
-  font-family: 'BlissMd';
-  src: url("/assets/fonts/Bliss-Medium.bmap");
+  font-family: 'BlissReg';
+  src: url("/assets/fonts/Bliss Regular.ttf");
 }
 
 @font-face {
-  font-family: 'BlissReg';
-  src: url("/assets/fonts/Bliss Regular.ttf");
+  font-family: 'BlissMd';
+  src: url("/assets/fonts/BlissMedium.ttf");
 }
 
 @font-face {
@@ -451,10 +451,10 @@ ul {
 }
 
 .hdr-banner-btn {
-  width: 348.309px;
+  width: 348.309px !important;
   height: 100px;
-  border-radius: 60px !important;
-  margin: 0 10px;
+  border-radius: 55px !important;
+  margin: 0 10.5px;
   border: 2px solid #fff !important;
   cursor: pointer;
 }
@@ -482,6 +482,7 @@ ul {
 
 .hdr-banner-btn:nth-child(2) {
   background-color: #612e9e !important;
+  padding-top: 2px;
 }
 
 .hdr-banner-btn:nth-child(2) span {
@@ -491,7 +492,8 @@ ul {
 .hdr-banner-btn:nth-child(2) span:nth-child(1) {
   font-size: 17px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  letter-spacing: 0.02em;
 }
 
 @media (max-width: 991.99px) {
@@ -502,6 +504,7 @@ ul {
 
 .hdr-banner-btn:nth-child(2) span:nth-child(3) {
   font-size: 17px;
+  letter-spacing: 0.02em;
 }
 
 @media (max-width: 991.99px) {
@@ -512,8 +515,9 @@ ul {
 
 .hdr-banner-btn:nth-child(2) span:nth-child(2) {
   font-size: 34px;
-  margin-top: 6px;
-  margin-bottom: 4px;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  letter-spacing: 0.02em;
 }
 
 @media (max-width: 991.99px) {
@@ -683,17 +687,21 @@ ul {
 }
 
 .ms-service {
-  min-height: 160px;
   background-color: #e3dfd2;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.ms-service-cnt {
+  margin-top: 26px;
+  margin-bottom: 25px;
+}
+
 .ms-service-cnt .service-top-text {
   font-size: 35px;
   color: #612e9e;
-  font-family: "BlissReg";
+  font-family: "BlissMd";
   text-align: center;
 }
 
@@ -706,30 +714,29 @@ ul {
   width: 150px;
 }
 
-.ms-service-cnt .service-top-info-text {
-  font-size: 22px;
-  color: #612e9e;
-}
-
-@media (max-width: 991.99px) {
-  .ms-service-cnt .service-top-info-text {
-    font-size: "12.6654px";
-  }
-}
-
 .ms-service-cnt .service-btm-info {
-  margin-top: 8.6px;
+  margin-top: 8.9px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
   color: #612e9e;
-  letter-spacing: 1px;
   font-family: "BlissReg";
 }
 
+.ms-service-cnt .service-btm-info-text {
+  font-size: 22px;
+  color: #612e9e;
+  letter-spacing: 0.16em;
+}
+
+@media (max-width: 991.99px) {
+  .ms-service-cnt .service-btm-info-text {
+    font-size: "12.6654px";
+  }
+}
+
 .ms-menu {
-  min-height: 160px;
   background-color: #a6e00a;
   -moz-align-items: center;
   align-items: center;
@@ -737,10 +744,16 @@ ul {
   justify-content: center;
 }
 
+.ms-menu-cnt {
+  margin-top: 44px;
+  margin-bottom: 35px;
+}
+
 .ms-menu-cnt .menu-top-text {
   font-size: 35px;
   color: #612e9e;
   text-align: center;
+  font-family: "BlissMd";
 }
 
 @media (max-width: 991.99px) {
@@ -760,11 +773,11 @@ ul {
   font-size: 22px;
   color: #612e9e;
   font-family: "BlissReg";
-  letter-spacing: 1px;
+  letter-spacing: 0.16em;
 }
 
 .ms-menu-cnt .menu-lang-list li.divider {
-  width: 1.2px;
+  width: 1px;
   height: 24px;
   background-color: #612e9e;
   margin-right: 37px;
@@ -796,7 +809,7 @@ ul {
 
 .ms-sig {
   padding-top: 83px;
-  padding-bottom: 87px;
+  padding-bottom: 83px;
   background-color: #e3dfd2;
 }
 
@@ -806,6 +819,7 @@ ul {
   text-align: center;
   color: #612e9e;
   font-family: "Sinhala MN";
+  letter-spacing: 0.04em;
 }
 
 @media (max-width: 991.99px) {
@@ -815,7 +829,7 @@ ul {
 }
 
 .ms-sig .ms-sig-cards {
-  margin-top: 65px;
+  margin-top: 54px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -852,7 +866,7 @@ ul {
 
 .ms-sig .ms-sig-cards .sig-card .card-title {
   text-align: center;
-  margin-top: 27.6px;
+  margin-top: 20px;
   color: #612e9e;
   font-size: 22px;
   text-transform: uppercase;
@@ -860,19 +874,19 @@ ul {
 }
 
 .ms-sig .ms-sig-cards .sig-card .card-body {
-  margin-top: 10px;
+  margin-top: 9px;
   text-align: center;
 }
 
 .ms-sig .ms-sig-cards .sig-card .card-body p {
   font-size: 20px;
-  line-height: 1.27;
+  line-height: 1.2;
   font-family: "BlissReg";
 }
 
 .ms-sig .ms-sig-cards .sig-card .divider-line {
-  margin-top: 17px;
-  margin-bottom: 12.5px;
+  margin-top: 12.4px;
+  margin-bottom: 8.2px;
   height: 2.2px;
   width: 107px;
   background-color: #fff;
@@ -882,6 +896,7 @@ ul {
 
 .ms-sig .ms-sig-cards .sig-card .card-foot {
   text-align: center;
+  padding-top: 3.2px;
 }
 
 .ms-sig .ms-sig-cards .sig-card .card-foot p {
@@ -894,6 +909,16 @@ ul {
 
 .ms-sig .ms-sig-cards .sig-card:nth-child(2) {
   width: 290px;
+}
+
+.ms-sig .ms-sig-cards .sig-card .cta-btn {
+  margin-top: 8px;
+}
+
+.ms-sig .ms-sig-cards .sig-card .cta-btn a {
+  font-size: 18px;
+  text-align: center;
+  color: #612e9e;
 }
 
 .ms-prebook {
@@ -912,6 +937,7 @@ ul {
   text-align: center;
   color: #fff;
   text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .ms-prebook-cnt .prebook-mid-text {
@@ -935,8 +961,8 @@ ul {
 }
 
 .ms-prebook-cnt .prebook-list .prebook-item-body {
-  width: 162px;
-  height: 162px;
+  width: 163px;
+  height: 163px;
   border-radius: 50%;
   background-color: #fff;
   display: flex;
@@ -954,10 +980,20 @@ ul {
 
 .ms-prebook-cnt .prebook-list .prebook-item-body .prebook-item-text-top {
   font-size: 22px;
+  display: block;
+  margin-bottom: 1px;
+  margin-top: 5px;
 }
 
-.ms-prebook-cnt .prebook-list .prebook-item-body .prebook-item-text-bottom {
-  font-size: 19px;
+.ms-prebook-cnt .prebook-list .prebook-item-body .prebook-item-text-top:nth-child(2) {
+  margin-top: -1px;
+}
+
+.ms-prebook-cnt .prebook-list .prebook-item-body .prebook-item-text-btm {
+  font-size: 20px;
+  display: block;
+  font-family: "BlissMd";
+  margin-top: 3px;
 }
 
 .ms-prebook-cnt .prebook-list .prebook-item-body .prebook-item-text .divider {
@@ -998,6 +1034,7 @@ ul {
   text-align: center;
   color: #612e9e;
   text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .ms-selection {
@@ -1013,6 +1050,7 @@ ul {
   text-align: center;
   color: #fff;
   text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .ms-selection-cnt .selection-list {
@@ -1031,15 +1069,18 @@ ul {
 
 .ms-selection-cnt .selection-list .sel-item-title {
   color: #9cd600;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .ms-selection-cnt .selection-list .sel-item-text {
   margin-top: 10px;
   color: #fff;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.4;
   font-family: "BlissReg";
+  max-width: 313px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .ms-loc {

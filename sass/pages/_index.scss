@@ -45,10 +45,10 @@
     }
 }
 .hdr-banner-btn{
-    width: 348.309px;
+    width: 348.309px!important;
     height: 100px;
-    border-radius: 60px!important;
-    margin: 0 10px;
+    border-radius: 55px!important;
+    margin: 0 10.5px;
     border: 2px solid $clr-white!important;
     cursor: pointer;
 
@@ -71,27 +71,31 @@
 
     &:nth-child(2){
         background-color: $clr-purple!important;
+        padding-top: 2px;
         
         span{
             color: $clr-white;
             &:nth-child(1){
                 font-size: 17px;
                 text-transform: uppercase;
-                letter-spacing: 1px;
+                letter-spacing: 1.5px;
+                @include tracking(20);
                 @include breakpoint-down(lg){
                     @include ptcon(40.75);
                 }
             }
             &:nth-child(3){
                 font-size: 17px;
+                @include tracking(20);
                 @include breakpoint-down(lg){
                     @include ptcon(81.5);
                 }
             }
             &:nth-child(2){
                 font-size: 34px;
-                margin-top: 6px;
-                margin-bottom: 4px;
+                margin-top: 2px;
+                margin-bottom: 1px;
+                @include tracking(20);
                 @include breakpoint-down(lg){
                     @include ptcon(40.75);
                 }
@@ -238,17 +242,18 @@
 }
 
 .ms-service{
-    min-height: 160px;
     background-color: $clr-black-haze;
     display: flex;
     justify-content: center;
     align-items: center;
 
     &-cnt{
+        margin-top: 26px;
+        margin-bottom: 25px;
         .service-top-text{
             font-size: 35px;
             color: $clr-purple;
-            font-family: $bliss-reg;
+            font-family: $bliss-md;
             text-align: center;
         }
         .service-img{
@@ -258,39 +263,40 @@
                 width: 150px;
             }
         }
-        .service-top-info{
+        .service-btm-info{
+            margin-top: 8.9px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            color: $clr-purple;
+            font-family: $bliss-reg;
+
             &-text{
                 font-size: 22px;
                 color: $clr-purple;
+                @include tracking(160);
 
                 @include breakpoint-down(lg){
                     @include ptcon(38);
                 }
             }
         }
-        .service-btm-info{
-            margin-top: 8.6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-transform: uppercase;
-            color: $clr-purple;
-            letter-spacing: 1px;
-            font-family: $bliss-reg;
-        }
     }
 }
 
 .ms-menu{
-    min-height: 160px;
     background-color: #a6e00a;
     @include flex-center;
 
     &-cnt{
+        margin-top: 44px;
+        margin-bottom: 35px;
         .menu-top-text{
             font-size: 35px;
             color: $clr-purple;
             text-align: center;
+            font-family: $bliss-md;
 
             @include breakpoint-down(lg){
                 @include ptcon(60);
@@ -306,9 +312,10 @@
                 font-size: 22px;
                 color: $clr-purple;
                 font-family: $bliss-reg;
-                letter-spacing: 1px;
+                @include tracking(160);
+                
                 &.divider{
-                    width: 1.2px;
+                    width: 1px;
                     height: 24px;
                     background-color: $clr-purple;
                     margin-right: 37px;
@@ -338,7 +345,7 @@
 
 .ms-sig{
     padding-top: 83px;
-    padding-bottom: 87px;
+    padding-bottom: 83px;
     background-color: $clr-black-haze;
     .sig-top-text{
         font-size: 36px;
@@ -346,13 +353,14 @@
         text-align: center;
         color: $clr-purple;
         font-family: $sinhala;
+        @include tracking(40);
         @include breakpoint-down(lg){
             @include ptcon(90);
         }
     }
 
     .ms-sig-cards{
-        margin-top: 65px;
+        margin-top: 54px;
         display: flex;
         align-items: flex-start;
         justify-content: center;
@@ -378,24 +386,24 @@
             }
             .card-title{
                 text-align: center;
-                margin-top: 27.6px;
+                margin-top: 20px;
                 color: $clr-purple;
                 font-size: 22px;
                 text-transform: uppercase;
                 line-height: 1.38;
             }
             .card-body{
-                margin-top: 10px;
+                margin-top: 9px;
                 text-align: center;
                 p{
                     font-size: 20px;
-                    line-height: 1.27;
+                    @include lh(24px, 20px);
                     font-family: $bliss-reg;
                 }
             }
             .divider-line{
-                margin-top: 17px;
-                margin-bottom: 12.5px;
+                margin-top: 12.4px;
+                margin-bottom: 8.2px;
                 height: 2.2px;
                 width: 107px;
                 background-color: $clr-white;
@@ -404,6 +412,7 @@
             }
             .card-foot{
                 text-align: center;
+                padding-top: 3.2px;
                 p{
                     font-size: 20px;
                 }
@@ -415,6 +424,15 @@
 
             &:nth-child(2){
                 width: 290px;
+            }
+
+            .cta-btn{
+                margin-top: 8px;
+                a{
+                    font-size: 18px;
+                    text-align: center;
+                    color: $clr-purple;
+                }
             }
         }
     }
@@ -436,6 +454,7 @@
             text-align: center;
             color: $clr-white;
             text-transform: uppercase;
+            @include tracking(40);
         }
         .prebook-mid-text{
             margin-top: 51px;
@@ -455,8 +474,8 @@
                 margin-right: 29px;
                 margin-left: 29px;
                 &-body{
-                    width: 162px;
-                    height: 162px;
+                    width: 163px;
+                    height: 163px;
                     border-radius: 50%;
                     background-color: $clr-white;
                     display: flex;
@@ -470,9 +489,18 @@
                         color: $clr-purple;
                         &-top{
                             font-size: 22px;
+                            display: block;
+                            margin-bottom: 1px;
+                            margin-top: 5px;
+                            &:nth-child(2){
+                                margin-top: -1px;
+                            }
                         }
-                        &-bottom{
-                            font-size: 19px;
+                        &-btm{
+                            font-size: 20px;
+                            display: block;
+                            font-family: $bliss-md;
+                            margin-top: 3px;
                         }
 
                         .divider{
@@ -515,6 +543,7 @@
             text-align: center;
             color: $clr-purple;
             text-transform: uppercase;
+            @include tracking(40);
         }
     }
 }
@@ -532,6 +561,7 @@
             text-align: center;
             color: $clr-white;
             text-transform: uppercase;
+            @include tracking(40);
         }
         .selection-list{
             display: flex;
@@ -546,15 +576,18 @@
 
                 &-title{
                     color: $clr-lime;
-                    font-size: 20px;
+                    font-size: 22px;
                 }
 
                 &-text{
                     margin-top: 10px;
                     color: $clr-white;
-                    font-size: 22px;
+                    font-size: 20px;
                     line-height: 1.4;
                     font-family: $bliss-reg;
+                    max-width: 313px;
+                    margin-right: auto;
+                    margin-left: auto;
                 }
             }
         }

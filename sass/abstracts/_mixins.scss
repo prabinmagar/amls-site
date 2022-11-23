@@ -698,3 +698,15 @@
 @mixin ptcon($pt){
     font-size: ($pt * 0.3333) + "px";
 }
+
+@function tracking($target){
+    @return ($target / 1000) * 1em;
+}
+
+@mixin tracking($target){
+    letter-spacing: tracking($target);
+}
+
+@mixin lh($h, $fs){
+    line-height: $h / $fs;
+}
