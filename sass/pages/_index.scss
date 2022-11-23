@@ -24,6 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px solid red;
 }
 .hdr-banner-btns{
     display: flex;
@@ -78,7 +79,6 @@
             &:nth-child(1){
                 font-size: 17px;
                 text-transform: uppercase;
-                letter-spacing: 1.5px;
                 @include tracking(120);
                 @include breakpoint-down(lg){
                     @include ptcon(40.75);
@@ -109,6 +109,11 @@
         span{
             color: $clr-purple;
             font-size: 32px;
+            font-family: $bliss-reg;
+
+            @include breakpoint-down(lg){
+                @include ptcon(76.697);
+            }
         }
     }
 
@@ -142,6 +147,7 @@
                     text-transform: uppercase;
                     color: $clr-purple;
                     font-size: 28px;
+                    @include tracking(30);
                     position: relative;
 
                     @include breakpoint-down(lg){
@@ -203,6 +209,7 @@
                     margin-bottom: 16px;
                     text-align: center;
                     font-family: $bliss-reg;
+                    @include tracking(-10);
 
                     @include breakpoint-down(lg){
                         @include ptcon(58);
@@ -225,7 +232,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        cursor: pointer;
         .btn{
             width: 400px;
             height: 40px;
@@ -234,6 +240,7 @@
             background-color: $clr-lime!important;
             border-radius: 20px;
             font-family: $bliss-md;
+            cursor: pointer;
 
             @include breakpoint-down(lg){
                 @include ptcon(65);
@@ -271,12 +278,12 @@
             justify-content: center;
             text-transform: uppercase;
             color: $clr-purple;
-            font-family: $bliss-reg;
 
             &-text{
                 font-size: 22px;
                 color: $clr-purple;
                 @include tracking(160);
+                font-family: $bliss-md;
 
                 @include breakpoint-down(lg){
                     @include ptcon(38);
@@ -312,7 +319,7 @@
             li{
                 font-size: 22px;
                 color: $clr-purple;
-                font-family: $bliss-reg;
+                font-family: $bliss-md;
                 @include tracking(160);
                 
                 &.divider{
@@ -366,9 +373,7 @@
         align-items: flex-start;
         justify-content: center;
         .sig-card{
-            width: 275px;
-            margin-right: 40px;
-            margin-left: 40px;
+            width: 300px;
 
             @include breakpoint-down(lg){
                 margin-right: 20px;
@@ -390,6 +395,8 @@
                 margin-top: 20px;
                 color: $clr-purple;
                 font-size: 22px;
+                font-family: $bliss-bold;
+                @include tracking(10);
                 text-transform: uppercase;
                 line-height: 1.38;
             }
@@ -400,6 +407,7 @@
                     font-size: 20px;
                     @include lh(24px, 20px);
                     font-family: $bliss-reg;
+                    @include tracking(10);
                 }
             }
             .divider-line{
@@ -420,15 +428,21 @@
             }
 
             &:nth-child(1){
-                width: 280px;
+                margin-right: 36px;
             }
 
             &:nth-child(2){
-                width: 290px;
+                margin-left: 36px;
+                margin-right: 40px;
+            }
+
+            &:nth-child(3){
+                margin-left: 40px;
             }
 
             .cta-btn{
                 margin-top: 8px;
+                text-align: center;
                 a{
                     font-size: 18px;
                     text-align: center;
@@ -463,6 +477,8 @@
             text-align: center;
             color: $clr-lime;
             font-size: 22px;
+            @include tracking(10);
+            font-family: $bliss-bold;
             line-height: 1.58;
         }
 
@@ -493,14 +509,17 @@
                             display: block;
                             margin-bottom: 1px;
                             margin-top: 5px;
+                            font-family: $bliss-bold;
+                            @include tracking(10);
                             &:nth-child(2){
                                 margin-top: -1px;
                             }
                         }
                         &-btm{
-                            font-size: 20px;
+                            font-size: 19px;
                             display: block;
                             font-family: $bliss-md;
+                            @include tracking(10);
                             margin-top: 3px;
                         }
 
@@ -522,6 +541,7 @@
                         font-size: 23px;
                         text-align: center;
                         color: $clr-lime;
+                        font-family: $bliss-md;
                     }
                 }
             }
@@ -555,7 +575,6 @@
     background: linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)),  url('../../assets/images/selection.jpg') center/cover no-repeat;
     &-cnt{
         .selection-top-text{
-            // margin-bottom: 68px;
             margin-bottom: 54px;
             font-family: $sinhala;
             font-size: 36px;
@@ -578,6 +597,8 @@
                 &-title{
                     color: $clr-lime;
                     font-size: 22px;
+                    font-family: $bliss-bold;
+                    @include tracking(25);
                 }
 
                 &-text{
@@ -621,10 +642,10 @@
                         font-family: $bliss-reg;
                         &:nth-child(1){
                             text-transform: uppercase;
-                            font-size: 21px;
+                            font-size: 20px;
                             margin-bottom: 3px;
                             font-family: $bliss-bold;
-                            @include tracking(60);
+                            @include tracking(100);
                         }
                     }
                 }
@@ -705,17 +726,17 @@
 
 // booking form
 .ms-book{
-    padding-top: 82px;
     padding-bottom: 66.5px;
-    display: none;
     &-cnt{
+        padding-top: 75.3px;
         .book-top-text{
             font-family: $sinhala;
             font-size: 36px;
             text-align: center;
             color: $clr-purple;
             text-transform: uppercase;
-            margin-bottom: 50px;
+            margin-bottom: 44px;
+
         }
         .book-mid-text{
             color: $clr-purple;
@@ -733,12 +754,16 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                margin-bottom: 13px;
                 padding-left: 15px;
+                margin-bottom: 21px;
 
                 &.center{
                     margin-right: auto;
                     margin-left: auto;
+                }
+
+                &.mb-13{
+                    margin-bottom: 13px!important;
                 }
             }
             .form-control{
@@ -746,6 +771,7 @@
                 margin-right: 15px;
                 color: $clr-black;
                 width: 100%;
+                font-size: 22px;
 
                 &::placeholder{
                     color: $clr-black;
@@ -756,6 +782,10 @@
                         color: $clr-purple;
                     }
                 }
+            }
+
+            .form-label{
+                font-size: 22px;
             }
 
             .form-elem-grid{
@@ -789,6 +819,7 @@
                 justify-self: flex-end;
                 span{
                     margin-right: 12px;
+                    font-size: 22px;
                 }
             }
 
@@ -826,6 +857,7 @@
             }
 
             .form-elem-purple{
+                margin-top: 2px;
                 background-color: $clr-purple!important;
                 select{
                     background-color: $clr-purple!important;
@@ -839,7 +871,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin-top: 20px;
+                margin-top: 12.2px;
 
                 .form-btn{
                     cursor: pointer;
@@ -853,5 +885,35 @@
                 }
             }
         }
+    }
+}
+
+.slide-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%!important;
+    overflow-x: hidden;
+    section{
+        width: 100%;
+    }
+
+    .ms-types{
+        width: 100vw;
+        @include transition-default;
+    }
+    .ms-book{
+        transform: translateX(100%);
+        width: 100vw;
+        @include transition-default;
+    }
+}
+
+// js scripts related
+.show-booking{
+    .ms-types{
+        transform: translateX(-100%);
+    }
+    .ms-book{
+        transform: translateX(-100%);
     }
 }

@@ -424,6 +424,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid red;
 }
 
 .hdr-banner-btns {
@@ -492,7 +493,6 @@ ul {
 .hdr-banner-btn:nth-child(2) span:nth-child(1) {
   font-size: 17px;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
   letter-spacing: 0.12em;
 }
 
@@ -534,6 +534,13 @@ ul {
 .hdr-banner-btn:nth-child(3) span {
   color: #612e9e;
   font-size: 32px;
+  font-family: "BlissReg";
+}
+
+@media (max-width: 991.99px) {
+  .hdr-banner-btn:nth-child(3) span {
+    font-size: "25.56311px";
+  }
 }
 
 .ms-types {
@@ -571,6 +578,7 @@ ul {
   text-transform: uppercase;
   color: #612e9e;
   font-size: 28px;
+  letter-spacing: 0.03em;
   position: relative;
 }
 
@@ -645,6 +653,7 @@ ul {
   margin-bottom: 16px;
   text-align: center;
   font-family: "BlissReg";
+  letter-spacing: -0.01em;
 }
 
 @media (max-width: 991.99px) {
@@ -668,7 +677,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
 
 .ms-types-btn .btn {
@@ -679,6 +687,7 @@ ul {
   background-color: #9cd600 !important;
   border-radius: 20px;
   font-family: "BlissMd";
+  cursor: pointer;
 }
 
 @media (max-width: 991.99px) {
@@ -722,13 +731,13 @@ ul {
   justify-content: center;
   text-transform: uppercase;
   color: #612e9e;
-  font-family: "BlissReg";
 }
 
 .ms-service-cnt .service-btm-info-text {
   font-size: 22px;
   color: #612e9e;
   letter-spacing: 0.16em;
+  font-family: "BlissMd";
 }
 
 @media (max-width: 991.99px) {
@@ -773,7 +782,7 @@ ul {
 .ms-menu-cnt .menu-lang-list li {
   font-size: 22px;
   color: #612e9e;
-  font-family: "BlissReg";
+  font-family: "BlissMd";
   letter-spacing: 0.16em;
 }
 
@@ -837,9 +846,7 @@ ul {
 }
 
 .ms-sig .ms-sig-cards .sig-card {
-  width: 275px;
-  margin-right: 40px;
-  margin-left: 40px;
+  width: 300px;
 }
 
 @media (max-width: 991.99px) {
@@ -870,6 +877,8 @@ ul {
   margin-top: 20px;
   color: #612e9e;
   font-size: 22px;
+  font-family: "BlissBold";
+  letter-spacing: 0.01em;
   text-transform: uppercase;
   line-height: 1.38;
 }
@@ -883,6 +892,7 @@ ul {
   font-size: 20px;
   line-height: 1.2;
   font-family: "BlissReg";
+  letter-spacing: 0.01em;
 }
 
 .ms-sig .ms-sig-cards .sig-card .divider-line {
@@ -905,15 +915,21 @@ ul {
 }
 
 .ms-sig .ms-sig-cards .sig-card:nth-child(1) {
-  width: 280px;
+  margin-right: 36px;
 }
 
 .ms-sig .ms-sig-cards .sig-card:nth-child(2) {
-  width: 290px;
+  margin-left: 36px;
+  margin-right: 40px;
+}
+
+.ms-sig .ms-sig-cards .sig-card:nth-child(3) {
+  margin-left: 40px;
 }
 
 .ms-sig .ms-sig-cards .sig-card .cta-btn {
   margin-top: 8px;
+  text-align: center;
 }
 
 .ms-sig .ms-sig-cards .sig-card .cta-btn a {
@@ -947,6 +963,8 @@ ul {
   text-align: center;
   color: #9cd600;
   font-size: 22px;
+  letter-spacing: 0.01em;
+  font-family: "BlissBold";
   line-height: 1.58;
 }
 
@@ -984,6 +1002,8 @@ ul {
   display: block;
   margin-bottom: 1px;
   margin-top: 5px;
+  font-family: "BlissBold";
+  letter-spacing: 0.01em;
 }
 
 .ms-prebook-cnt .prebook-list .prebook-item-body .prebook-item-text-top:nth-child(2) {
@@ -991,9 +1011,10 @@ ul {
 }
 
 .ms-prebook-cnt .prebook-list .prebook-item-body .prebook-item-text-btm {
-  font-size: 20px;
+  font-size: 19px;
   display: block;
   font-family: "BlissMd";
+  letter-spacing: 0.01em;
   margin-top: 3px;
 }
 
@@ -1015,6 +1036,7 @@ ul {
   font-size: 23px;
   text-align: center;
   color: #9cd600;
+  font-family: "BlissMd";
 }
 
 @media (max-width: 1199.99px) {
@@ -1071,6 +1093,8 @@ ul {
 .ms-selection-cnt .selection-list .sel-item-title {
   color: #9cd600;
   font-size: 22px;
+  font-family: "BlissBold";
+  letter-spacing: 0.025em;
 }
 
 .ms-selection-cnt .selection-list .sel-item-text {
@@ -1114,10 +1138,10 @@ ul {
 
 .ms-loc-cnt .loc-list .loc-item-text p:nth-child(1) {
   text-transform: uppercase;
-  font-size: 21px;
+  font-size: 20px;
   margin-bottom: 3px;
   font-family: "BlissBold";
-  letter-spacing: 0.06em;
+  letter-spacing: 0.1em;
 }
 
 .ms-loc-cnt .loc-list .loc-item:nth-child(1) {
@@ -1195,9 +1219,11 @@ ul {
 }
 
 .ms-book {
-  padding-top: 82px;
   padding-bottom: 66.5px;
-  display: none;
+}
+
+.ms-book-cnt {
+  padding-top: 75.3px;
 }
 
 .ms-book-cnt .book-top-text {
@@ -1206,7 +1232,7 @@ ul {
   text-align: center;
   color: #612e9e;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 44px;
 }
 
 .ms-book-cnt .book-mid-text {
@@ -1227,8 +1253,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 13px;
   padding-left: 15px;
+  margin-bottom: 21px;
 }
 
 .ms-book-cnt form .form-elem.center {
@@ -1236,11 +1262,16 @@ ul {
   margin-left: auto;
 }
 
+.ms-book-cnt form .form-elem.mb-13 {
+  margin-bottom: 13px !important;
+}
+
 .ms-book-cnt form .form-control {
   border: none;
   margin-right: 15px;
   color: #000;
   width: 100%;
+  font-size: 22px;
 }
 
 .ms-book-cnt form .form-control::placeholder {
@@ -1249,6 +1280,10 @@ ul {
 
 .ms-book-cnt form .form-control.placeholder-purple::placeholder {
   color: #612e9e;
+}
+
+.ms-book-cnt form .form-label {
+  font-size: 22px;
 }
 
 .ms-book-cnt form .form-elem-grid {
@@ -1282,6 +1317,7 @@ ul {
 
 .ms-book-cnt form .radio-wrap span {
   margin-right: 12px;
+  font-size: 22px;
 }
 
 .ms-book-cnt form .form-radio {
@@ -1319,6 +1355,7 @@ ul {
 }
 
 .ms-book-cnt form .form-elem-purple {
+  margin-top: 2px;
   background-color: #612e9e !important;
 }
 
@@ -1333,7 +1370,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 12.2px;
 }
 
 .ms-book-cnt form .form-elem-btn .form-btn {
@@ -1345,5 +1382,35 @@ ul {
   background-color: #fff !important;
   border-radius: 20px;
   font-family: "BlissMd";
+}
+
+.slide-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100% !important;
+  overflow-x: hidden;
+}
+
+.slide-section section {
+  width: 100%;
+}
+
+.slide-section .ms-types {
+  width: 100vw;
+  transition: all ease-in-out 300ms;
+}
+
+.slide-section .ms-book {
+  transform: translateX(100%);
+  width: 100vw;
+  transition: all ease-in-out 300ms;
+}
+
+.show-booking .ms-types {
+  transform: translateX(-100%);
+}
+
+.show-booking .ms-book {
+  transform: translateX(-100%);
 }
 /*# sourceMappingURL=main.css.map */
