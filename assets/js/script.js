@@ -8,7 +8,6 @@ test.forEach((item, idx) => {
 const bookingBtn = $('.booking-btn');
 const bookingSection = $('#slideSection');
 $(bookingBtn).click(function(){
-    console.log('clicked here');
     $(bookingSection).addClass('show-booking');
 });
 
@@ -25,8 +24,6 @@ $(document).ready(function(){
         if($(this).scrollTop() >= 500){
             console.log("reached here");
             $('.hdr-banner').css('background', 'url("../../assets/images/banner-img-3.png") center/cover no-repeat');
-            
-            
         }
 
         if($(this).scrollTop() >= 828){

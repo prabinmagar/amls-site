@@ -46,6 +46,10 @@
   src: url("/assets/fonts/Tajawal-Medium.ttf");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .ms-menu {
   display: -moz-flex;
   display: flex;
@@ -1089,6 +1093,12 @@ ul {
   letter-spacing: 0.04em;
 }
 
+@media (max-width: 991.99px) {
+  .ms-prebook-cnt .prebook-top-text {
+    font-size: "29.997px";
+  }
+}
+
 .ms-prebook-cnt .prebook-mid-text {
   margin-top: 51px;
   margin-bottom: 30px;
@@ -1653,6 +1663,13 @@ ul {
 
 .ms-book-cnt form select option {
   font-size: 20px;
+  background-color: #fff;
+  color: #aea29f;
+}
+
+.ms-book-cnt form select option:nth-child(odd) {
+  background-color: #e4e4e4;
+  color: #000;
 }
 
 .slide-section {
@@ -1660,6 +1677,7 @@ ul {
   grid-template-columns: repeat(2, 1fr);
   width: 100% !important;
   overflow-x: hidden;
+  transition: all ease-in-out 300ms;
 }
 
 .slide-section section {
@@ -1675,5 +1693,13 @@ ul {
   transform: translateX(100%);
   width: 100vw;
   transition: all ease-in-out 300ms;
+}
+
+.show-booking .ms-types {
+  transform: translateX(-100%);
+}
+
+.show-booking .ms-book {
+  transform: translateX(-100%);
 }
 /*# sourceMappingURL=main.css.map */

@@ -577,6 +577,10 @@
             color: $clr-white;
             text-transform: uppercase;
             @include tracking(40);
+
+            @include breakpoint-down(lg){
+                @include ptcon(90);
+            }
         }
         .prebook-mid-text{
             margin-top: 51px;
@@ -1099,6 +1103,13 @@
             select{
                 option{
                     font-size: 20px;
+                    background-color: $clr-white;
+                    color: #aea29f;
+
+                    &:nth-child(odd){
+                        background-color: #e4e4e4;
+                        color: $clr-black;
+                    }
                 }
             }
         }
@@ -1110,6 +1121,7 @@
     grid-template-columns: repeat(2, 1fr);
     width: 100%!important;
     overflow-x: hidden;
+    @include transition-default;
     section{
         width: 100%;
     }
@@ -1126,11 +1138,21 @@
 }
 
 // js scripts related
-// .show-booking{
-//     .ms-types{
-//         transform: translateX(-100%);
-//     }
-//     .ms-book{
-//         transform: translateX(-100%);
-//     }
-// }
+.show-booking{
+    .ms-types{
+        transform: translateX(-100%);
+    }
+    .ms-book{
+        transform: translateX(-100%);
+    }
+}
+
+// select {
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//     appearance: none;
+//     background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat 96% !important;
+   
+//   }
+  
+//   select::-ms-expand { display: none; }
