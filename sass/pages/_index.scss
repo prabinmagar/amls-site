@@ -1,21 +1,21 @@
 .cntr{
     max-width: 1366px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0px 12px;
 
-    @include breakpoint-down(lg){
+    @include breakpoint-down(mob){
         padding: 0;
     }
 }
 
-.header{
-    // height: 828px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    z-index: 999;
-}
+
+// .header{
+//     position: fixed;
+//     left: 0;
+//     top: 0;
+//     right: 0;
+//     z-index: 999;
+// }
 
 .hdr-top{
     height: 188px; 
@@ -33,8 +33,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 
-    @include breakpoint-down(lg){
+    @include breakpoint-down(mob){
         height: 1012px;
     }
 }
@@ -43,7 +44,7 @@
     align-items: center;
     justify-content: center;
 
-    @include breakpoint-down(xl){
+    @include breakpoint-down(mob){
         flex-wrap: wrap;
         .hdr-banner-btn{
             margin-bottom: 32px!important;
@@ -53,7 +54,7 @@
         }
     }
 
-    @include breakpoint-down(xl){
+    @include breakpoint-down(mob){
         flex-direction: column;
     }
 }
@@ -64,6 +65,15 @@
     margin: 0 10.5px;
     border: 2px solid $clr-white!important;
     cursor: pointer;
+
+    // #####################
+    @include breakpoint-down(md){
+        width: 300px!important;
+    }
+
+    @include breakpoint-down(mob){
+        width: 348.309px!important;
+    }
 
     span{
         display: block;
@@ -76,7 +86,7 @@
             font-size: 27px;
             font-family: $bliss-reg;
 
-            @include breakpoint-down(lg){
+            @include breakpoint-down(mob){
                 @include ptcon(64.7);
             }
         }
@@ -92,7 +102,7 @@
                 font-size: 17px;
                 text-transform: uppercase;
                 @include tracking(120);
-                @include breakpoint-down(lg){
+                @include breakpoint-down(mob){
                     @include ptcon(40.75);
                 }
             }
@@ -100,7 +110,7 @@
                 font-size: 17px;
                 @include tracking(25);
                 font-family: $bliss-md;
-                @include breakpoint-down(lg){
+                @include breakpoint-down(mob){
                     @include ptcon(81.5);
                 }
             }
@@ -109,7 +119,7 @@
                 margin-top: 2px;
                 margin-bottom: 1px;
                 @include tracking(20);
-                @include breakpoint-down(lg){
+                @include breakpoint-down(mob){
                     @include ptcon(40.75);
                 }
             }
@@ -123,7 +133,7 @@
             font-size: 32px;
             font-family: $bliss-reg;
 
-            @include breakpoint-down(lg){
+            @include breakpoint-down(mob){
                 @include ptcon(76.697);
             }
         }
@@ -135,6 +145,10 @@
 .ms-types{
     padding-top: 116px;
     padding-bottom: 94px;
+
+    // @include breakpoint-down(lg){
+    //     padding: 0;
+    // }
 
     @include breakpoint-down(mob){
         padding-bottom: 0!important;
@@ -148,10 +162,6 @@
             background-color: $clr-black-haze;
             width: 347.333px;
             margin: 0 11px;
-
-            @include breakpoint-down(lg){
-                margin: 0 auto;
-            }
 
             @include breakpoint-down(mob){
                 width: 100%!important;
@@ -169,6 +179,7 @@
                 @include breakpoint-down(mob){
                     height: 200px!important;
                 }
+
                 h3{
                     text-transform: uppercase;
                     color: $clr-purple;
@@ -176,7 +187,7 @@
                     @include tracking(30);
                     position: relative;
 
-                    @include breakpoint-down(lg){
+                    @include breakpoint-down(mob){
                         @include ptcon(75);
                     }
 
@@ -196,12 +207,11 @@
             .card-body{
                 position: relative;
                 height: 246px;
-                @include breakpoint-down(xl){
-                    height: 300px;
-                }
+                width: 347.333px;
 
                 @include breakpoint-down(mob){
                     height: 350px!important;
+                    width: 100%!important;
                 }
 
 
@@ -223,17 +233,19 @@
                 position: absolute;
                 top: 0;
                 right: 0;
-                left: 0;
+                left: 50%;
+                transform: translateX(-50%);
                 bottom: 0;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 z-index: 5;
+                width: 317px;
 
-                @include breakpoint-down(xl){
-                    padding-right: 19.5px;
-                    padding-left: 19.5px;
+                // #############
+                @include breakpoint-down(mob){
+                    left: calc(50% - 12px);
                 }
 
                 li{
@@ -260,7 +272,7 @@
             
         }
 
-        @include breakpoint-down(lg){
+        @include breakpoint-down(mob){
             flex-direction: column;
         }
     }
@@ -305,8 +317,6 @@
         }
     }
 }
-
-
 
 .ms-service{
     background-color: $clr-black-haze;
@@ -417,7 +427,12 @@
     padding-bottom: 83px;
     background-color: $clr-black-haze;
 
+    @include breakpoint-down(lg){
+        padding: 0;
+    }
+
     @include breakpoint-down(mob){
+        padding-top: 83px;
         padding-bottom: 64px;
     }
 
@@ -451,10 +466,6 @@
                 margin-bottom: 47px;
             }
 
-            @include breakpoint-down(lg){
-                margin-right: 20px;
-                margin-left: 20px;
-            }
             .card-img{
                 width: 250px;
                 height: 194px;
@@ -489,6 +500,9 @@
                 }
 
                 p{
+                    width: 310px;
+                    margin-right: auto;
+                    margin-left: auto;
                     font-size: 20px;
                     @include lh(24px, 20px);
                     font-family: $bliss-reg;
@@ -514,6 +528,14 @@
 
             &:nth-child(1){
                 margin-right: 36px;
+
+                @include breakpoint-down(lg){
+                    margin-right: 15px;
+                }
+
+                @include breakpoint-down(md){
+                    margin-right: 5px;
+                }
                 @include breakpoint-down(mob){
                     margin-right: auto;
                     margin-left: auto;
@@ -523,6 +545,15 @@
             &:nth-child(2){
                 margin-left: 36px;
                 margin-right: 40px;
+                @include breakpoint-down(lg){
+                    margin-right: 15px;
+                    margin-left: 15px;
+                }
+
+                @include breakpoint-down(md){
+                    margin-right: 5px;
+                    margin-left: 5px;
+                }
                 @include breakpoint-down(mob){
                     margin-right: auto;
                     margin-left: auto;
@@ -531,6 +562,13 @@
 
             &:nth-child(3){
                 margin-left: 40px;
+                @include breakpoint-down(lg){
+                    margin-left: 15px;
+                }
+
+                @include breakpoint-down(md){
+                    margin-left: 5px;
+                }
                 @include breakpoint-down(mob){
                     margin-right: auto;
                     margin-left: auto;
@@ -558,6 +596,7 @@
 
 .ms-prebook{
     background: linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)), url('../../assets/images/prebook-img.jpg') center/cover no-repeat;
+    background-attachment: fixed;
     padding-top: 81px;
     padding-bottom: 84px;
     min-height: 530px;
@@ -680,11 +719,8 @@
                 }
             }
 
-            @include breakpoint-down(xl){
-                flex-wrap: wrap;
-            }
-
             @include breakpoint-down(mob){
+                flex-wrap: wrap;
                 flex-direction: column;
             }
         }
@@ -694,6 +730,7 @@
 .ms-ours{
     padding-top: 82px;
     padding-bottom: 85px;
+
     &-cnt{
         .ours-top-text{
             margin-bottom: 68px;
@@ -711,6 +748,7 @@
     padding-top: 82px;
     padding-bottom: 34.3px;
     background: linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)),  url('../../assets/images/selection.jpg') center/cover no-repeat;
+    background-attachment: fixed;
 
     @include breakpoint-down(mob){
         padding-top: 125px;
@@ -732,11 +770,13 @@
             }
         }
         .selection-list{
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             justify-content: center;
-            flex-wrap: wrap;
+            // flex-wrap: wrap;
             .sel-item{
-                width: calc(33.3333% - 55px);
+                // width: calc(33.3333% - 55px);
+                max-width: 312px;
                 margin-right: 27.5px;
                 margin-left: 27.5px;
                 margin-bottom: 45px;
@@ -754,6 +794,9 @@
                     font-size: 22px;
                     font-family: $bliss-bold;
                     @include tracking(25);
+                    width: 350px;
+                    margin-right: auto;
+                    margin-left: auto;
                 }
 
                 &-text{
@@ -762,7 +805,7 @@
                     font-size: 20px;
                     @include lh(30, 20);
                     font-family: $bliss-reg;
-                    max-width: 313px;
+                    width: 312px;
                     margin-right: auto;
                     margin-left: auto;
                 }
@@ -773,7 +816,9 @@
             }
 
             @include breakpoint-down(mob){
-                flex-direction: column;
+                // flex-direction: column;
+                grid-template-columns: repeat(1, 1fr);
+                place-items: center;
             }
         }
     }
@@ -843,17 +888,21 @@
 }
 
 .ftr-top-divider{
-    height: 2.2px;
-    background-color: $clr-white;
-    max-width: 1087px;
-    margin-right: auto;
-    margin-left: auto;
+    background-color: $clr-black-haze;
+    .line{
+        max-width: 1087px;
+        background-color: $clr-white;
+        height: 2.2px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .ftr{
     background-color: $clr-black-haze;
     padding-top: 26px;
     padding-bottom: 30px;
+
     .social-links{
         display: flex;
         align-items: center;
@@ -872,6 +921,10 @@
             margin-right: 10px;
             margin-left: 10px;
             font-size: 28px;
+
+            &:hover{
+                transform: scale(0.9);
+            }
         }
     }
 
@@ -895,6 +948,10 @@
         color: $clr-purple;
         font-family: $bliss-bold;
         @include tracking(10);
+
+        a{
+            color: $clr-purple;
+        }
     }
     .footer-attr-text{
         font-size: 17px;
@@ -908,6 +965,7 @@
 // booking form
 .ms-book{
     padding-bottom: 66.5px;
+
     &-cnt{
         padding-top: 75.3px;
         .book-top-text{
@@ -928,7 +986,7 @@
         form{
             margin-top: 20px;
             .form-elem{
-                width: 524px;
+                width: 524px!important;
                 height: 34px;
                 border-radius: 20px;
                 background-color: $clr-white;
@@ -938,11 +996,6 @@
                 padding-left: 15px;
                 margin-bottom: 21px;
                 overflow: hidden;
-                
-                @include breakpoint-down(mob){
-                    height: 47px;
-                    border-radius: 30px;
-                }
 
                 &.center{
                     margin-right: auto;
@@ -964,6 +1017,8 @@
                     width: 563px;
                     margin-right: 0!important;
                     margin-left: 0!important;
+                    height: 47px;
+                    border-radius: 30px;
                 }
             }
             .form-control{
@@ -1012,7 +1067,7 @@
                         margin-right: 37px;
                     }
                     &:last-child{
-                        margin-right: 5px;
+                        margin-right: 8px;
                     }
                 }
             }
@@ -1052,9 +1107,9 @@
 
                     @include breakpoint-down(mob){
                         top: -7px;
-                        left: -10px;
-                        width: 30px;
-                        height: 30px;
+                        left: -7px;
+                        width: 30px!important;
+                        height: 30px!important;
                     }
                 }
                 &:checked::before{
@@ -1086,7 +1141,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin-top: 12.2px;
+                padding: 12.2px!important;
 
                 .form-btn{
                     cursor: pointer;
@@ -1122,6 +1177,13 @@
     width: 100%!important;
     overflow-x: hidden;
     @include transition-default;
+    height: auto!important;
+
+
+    .cntr{
+        padding-right: 32px;
+    }
+
     section{
         width: 100%;
     }
@@ -1156,3 +1218,6 @@
 //   }
   
 //   select::-ms-expand { display: none; }
+
+
+

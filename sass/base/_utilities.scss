@@ -89,3 +89,306 @@ $tajawal: 'Tajawal-Medium';
 }
 
 
+.px-custom{
+    padding-right: 3px;
+    padding-left: 3px;
+}
+.px-custom-2{
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.sel-item-cs-text{
+    width: 325px!important;
+}
+
+#resizable { 
+    width: 100%; 
+    height: 100%; 
+    background-color: transparent;
+}
+.ui-widget-content{
+    overflow-x: hidden;
+    margin-right: 0!important;
+    padding-right: 0!important;
+}
+.ui-widget-banner-btns{
+    background-color: transparent!important;
+    border: none!important;
+
+    @media screen and (max-width: 1320px){
+        transform: scale(0.95);
+    }
+
+    @media screen and (max-width: 1080px){
+        transform: scale(0.85);
+    }
+
+    @media screen and (max-width: 992px){
+        transform: scale(0.75);
+        .hdr-banner-btn{
+            margin-bottom: -700px!important;
+        }
+    }
+
+    @media screen and (max-width: 850px){
+        transform: scale(0.65);
+    }
+
+    @media screen and (max-width: 678px){
+        transform: scale(0.6);
+    }
+
+    @include breakpoint-down(mob){
+        transform: scale(1);
+    }
+}
+
+.ui-widget-types{
+    @media screen and (max-width: 1320px){
+        transform: scale(0.95);
+    }
+
+    @media screen and (max-width: 1080px){
+        transform: scale(0.85);
+    }
+
+    @media screen and (max-width: 992px){
+        transform: scale(0.75);
+    }
+
+    @media screen and (max-width: 850px){
+        transform: scale(0.65);
+    }
+
+    @media screen and (max-width: 768px){
+        transform: scale(0.6);
+    }
+
+    @media screen and (max-width: 678px){
+        transform: scale(0.53);
+    }
+
+    @include breakpoint-down(mob){
+        transform: scale(1);
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: -20px!important;
+    }
+}
+
+.ui-widget-book{
+    @media screen and (max-width: 1320px){
+        transform: scale(0.95);
+    }
+
+    @media screen and (max-width: 1080px){
+        transform: scale(0.85);
+    }
+
+    @media screen and (max-width: 992px){
+        transform: scale(0.7);
+    }
+    @include breakpoint-down(mob){
+        transform: scale(1);
+    }
+}
+
+.ui-widget-service{
+    @media screen and (max-width: 1320px){
+        transform: scale(0.95);
+    }
+
+    @media screen and (max-width: 1080px){
+        transform: scale(0.85);
+    }
+
+    @media screen and (max-width: 992px){
+        transform: scale(0.75);
+    }
+
+    @media screen and (max-width: 850px){
+        transform: scale(0.65);
+    }
+    @media screen and (max-width: 768px){
+        transform: scale(0.6);
+    }
+
+    @media screen and (max-width: 678px){
+        transform: scale(0.53);
+    }
+    @include breakpoint-down(mob){
+        transform: scale(1);
+    }
+}
+
+.ui-widget-sig{
+    @media screen and (max-width: 1320px){
+        transform: scale(0.95);
+    }
+
+    @media screen and (max-width: 1080px){
+        transform: scale(0.85);
+    }
+
+    @media screen and (max-width: 992px){
+        transform: scale(0.75);
+    }
+
+    @media screen and (max-width: 850px){
+        transform: scale(0.65);
+    }
+    @media screen and (max-width: 768px){
+        transform: scale(0.6);
+    }
+
+    @media screen and (max-width: 678px){
+        transform: scale(0.53);
+    }
+    @include breakpoint-down(mob){
+        transform: scale(1);
+    }
+}
+
+.ui-widget-service-2{
+    @media screen and (max-width: 1320px){
+        transform: scale(0.95);
+    }
+
+    @media screen and (max-width: 1080px){
+        transform: scale(0.85);
+    }
+
+    @media screen and (max-width: 992px){
+        transform: scale(0.75);
+    }
+
+    @media screen and (max-width: 850px){
+        transform: scale(0.65);
+    }
+    @media screen and (max-width: 768px){
+        transform: scale(0.6);
+    }
+
+    @media screen and (max-width: 678px){
+        transform: scale(0.53);
+    }
+    @include breakpoint-down(mob){
+        transform: scale(1);
+    }
+}
+
+.ui-widget-prebook{
+    @media screen and (max-width: 1320px){
+        transform: scale(0.95);
+    }
+
+    @media screen and (max-width: 1080px){
+        transform: scale(0.85);
+    }
+
+    @media screen and (max-width: 992px){
+        transform: scale(0.75);
+    }
+
+    @media screen and (max-width: 850px){
+        transform: scale(0.65);
+    }
+
+    @media screen and (max-width: 768px){
+        transform: scale(0.6);
+    }
+
+    @media screen and (max-width: 678px){
+        transform: scale(0.53);
+    }
+    @include breakpoint-down(mob){
+        transform: scale(1);
+    }
+}
+
+.ui-widget-selection{
+    @media screen and (max-width: 1320px){
+        transform: scale(0.95);
+    }
+
+    @media screen and (max-width: 1080px){
+        transform: scale(0.85);
+    }
+
+    @media screen and (max-width: 992px){
+        transform: scale(0.75);
+    }
+
+    @media screen and (max-width: 850px){
+        transform: scale(0.65);
+    }
+
+    @media screen and (max-width: 768px){
+        transform: scale(0.6);
+    }
+
+    @media screen and (max-width: 678px){
+        transform: scale(0.53);
+    }
+    @include breakpoint-down(mob){
+        transform: scale(1);
+    }
+}
+
+.ui-widget-loc{
+    @media screen and (max-width: 1320px){
+        transform: scale(0.95);
+    }
+
+    @media screen and (max-width: 1080px){
+        transform: scale(0.85);
+    }
+
+    @media screen and (max-width: 992px){
+        transform: scale(0.75);
+    }
+
+    @media screen and (max-width: 850px){
+        transform: scale(0.65);
+    }
+
+    @media screen and (max-width: 768px){
+        transform: scale(0.6);
+    }
+
+    @media screen and (max-width: 678px){
+        transform: scale(0.53);
+    }
+    @include breakpoint-down(mob){
+        transform: scale(1);
+    }
+}
+
+.ui-widget-ftr{
+    @media screen and (max-width: 1320px){
+        transform: scale(0.95);
+    }
+
+    @media screen and (max-width: 1080px){
+        transform: scale(0.85);
+    }
+
+    @media screen and (max-width: 992px){
+        transform: scale(0.75);
+    }
+
+    @media screen and (max-width: 850px){
+        transform: scale(0.65);
+    }
+
+    @media screen and (max-width: 768px){
+        transform: scale(0.6);
+    }
+
+    @media screen and (max-width: 678px){
+        transform: scale(0.53);
+    }
+    @include breakpoint-down(mob){
+        transform: scale(1);
+    }
+}
