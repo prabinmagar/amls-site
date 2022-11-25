@@ -1354,7 +1354,8 @@
     }
 
     .ms-book{
-        transform: translateX(100%);
+        // transform: translateX(100%);
+        display: none;
         width: 100vw;
         @include transition-default;
     }
@@ -1363,10 +1364,12 @@
 // js scripts related
 .show-booking{
     .ms-types{
-        transform: translateX(-100%);
+        // transform: translateX(-100%);
+        display: none;
     }
     .ms-book{
-        transform: translateX(-100%);
+        // transform: translateX(-100%);
+        display: block;
     }
 }
 

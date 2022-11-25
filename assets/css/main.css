@@ -2470,16 +2470,16 @@ ul {
 }
 
 .slide-section .ms-book {
-  transform: translateX(100%);
+  display: none;
   width: 100vw;
   transition: all ease-in-out 300ms;
 }
 
 .show-booking .ms-types {
-  transform: translateX(-100%);
+  display: none;
 }
 
 .show-booking .ms-book {
-  transform: translateX(-100%);
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
