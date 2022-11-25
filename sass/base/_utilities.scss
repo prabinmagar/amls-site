@@ -188,6 +188,19 @@ $tajawal: 'Tajawal-Medium';
             margin-left: 24px!important;
         }
     }
+
+    @media screen and (max-width: 400px){
+        transform: scale(0.95);
+        margin-left: 6px!important;
+
+        .card-list{
+            margin-left: 12px;
+        }
+
+        .ms-types-btn{
+            margin-left: 24px!important;
+        }
+    }
 }
 
 .ui-widget-book{
@@ -204,10 +217,14 @@ $tajawal: 'Tajawal-Medium';
     }
     @include breakpoint-down(mob){
         transform: scale(1);
+        margin-right: -16px;
     }
 
     @media screen and (max-width: 585px){
         transform: scale(0.85);
+    }
+    @media screen and (max-width: 400px){
+        transform: scale(0.65);
     }
 }
 
@@ -239,6 +256,9 @@ $tajawal: 'Tajawal-Medium';
     }
     @media screen and (max-width: 585px){
         transform: scale(0.80);
+    }
+    @media screen and (max-width: 400px){
+        transform: scale(0.65);
     }
 }
 
@@ -295,6 +315,9 @@ $tajawal: 'Tajawal-Medium';
     }
     @include breakpoint-down(mob){
         transform: scale(1);
+    }
+    @media screen and (max-width: 400px){
+        transform: scale(0.65);
     }
 }
 
@@ -444,5 +467,10 @@ $tajawal: 'Tajawal-Medium';
     }
     @include breakpoint-down(mob){
         transform: scale(1);
+    }
+
+    @media screen and (max-width: 400px){
+        transform: scale(0.65);
+        width: 100%;
     }
 }

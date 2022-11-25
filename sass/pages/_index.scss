@@ -754,6 +754,9 @@
     }
 
     &-cnt{
+        max-width: 1045px;
+        margin-right: auto;
+        margin-left: auto;
         .selection-top-text{
             margin-bottom: 54px;
             font-family: $sinhala;
@@ -777,7 +780,8 @@
                 max-width: 312px;
                 margin-right: 27.5px;
                 margin-left: 27.5px;
-                margin-bottom: 45px;
+                // margin-bottom: 45px;
+                margin-bottom: 37px;
                 text-align: center;
 
                 @include breakpoint-down(mob){
@@ -966,6 +970,7 @@
 
     &-cnt{
         padding-top: 75.3px;
+
         .book-top-text{
             font-family: $sinhala;
             font-size: 36px;
@@ -973,7 +978,6 @@
             color: $clr-purple;
             text-transform: uppercase;
             margin-bottom: 44px;
-
         }
         .book-mid-text{
             color: $clr-purple;
@@ -1049,15 +1053,26 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                
                 .form-elem{
                     &:first-child{
                         margin-right: 41px;
+                    }
+                }
 
+                &:first-child{
+                    .form-elem{
+                        margin-right: 0;
                     }
                 }
 
                 @include breakpoint-down(lg){
                     flex-direction: column;
+                }
+
+                @include breakpoint-down(mob){
+                    margin-right: auto;
+                    margin-left: auto;
                 }
             }
 
@@ -1131,6 +1146,7 @@
             .form-elem-purple{
                 margin-top: 2px;
                 background-color: $clr-purple!important;
+                margin-right: 0!important;
                 select{
                     background-color: $clr-purple!important;
                     color: $clr-white;

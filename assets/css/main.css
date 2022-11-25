@@ -501,6 +501,19 @@ body {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .ui-widget-types {
+    transform: scale(0.95);
+    margin-left: 6px !important;
+  }
+  .ui-widget-types .card-list {
+    margin-left: 12px;
+  }
+  .ui-widget-types .ms-types-btn {
+    margin-left: 24px !important;
+  }
+}
+
 @media screen and (max-width: 1320px) {
   .ui-widget-book {
     transform: scale(0.95);
@@ -522,12 +535,19 @@ body {
 @media (max-width: 603.99px) {
   .ui-widget-book {
     transform: scale(1);
+    margin-right: -16px;
   }
 }
 
 @media screen and (max-width: 585px) {
   .ui-widget-book {
     transform: scale(0.85);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ui-widget-book {
+    transform: scale(0.65);
   }
 }
 
@@ -579,6 +599,12 @@ body {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .ui-widget-service {
+    transform: scale(0.65);
+  }
+}
+
 @media screen and (max-width: 1320px) {
   .ui-widget-sig {
     transform: scale(0.95);
@@ -660,6 +686,12 @@ body {
 @media (max-width: 603.99px) {
   .ui-widget-service-2 {
     transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ui-widget-service-2 {
+    transform: scale(0.65);
   }
 }
 
@@ -876,6 +908,13 @@ body {
 @media (max-width: 603.99px) {
   .ui-widget-ms {
     transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ui-widget-ms {
+    transform: scale(0.65);
+    width: 100%;
   }
 }
 
@@ -1792,6 +1831,12 @@ ul {
   }
 }
 
+.ms-selection-cnt {
+  max-width: 1045px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .ms-selection-cnt .selection-top-text {
   margin-bottom: 54px;
   font-family: "Sinhala MN";
@@ -1818,7 +1863,7 @@ ul {
   max-width: 312px;
   margin-right: 27.5px;
   margin-left: 27.5px;
-  margin-bottom: 45px;
+  margin-bottom: 37px;
   text-align: center;
 }
 
@@ -2113,9 +2158,20 @@ ul {
   margin-right: 41px;
 }
 
+.ms-book-cnt form .form-elem-grid:first-child .form-elem {
+  margin-right: 0;
+}
+
 @media (max-width: 991.99px) {
   .ms-book-cnt form .form-elem-grid {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 603.99px) {
+  .ms-book-cnt form .form-elem-grid {
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -2195,6 +2251,7 @@ ul {
 .ms-book-cnt form .form-elem-purple {
   margin-top: 2px;
   background-color: #612e9e !important;
+  margin-right: 0 !important;
 }
 
 .ms-book-cnt form .form-elem-purple select {
