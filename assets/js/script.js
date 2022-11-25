@@ -51,6 +51,6 @@ $(document).ready(function(){
     }, 3000);
 });
 
-$( function() {
+$(function() {
     $( "#resizable" ).resizable();
-  } );
+});

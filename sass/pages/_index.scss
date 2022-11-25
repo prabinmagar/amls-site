@@ -8,7 +8,6 @@
     }
 }
 
-
 // .header{
 //     position: fixed;
 //     left: 0;
@@ -34,7 +33,6 @@
     align-items: center;
     justify-content: center;
     
-
     @include breakpoint-down(mob){
         height: 1012px;
     }
@@ -146,12 +144,12 @@
     padding-top: 116px;
     padding-bottom: 94px;
 
-    // @include breakpoint-down(lg){
-    //     padding: 0;
-    // }
+    @include breakpoint-down(lg){
+    }
 
     @include breakpoint-down(mob){
         padding-bottom: 0!important;
+        padding-top: 0!important;
     }
     
     &-cards{
@@ -1002,7 +1000,7 @@
                     margin-left: auto;
 
                     // changed
-                    @include breakpoint-down(mob){
+                    @include breakpoint-down(lg){
                         margin-left: auto!important;
                         margin-right: auto!important;
                     }
@@ -1013,6 +1011,10 @@
                 }
 
                 // changed
+                @include breakpoint-down(lg){
+                    margin-right: 0!important;
+                    margin-left: 0!important;
+                }
                 @include breakpoint-down(mob){
                     width: 563px;
                     margin-right: 0!important;
@@ -1177,8 +1179,6 @@
     width: 100%!important;
     overflow-x: hidden;
     @include transition-default;
-    height: auto!important;
-
 
     .cntr{
         padding-right: 32px;

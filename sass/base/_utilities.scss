@@ -125,9 +125,6 @@ $tajawal: 'Tajawal-Medium';
 
     @media screen and (max-width: 992px){
         transform: scale(0.75);
-        .hdr-banner-btn{
-            margin-bottom: -700px!important;
-        }
     }
 
     @media screen and (max-width: 850px){
@@ -141,11 +138,15 @@ $tajawal: 'Tajawal-Medium';
     @include breakpoint-down(mob){
         transform: scale(1);
     }
+
+    @media screen and (max-width: 585px){
+        transform: scale(0.85);
+    }
 }
 
 .ui-widget-types{
     @media screen and (max-width: 1320px){
-        transform: scale(0.95);
+        transform: scale(0.90);
     }
 
     @media screen and (max-width: 1080px){
@@ -173,6 +174,19 @@ $tajawal: 'Tajawal-Medium';
         padding-left: 0;
         padding-right: 0;
         margin-left: -20px!important;
+
+        .ms-types-btn{
+            margin-left: 32px!important;
+        }
+    }
+
+    @media screen and (max-width: 585px){
+        transform: scale(0.95);
+        margin-left: -12px!important;
+
+        .ms-types-btn{
+            margin-left: 24px!important;
+        }
     }
 }
 
@@ -190,6 +204,10 @@ $tajawal: 'Tajawal-Medium';
     }
     @include breakpoint-down(mob){
         transform: scale(1);
+    }
+
+    @media screen and (max-width: 585px){
+        transform: scale(0.85);
     }
 }
 
@@ -218,6 +236,9 @@ $tajawal: 'Tajawal-Medium';
     }
     @include breakpoint-down(mob){
         transform: scale(1);
+    }
+    @media screen and (max-width: 585px){
+        transform: scale(0.80);
     }
 }
 
@@ -304,6 +325,10 @@ $tajawal: 'Tajawal-Medium';
     @include breakpoint-down(mob){
         transform: scale(1);
     }
+
+    @media screen and (max-width: 585px){
+        transform: scale(0.85);
+    }
 }
 
 .ui-widget-selection{
@@ -365,6 +390,35 @@ $tajawal: 'Tajawal-Medium';
 }
 
 .ui-widget-ftr{
+    @media screen and (max-width: 1320px){
+        transform: scale(0.95);
+    }
+
+    @media screen and (max-width: 1080px){
+        transform: scale(0.85);
+    }
+
+    @media screen and (max-width: 992px){
+        transform: scale(0.75);
+    }
+
+    @media screen and (max-width: 850px){
+        transform: scale(0.65);
+    }
+
+    @media screen and (max-width: 768px){
+        transform: scale(0.6);
+    }
+
+    @media screen and (max-width: 678px){
+        transform: scale(0.53);
+    }
+    @include breakpoint-down(mob){
+        transform: scale(1);
+    }
+}
+
+.ui-widget-ms{
     @media screen and (max-width: 1320px){
         transform: scale(0.95);
     }
