@@ -1372,20 +1372,8 @@
     }
 }
 
-// changes stylings
-.form-btn.change{
-    background-color: $clr-lime!important;
-    border-color: $clr-white!important;
-    color: $clr-white;
-}
-.form-elem.change{
-    background-color: #e4e4e4!important;
-    select{
-        background-color: #e4e4e4!important;
-    }
-}
-
 .ms-book-2{
+    display: none;
     select{
         optgroup{
             font-size: 20px!important;
@@ -1403,6 +1391,10 @@
         justify-content: center;
         align-items: flex-start;
 
+        @include breakpoint-down(mob){
+            grid-template-columns: repeat(1, 1fr);
+        }
+
         .treatment-item{
             display: flex;
             align-items: center;
@@ -1410,8 +1402,19 @@
             margin-right: 45px;
             margin-bottom: 13px;
 
+            @include breakpoint-down(mob){
+                justify-content: center;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
             &:nth-child(even){
                 justify-content: flex-start;
+                margin-right: 0;
+
+                @include breakpoint-down(mob){
+                    justify-content: center;
+                }
             }
 
             &-l, &-r{
@@ -1423,6 +1426,11 @@
                 align-items: center;
                 justify-content: space-between;
                 padding-left: 15px;
+
+                @include breakpoint-down(mob){
+                    height: 45px;
+                    border-radius: 30px;
+                }
             }
 
             &-l{
@@ -1444,6 +1452,37 @@
 
     .form-btm-text{
         margin-top: 24px;
+    }
+}
+
+.ms-book-3{
+    display: none;
+    .submit-top-text{
+        color: $clr-purple;
+        font-size: 26px;
+        text-align: center;
+        max-width: 992px;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: $bliss-reg;
+        margin-top: 74px;
+    }
+    .submit-btm-text{
+        width: 870px;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 22px;
+        font-family: $bliss-reg;
+        color: $clr-black;
+        text-align: center;
+        margin-top: 34px;
+        @include lh(28px, 22px);
+
+        span{
+            font-size: 24px;
+            font-family: $bliss-md;
+            margin-bottom: 4px;
+        }
     }
 }
 
@@ -1490,4 +1529,17 @@
 
 .grid-item { 
     width: 200px;
+}
+
+// changes stylings
+.change-btn{
+    background-color: $clr-lime!important;
+    border-color: $clr-white!important;
+    color: $clr-white;
+}
+.change-selected{
+    background-color: #e4e4e4!important;
+    select{
+        background-color: #e4e4e4!important;
+    }
 }

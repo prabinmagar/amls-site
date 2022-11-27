@@ -2502,18 +2502,8 @@ ul {
   color: #000;
 }
 
-.form-btn.change {
-  background-color: #9cd600 !important;
-  border-color: #fff !important;
-  color: #fff;
-}
-
-.form-elem.change {
-  background-color: #e4e4e4 !important;
-}
-
-.form-elem.change select {
-  background-color: #e4e4e4 !important;
+.ms-book-2 {
+  display: none;
 }
 
 .ms-book-2 select optgroup {
@@ -2532,6 +2522,12 @@ ul {
   align-items: flex-start;
 }
 
+@media (max-width: 603.99px) {
+  .ms-book-2 .treatment-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .ms-book-2 .treatment-list .treatment-item {
   display: flex;
   align-items: center;
@@ -2540,8 +2536,23 @@ ul {
   margin-bottom: 13px;
 }
 
+@media (max-width: 603.99px) {
+  .ms-book-2 .treatment-list .treatment-item {
+    justify-content: center;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
 .ms-book-2 .treatment-list .treatment-item:nth-child(even) {
   justify-content: flex-start;
+  margin-right: 0;
+}
+
+@media (max-width: 603.99px) {
+  .ms-book-2 .treatment-list .treatment-item:nth-child(even) {
+    justify-content: center;
+  }
 }
 
 .ms-book-2 .treatment-list .treatment-item-l, .ms-book-2 .treatment-list .treatment-item-r {
@@ -2553,6 +2564,13 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding-left: 15px;
+}
+
+@media (max-width: 603.99px) {
+  .ms-book-2 .treatment-list .treatment-item-l, .ms-book-2 .treatment-list .treatment-item-r {
+    height: 45px;
+    border-radius: 30px;
+  }
 }
 
 .ms-book-2 .treatment-list .treatment-item-l {
@@ -2573,6 +2591,39 @@ ul {
 
 .ms-book-2 .form-btm-text {
   margin-top: 24px;
+}
+
+.ms-book-3 {
+  display: none;
+}
+
+.ms-book-3 .submit-top-text {
+  color: #612e9e;
+  font-size: 26px;
+  text-align: center;
+  max-width: 992px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "BlissReg";
+  margin-top: 74px;
+}
+
+.ms-book-3 .submit-btm-text {
+  width: 870px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 22px;
+  font-family: "BlissReg";
+  color: #000;
+  text-align: center;
+  margin-top: 34px;
+  line-height: 1.27273;
+}
+
+.ms-book-3 .submit-btm-text span {
+  font-size: 24px;
+  font-family: "BlissMd";
+  margin-bottom: 4px;
 }
 
 .slide-section {
@@ -2612,5 +2663,19 @@ ul {
 
 .grid-item {
   width: 200px;
+}
+
+.change-btn {
+  background-color: #9cd600 !important;
+  border-color: #fff !important;
+  color: #fff;
+}
+
+.change-selected {
+  background-color: #e4e4e4 !important;
+}
+
+.change-selected select {
+  background-color: #e4e4e4 !important;
 }
 /*# sourceMappingURL=main.css.map */

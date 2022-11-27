@@ -35,7 +35,7 @@ $(document).ready(function(){
         isLocSelected = true;
         if(isLocSelected == true){
             $('.ms-book .form-btn').text("Go to treatment details >");
-            $('.ms-book .form-btn').addClass('change');
+            $('.ms-book .form-btn').addClass('change-btn');
         }
     });
 
@@ -93,6 +93,39 @@ $(document).ready(function(){
             `);
             $(treatmentListContainer).append(tempDiv);
         }
+
+        const treatmentItems = $('.treatment-item');
+        jQuery.each(treatmentItems, function(idx, treatmentItem){
+            let totalSelectionCount = 0;
+            $(treatmentItem).find('.treatment-item-l').change(function(){
+                $(this).addClass('change-selected');
+                $(this).addClass('selection-active');
+                totalSelectionCount = $('.selection-active').length;
+
+                if(totalSelectionCount == (2 * Number(noOfBookingOpt))){
+                    $('.submit-btn').text("Submit your booking");
+                    $('.submit-btn').addClass('change-btn');
+                }
+            });
+
+            $(treatmentItem).find('.treatment-item-r').change(function(){
+                $(this).addClass('change-selected');
+                $(this).addClass('selection-active');
+                totalSelectionCount = $('.selection-active').length;
+
+                if(totalSelectionCount == (2 * Number(noOfBookingOpt))){
+                    $('.submit-btn').text("Submit your booking");
+                    $('.submit-btn').addClass('change-btn');
+                }
+            });
+        });
+    });
+
+    
+
+    $('.submit-btn').click(function(){
+        $('.ms-book-2').css('display', 'none');
+        $('.ms-book-3').css('display', 'block');
     });
 });
 
