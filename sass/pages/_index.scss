@@ -1150,11 +1150,11 @@
 
                 @include breakpoint-down(mob){
                     flex-direction: column;
-                }
 
-                > div{
-                    &:first-child{
-                        margin-right: 0;
+                    > div{
+                        &:first-child{
+                            margin-right: 0;
+                        }
                     }
                 }
             }

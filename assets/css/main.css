@@ -2275,10 +2275,9 @@ ul {
   .ms-book-cnt form .form-row {
     flex-direction: column;
   }
-}
-
-.ms-book-cnt form .form-row > div:first-child {
-  margin-right: 0;
+  .ms-book-cnt form .form-row > div:first-child {
+    margin-right: 0;
+  }
 }
 
 .ms-book-cnt form .form-elem {
