@@ -1,3 +1,4 @@
+
 .cntr{
     max-width: 1366px;
     margin: 0 auto;
@@ -52,7 +53,7 @@
     @include breakpoint-down(mob){
         flex-wrap: wrap;
         .hdr-banner-btn{
-            margin-bottom: 32px!important;
+            margin-bottom: 60px!important;
             &:last-child{
                 margin-bottom: 0!important;
             }
@@ -162,9 +163,12 @@
 //  ms types
 .ms-types{
     padding-top: 116px;
-    padding-bottom: 94px;
+    padding-bottom: 64px;
 
-    @include breakpoint-down(lg){
+    .cntr{
+        @include breakpoint-down(mob){
+            padding-right: 0!important;
+        }
     }
 
     @include breakpoint-down(mob){
@@ -184,6 +188,8 @@
             /* ### mobile stylings ### */
             @include breakpoint-down(mob){
                 width: 100%!important;
+                margin-right: auto!important;
+                margin-left: auto!important;
             }
             
             .card-head{
@@ -195,10 +201,12 @@
                 text-align: center;
 
                 @include breakpoint-down(mob){
-                    height: 200px!important;
+                    height: auto;
                     width: 356px;
                     margin-right: auto;
                     margin-left: auto;
+                    padding-top: 57.8px;
+                    padding-bottom: 45.4px;
                 }
 
                 h3{
@@ -266,7 +274,7 @@
 
                 // #############
                 @include breakpoint-down(mob){
-                    left: calc(50% - 12px);
+                    left: 50%;
                 }
 
                 li{
@@ -659,16 +667,14 @@
 .ms-prebook{
     background: linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)), url('../../assets/images/prebook-img.jpg') center/cover no-repeat;
     background-attachment: fixed;
-    padding-top: 81px;
-    padding-bottom: 84px;
     min-height: 530px;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    /* ### mobile stylings ### */
     @include breakpoint-down(mob){
-        padding-bottom: 106px;
+        padding-top: 95px;
+        padding-bottom: 117px;
     }
 
     &-cnt{
@@ -694,6 +700,9 @@
             @include tracking(10);
             font-family: $bliss-bold;
             line-height: 1.58;
+            max-width: 1051px;
+            margin-right: auto;
+            margin-left: auto;
 
             /* ### mobile stylings ### */
             @include breakpoint-down(mob){
@@ -723,16 +732,18 @@
                     width: 163px;
                     height: 163px;
                     border-radius: 50%;
-                    background-color: $clr-white;
+                    background-color: #e3dfd2;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
                     margin-right: auto;
                     margin-left: auto;
+
                     .prebook-item-text{
                         text-align: center;
                         color: $clr-purple;
+
                         &-top{
                             font-size: 22px;
                             display: block;
@@ -740,6 +751,7 @@
                             margin-top: 5px;
                             font-family: $bliss-bold;
                             @include tracking(10);
+
                             &:nth-child(2){
                                 margin-top: -1px;
                             }
@@ -765,7 +777,7 @@
                         .divider{
                             height: 3px;
                             width: 42px;
-                            background-color: $clr-black-haze;
+                            background-color: $clr-white;
                             margin-right: auto;
                             margin-left: auto;
                             margin-top: 7px;
@@ -843,7 +855,7 @@
 
     /* ### mobile stylings ### */
     @include breakpoint-down(mob){
-        padding-top: 125px;
+        padding-top: 119px;
         padding-bottom: 135px;
     }
 
@@ -880,6 +892,9 @@
                 margin-right: 27.5px;
                 margin-left: 27.5px;
                 margin-bottom: 37px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 text-align: center;
 
                 /* ### mobile stylings ### */
@@ -896,8 +911,6 @@
                     font-family: $bliss-bold;
                     @include tracking(25);
                     width: 350px;
-                    margin-right: auto;
-                    margin-left: auto;
 
                     /* ### mobile stylings ### */
                     @include breakpoint-down(mob){
@@ -1119,10 +1132,33 @@
             color: $clr-purple;
             font-size: 33px;
             text-align: center;
+            font-family: $bliss-md;
         }
 
         form{
             margin-top: 20px;
+
+            .form-row{
+                display: flex;
+                justify-content: center;
+
+                > div{
+                    &:first-child{
+                        margin-right: 40px;
+                    }
+                }
+
+                @include breakpoint-down(mob){
+                    flex-direction: column;
+                }
+
+                > div{
+                    &:first-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+
             .form-elem{
                 width: 524px!important;
                 height: 34px;
@@ -1171,6 +1207,7 @@
                 color: $clr-black;
                 width: 100%;
                 font-size: 22px;
+                font-family: $bliss-md;
 
                 &::placeholder{
                     color: $clr-black;
@@ -1191,28 +1228,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                
-                .form-elem{
-                    &:first-child{
-                        margin-right: 41px;
-                    }
-                }
-
-                &:first-child{
-                    .form-elem{
-                        margin-right: 0;
-                    }
-                }
-
-                @include breakpoint-down(lg){
-                    flex-direction: column;
-                }
-
-                /* ### mobile stylings ### */
-                @include breakpoint-down(mob){
-                    margin-right: auto;
-                    margin-left: auto;
-                }
+                flex-direction: column;
             }
 
             .radio-container{
@@ -1296,6 +1312,10 @@
                     width: 100%;
                     height: 100%;
                 }
+
+                @include breakpoint-down(mob){
+                    margin-top: 25px;
+                }
             }
 
             .form-elem-btn{
@@ -1313,6 +1333,16 @@
                     background-color: $clr-white!important;
                     border-radius: 20px;
                     font-family: $bliss-md;
+                    width: 526px;
+
+                    @include breakpoint-down(mob){
+                        height: 67px;
+                        border-radius: 30px;
+                    }
+                }
+
+                @include breakpoint-down(mob){
+                    margin-top: 26px;
                 }
             }
 
@@ -1373,15 +1403,6 @@
     }
 }
 
-// select {
-//     -webkit-appearance: none;
-//     -moz-appearance: none;
-//     appearance: none;
-//     background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat 96% !important;
-   
-//   }
-  
-//   select::-ms-expand { display: none; }
-
-
-
+.grid-item { 
+    width: 200px;
+}

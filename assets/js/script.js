@@ -54,3 +54,9 @@ $(document).ready(function(){
 $(function() {
     $( "#resizable" ).resizable();
 });
+
+$('.grid').masonry({
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: 200
+});

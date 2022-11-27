@@ -392,6 +392,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: transparent;
+  border: none !important;
 }
 
 .ui-widget-content {
@@ -488,33 +489,27 @@ body {
     transform: scale(1);
     padding-left: 0;
     padding-right: 0;
-    margin-left: -20px !important;
-  }
-  .ui-widget-types .ms-types-btn {
-    margin-left: 32px !important;
-  }
-}
-
-@media screen and (max-width: 585px) {
-  .ui-widget-types {
-    transform: scale(0.95);
-    margin-left: -12px !important;
-  }
-  .ui-widget-types .ms-types-btn {
-    margin-left: 24px !important;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .ui-widget-types {
-    transform: scale(0.95);
-    margin-left: 6px !important;
   }
   .ui-widget-types .card-list {
-    margin-left: 12px;
+    margin-left: -12px;
   }
   .ui-widget-types .ms-types-btn {
-    margin-left: 24px !important;
+    width: 360px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 12px;
+  }
+  .ui-widget-types .ms-types-card {
+    width: 100% !important;
+  }
+  .ui-widget-types .card-head {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .ui-widget-types .card-list {
+    margin-left: -4px !important;
   }
 }
 
@@ -533,6 +528,24 @@ body {
 @media screen and (max-width: 992px) {
   .ui-widget-book {
     transform: scale(0.7);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .ui-widget-book {
+    transform: scale(0.65);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ui-widget-book {
+    transform: scale(0.6);
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .ui-widget-book {
+    transform: scale(0.53);
   }
 }
 
@@ -1012,7 +1025,7 @@ ul {
     flex-wrap: wrap;
   }
   .hdr-banner-btns .hdr-banner-btn {
-    margin-bottom: 32px !important;
+    margin-bottom: 60px !important;
   }
   .hdr-banner-btns .hdr-banner-btn:last-child {
     margin-bottom: 0 !important;
@@ -1136,7 +1149,13 @@ ul {
 
 .ms-types {
   padding-top: 116px;
-  padding-bottom: 94px;
+  padding-bottom: 64px;
+}
+
+@media (max-width: 603.99px) {
+  .ms-types .cntr {
+    padding-right: 0 !important;
+  }
 }
 
 @media (max-width: 603.99px) {
@@ -1161,6 +1180,8 @@ ul {
 @media (max-width: 603.99px) {
   .ms-types-cards .ms-types-card {
     width: 100% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
   }
 }
 
@@ -1175,10 +1196,12 @@ ul {
 
 @media (max-width: 603.99px) {
   .ms-types-cards .ms-types-card .card-head {
-    height: 200px !important;
+    height: auto;
     width: 356px;
     margin-right: auto;
     margin-left: auto;
+    padding-top: 57.8px;
+    padding-bottom: 45.4px;
   }
 }
 
@@ -1255,7 +1278,7 @@ ul {
 
 @media (max-width: 603.99px) {
   .ms-types-cards .ms-types-card .card-list {
-    left: calc(50% - 12px);
+    left: 50%;
   }
 }
 
@@ -1726,18 +1749,16 @@ ul {
 .ms-prebook {
   background: linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)), url("../../assets/images/prebook-img.jpg") center/cover no-repeat;
   background-attachment: fixed;
-  padding-top: 81px;
-  padding-bottom: 84px;
   min-height: 530px;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* ### mobile stylings ### */
 }
 
 @media (max-width: 603.99px) {
   .ms-prebook {
-    padding-bottom: 106px;
+    padding-top: 95px;
+    padding-bottom: 117px;
   }
 }
 
@@ -1766,6 +1787,9 @@ ul {
   letter-spacing: 0.01em;
   font-family: "BlissBold";
   line-height: 1.58;
+  max-width: 1051px;
+  margin-right: auto;
+  margin-left: auto;
   /* ### mobile stylings ### */
 }
 
@@ -1801,7 +1825,7 @@ ul {
   width: 163px;
   height: 163px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #e3dfd2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1853,7 +1877,7 @@ ul {
 .ms-prebook-cnt .prebook-list .prebook-item-body .prebook-item-text .divider {
   height: 3px;
   width: 42px;
-  background-color: #e3dfd2;
+  background-color: #fff;
   margin-right: auto;
   margin-left: auto;
   margin-top: 7px;
@@ -1934,7 +1958,7 @@ ul {
 
 @media (max-width: 603.99px) {
   .ms-selection {
-    padding-top: 125px;
+    padding-top: 119px;
     padding-bottom: 135px;
   }
 }
@@ -1977,6 +2001,9 @@ ul {
   margin-right: 27.5px;
   margin-left: 27.5px;
   margin-bottom: 37px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   /* ### mobile stylings ### */
 }
@@ -1995,8 +2022,6 @@ ul {
   font-family: "BlissBold";
   letter-spacing: 0.025em;
   width: 350px;
-  margin-right: auto;
-  margin-left: auto;
   /* ### mobile stylings ### */
 }
 
@@ -2230,10 +2255,30 @@ ul {
   color: #612e9e;
   font-size: 33px;
   text-align: center;
+  font-family: "BlissMd";
 }
 
 .ms-book-cnt form {
   margin-top: 20px;
+}
+
+.ms-book-cnt form .form-row {
+  display: flex;
+  justify-content: center;
+}
+
+.ms-book-cnt form .form-row > div:first-child {
+  margin-right: 40px;
+}
+
+@media (max-width: 603.99px) {
+  .ms-book-cnt form .form-row {
+    flex-direction: column;
+  }
+}
+
+.ms-book-cnt form .form-row > div:first-child {
+  margin-right: 0;
 }
 
 .ms-book-cnt form .form-elem {
@@ -2289,6 +2334,7 @@ ul {
   color: #000;
   width: 100%;
   font-size: 22px;
+  font-family: "BlissMd";
 }
 
 .ms-book-cnt form .form-control::placeholder {
@@ -2307,28 +2353,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* ### mobile stylings ### */
-}
-
-.ms-book-cnt form .form-elem-grid .form-elem:first-child {
-  margin-right: 41px;
-}
-
-.ms-book-cnt form .form-elem-grid:first-child .form-elem {
-  margin-right: 0;
-}
-
-@media (max-width: 991.99px) {
-  .ms-book-cnt form .form-elem-grid {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 603.99px) {
-  .ms-book-cnt form .form-elem-grid {
-    margin-right: auto;
-    margin-left: auto;
-  }
+  flex-direction: column;
 }
 
 .ms-book-cnt form .radio-container {
@@ -2419,6 +2444,12 @@ ul {
   height: 100%;
 }
 
+@media (max-width: 603.99px) {
+  .ms-book-cnt form .form-elem-purple {
+    margin-top: 25px;
+  }
+}
+
 .ms-book-cnt form .form-elem-btn {
   display: flex;
   align-items: center;
@@ -2435,6 +2466,20 @@ ul {
   background-color: #fff !important;
   border-radius: 20px;
   font-family: "BlissMd";
+  width: 526px;
+}
+
+@media (max-width: 603.99px) {
+  .ms-book-cnt form .form-elem-btn .form-btn {
+    height: 67px;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 603.99px) {
+  .ms-book-cnt form .form-elem-btn {
+    margin-top: 26px;
+  }
 }
 
 .ms-book-cnt form select option {
@@ -2481,5 +2526,9 @@ ul {
 
 .show-booking .ms-book {
   display: block;
+}
+
+.grid-item {
+  width: 200px;
 }
 /*# sourceMappingURL=main.css.map */
