@@ -1,39 +1,5 @@
-
-
-// $(document).ready(function(){
-//     $(window).scroll(function(){
-//         console.log($(this).scrollTop());
-//         if($(this).scrollTop() >= 0){
-//             $('.hdr-banner').css('background', 'url("../../assets/images/banner-img-1.png") center/cover no-repeat');
-//         }
-//         if($(this).scrollTop() >= 240){
-//             $('.hdr-banner').css('background', 'url("../../assets/images/banner-img-2.png") center/cover no-repeat');
-//         }
-        
-//         if($(this).scrollTop() >= 500){
-//             console.log("reached here");
-//             $('.hdr-banner').css('background', 'url("../../assets/images/banner-img-3.png") center/cover no-repeat');
-//         }
-
-//         if($(this).scrollTop() >= 828){
-//             $('.header').css('position', 'relative');
-//         } else {
-//             $('.header').css('position', 'fixed');
-//         }
-//     });
-// });
-
-
-
-
 $(document).ready(function(){
     const hdrBanner = $('.hdr-banner');
-    // const test = document.querySelectorAll('.form-checkbox');
-    // test.forEach((item, idx) => {
-    //     item.addEventListener('change', function(){
-    //         console.log('clicked');
-    //     });
-    // });
     const bookingBtn = $('.booking-btn');
     const bookingSection = $('#slideSection');
 
@@ -49,6 +15,85 @@ $(document).ready(function(){
         $(hdrBanner).css('background', `url("../../assets/images/banner-img-${sliderCountValue}.png") center/cover no-repeat`);
         sliderCountValue++;
     }, 3000);
+
+    const radioElems = $('.ms-book .radio-elem-1 .form-radio');
+    jQuery.each(radioElems, function(idx, radioElem){
+        $(radioElem).change(function(){
+            if(idx == 0){
+                $('.ms-book .placeholder-one').attr('placeholder', 'Hotel name');
+                $('.ms-book .placeholder-two').attr('placeholder', 'Room Number');
+            } else if(idx == 1){
+                $('.ms-book .placeholder-one').attr('placeholder', 'Villa name');
+                $('.ms-book .placeholder-two').attr('placeholder', 'Villa address');
+            }
+        });
+    });
+
+    const locationOpt = $('#locationOpt');
+    let isLocSelected = false;
+    $(locationOpt).change(function(){
+        isLocSelected = true;
+        if(isLocSelected == true){
+            $('.ms-book .form-btn').text("Go to treatment details >");
+            $('.ms-book .form-btn').addClass('change');
+        }
+    });
+
+    $('.details-btn').click(function(){
+        $('.ms-book').css('display', 'none');
+        $('.ms-book-2').css('display', 'block');
+    });
+
+    // no of booking section
+    const noOfBooking = $(".ms-book-2 #noOfBooking");
+    const treatmentListContainer = $('.treatment-list');
+    $(noOfBooking).change(function(){
+        let noOfBookingOpt = $(this).children("option:selected").val();
+        treatmentListContainer.html("");
+
+        for(let i = 0; i < noOfBookingOpt; i++){
+            const tempDiv = $('<div>', { "class" : "treatment-item"});
+            $(tempDiv).html(`
+                <div class = "treatment-item-l">
+                    <select name = "" class = "form-control">
+                            <option selected disabled>Customer ${i + 1} treatment</option>
+                        <optgroup label="CLASSIC EVERYDAY MASSAGE">
+                            <option value = "">Traditional Thai Massage</option>
+                            <option value="">Aromatherapy Oil Massage</option>
+                        </optgroup>
+                        <optgroup label="CLASSIC EVERYDAY MASSAGE">
+                            <option value = "">Neck, Shoulders and Back Massage</option>
+                            <option value="">Aromatherapy Sport Massage</option>
+                        </optgroup>
+                        <optgroup label="CLASSIC EVERYDAY MASSAGE">
+                            <option value="">After Sun Aromatherapy Massage</option>
+                            <option value="">Slimming Massage</option>
+                            <option value="">Warm Candle Oil Massage</option>
+                            <option value = "">Herbal Pack Aromatherapy Massage</option>
+                            <option value="">Hot Stones Aromatherapy Massage</option>
+                        </optgroup>
+                        <optgroup label="OTHER LUXURIOUS TREATMENTS">
+                            <option value="">Cannabis (Cannabidiol) Massage</option>
+                            <option value="">Aromatherapy Gold Massage</option>
+                            <option value="">Four Hands Massage</option>
+                            <option value = "">Facial Deep Skin Cleansing</option>
+                            <option value="">Full-Body Scrubs</option>
+                        </optgroup>
+                    </select>
+                </div>
+                
+                <div class = "treatment-item-r">
+                    <select name = "" class = "form-control">
+                        <option selected disabled>Mins</option>
+                        <option value = "60">60</option>
+                        <option value = "90">90</option>
+                        <option value = "120">120</option>
+                    </select>
+                </div>
+            `);
+            $(treatmentListContainer).append(tempDiv);
+        }
+    });
 });
 
 $(function() {
@@ -60,3 +105,5 @@ $('.grid').masonry({
     itemSelector: '.grid-item',
     columnWidth: 200
 });
+
+

@@ -2234,8 +2234,15 @@ ul {
   }
 }
 
+.form-btm-text {
+  font-size: 22px;
+  font-family: "BlissMd";
+  text-align: center;
+}
+
 .ms-book {
   padding-bottom: 66.5px;
+  min-height: 640px;
 }
 
 .ms-book-cnt {
@@ -2282,7 +2289,7 @@ ul {
 
 .ms-book-cnt form .form-elem {
   width: 524px !important;
-  height: 34px;
+  height: 35px;
   border-radius: 20px;
   background-color: #fff;
   display: flex;
@@ -2466,6 +2473,7 @@ ul {
   border-radius: 20px;
   font-family: "BlissMd";
   width: 526px;
+  border: 1.5px solid #fff !important;
 }
 
 @media (max-width: 603.99px) {
@@ -2485,11 +2493,86 @@ ul {
   font-size: 20px;
   background-color: #fff;
   color: #aea29f;
+  font-family: "BlissReg";
+  border-radius: 20px;
 }
 
-.ms-book-cnt form select option:nth-child(odd) {
+.ms-book-cnt form select option:hover {
   background-color: #e4e4e4;
   color: #000;
+}
+
+.form-btn.change {
+  background-color: #9cd600 !important;
+  border-color: #fff !important;
+  color: #fff;
+}
+
+.form-elem.change {
+  background-color: #e4e4e4 !important;
+}
+
+.form-elem.change select {
+  background-color: #e4e4e4 !important;
+}
+
+.ms-book-2 select optgroup {
+  font-size: 20px !important;
+  color: #612e9e;
+}
+
+.ms-book-2 .treatment-grid {
+  min-height: 237px;
+}
+
+.ms-book-2 .treatment-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.ms-book-2 .treatment-list .treatment-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 45px;
+  margin-bottom: 13px;
+}
+
+.ms-book-2 .treatment-list .treatment-item:nth-child(even) {
+  justify-content: flex-start;
+}
+
+.ms-book-2 .treatment-list .treatment-item-l, .ms-book-2 .treatment-list .treatment-item-r {
+  background-color: #fff;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+}
+
+.ms-book-2 .treatment-list .treatment-item-l {
+  width: 440px;
+  margin-right: 8px;
+}
+
+.ms-book-2 .treatment-list .treatment-item-r {
+  width: 83px;
+}
+
+.ms-book-2 .treatment-list .treatment-item-r select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0px;
+  text-overflow: '';
+}
+
+.ms-book-2 .form-btm-text {
+  margin-top: 24px;
 }
 
 .slide-section {

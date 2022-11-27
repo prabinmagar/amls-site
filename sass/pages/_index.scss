@@ -1113,9 +1113,16 @@
     }
 }
 
+.form-btm-text{
+    font-size: 22px;
+    font-family: $bliss-md;
+    text-align: center;
+}
+
 // booking form
 .ms-book{
     padding-bottom: 66.5px;
+    min-height: 640px;
 
     &-cnt{
         padding-top: 75.3px;
@@ -1161,7 +1168,7 @@
 
             .form-elem{
                 width: 524px!important;
-                height: 34px;
+                height: 35px;
                 border-radius: 20px;
                 background-color: $clr-white;
                 display: flex;
@@ -1334,6 +1341,7 @@
                     border-radius: 20px;
                     font-family: $bliss-md;
                     width: 526px;
+                    border: 1.5px solid $clr-white!important;
 
                     @include breakpoint-down(mob){
                         height: 67px;
@@ -1351,14 +1359,91 @@
                     font-size: 20px;
                     background-color: $clr-white;
                     color: #aea29f;
+                    font-family: $bliss-reg;
+                    border-radius: 20px;
 
-                    &:nth-child(odd){
+                    &:hover{
                         background-color: #e4e4e4;
                         color: $clr-black;
                     }
                 }
             }
         }
+    }
+}
+
+// changes stylings
+.form-btn.change{
+    background-color: $clr-lime!important;
+    border-color: $clr-white!important;
+    color: $clr-white;
+}
+.form-elem.change{
+    background-color: #e4e4e4!important;
+    select{
+        background-color: #e4e4e4!important;
+    }
+}
+
+.ms-book-2{
+    select{
+        optgroup{
+            font-size: 20px!important;
+            color: $clr-purple;
+        }
+    }
+    
+    .treatment-grid{
+        min-height: 237px;
+    }
+
+    .treatment-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: flex-start;
+
+        .treatment-item{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 45px;
+            margin-bottom: 13px;
+
+            &:nth-child(even){
+                justify-content: flex-start;
+            }
+
+            &-l, &-r{
+                background-color: $clr-white;
+                height: 35px;
+                border-radius: 20px;
+                background-color: $clr-white;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-left: 15px;
+            }
+
+            &-l{
+                width: 440px;
+                margin-right: 8px;
+            }
+
+            &-r{
+                width: 83px;
+                select {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    text-indent: 0px;
+                    text-overflow: '';
+                  }
+            }
+        }
+    }
+
+    .form-btm-text{
+        margin-top: 24px;
     }
 }
 
