@@ -113,7 +113,7 @@ $(document).ready(function(){
                 if($(this).find('option:selected').attr('class') == "steps-active"){
                     let rightOptions = $(stepOption).parent().parent().parent().next();
                     rightOptions.html(`
-                        <div class = "treatment-item-r">
+                        <div class = "treatment-item-r" style = "padding-left: 0">
                             <select name = "" class = "form-control">
                                 <option selected disabled>Steps</option>
                                 <option value ="8">8</option>
