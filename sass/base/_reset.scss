@@ -1,7 +1,8 @@
 *,
 *::before,
 *::after{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     @include flush;
     @include hard;
 }
@@ -48,6 +49,9 @@ button{
 }
 
 .resize-animation-stopper *{
-    animation: none!important;
+    -webkit-animation: none!important;
+            animation: none!important;
+    -webkit-transition: none!important;
+    -o-transition: none!important;
     transition: none!important;
 }

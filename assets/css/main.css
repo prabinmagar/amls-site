@@ -564,6 +564,18 @@ body {
   }
 }
 
+@media screen and (max-width: 585px) {
+  .ui-widget-book {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .ui-widget-book {
+    margin-right: -32px !important;
+  }
+}
+
 @media screen and (max-width: 1320px) {
   .ui-widget-service-2, .ui-widget-service {
     transform: scale(0.95);
@@ -603,6 +615,12 @@ body {
 @media (max-width: 603.99px) {
   .ui-widget-service-2, .ui-widget-service {
     transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .ui-widget-service-2, .ui-widget-service {
+    transform: scale(0.75);
   }
 }
 
@@ -1053,8 +1071,7 @@ ul {
 
 .hdr-banner-btn:nth-child(2) span:nth-child(2) {
   font-size: 34px;
-  margin-top: 2px;
-  margin-bottom: 1px;
+  margin-top: -1px;
   letter-spacing: 0.02em;
   /* ### mobile stylings ### */
 }
@@ -1069,6 +1086,7 @@ ul {
   font-size: 17px;
   letter-spacing: 0.025em;
   font-family: "BlissMedium";
+  margin-top: -2px;
   /* ### mobile stylings ### */
 }
 
@@ -1159,6 +1177,7 @@ ul {
   font-size: 28px;
   letter-spacing: 0.03em;
   position: relative;
+  line-height: 1.35;
 }
 
 @media (max-width: 603.99px) {
@@ -1414,12 +1433,12 @@ ul {
   /* ### mobile stylings ### */
 }
 
-.ms-menu-cnt .menu-lang-list li:nth-child(5) {
-  font-family: "MyriadPro-Regular";
+.ms-menu-cnt .menu-lang-list li:nth-child(5) a {
+  font-family: "MyriadPro-Regular" !important;
 }
 
-.ms-menu-cnt .menu-lang-list li:nth-child(7) {
-  font-family: "Tajawal-Medium";
+.ms-menu-cnt .menu-lang-list li:nth-child(7) a {
+  font-family: "Tajawal-Medium" !important;
 }
 
 .ms-menu-cnt .menu-lang-list li.divider {
@@ -2253,6 +2272,21 @@ ul {
 
 .ms-book-cnt form {
   margin-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 420px) {
+  .ms-book-cnt form {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .ms-book-cnt form button {
+    font-size: 22px !important;
+  }
 }
 
 .ms-book-cnt form .form-row {
@@ -2312,9 +2346,7 @@ ul {
 
 @media (max-width: 603.99px) {
   .ms-book-cnt form .form-elem {
-    width: 563px;
-    margin-right: 0 !important;
-    margin-left: 0 !important;
+    width: 100% !important;
     height: 47px;
     border-radius: 30px;
   }
@@ -2337,8 +2369,20 @@ ul {
   color: #612e9e;
 }
 
+@media screen and (max-width: 585px) {
+  .ms-book-cnt form .form-control {
+    font-size: 20px !important;
+  }
+}
+
 .ms-book-cnt form .form-label {
   font-size: 22px;
+}
+
+@media screen and (max-width: 585px) {
+  .ms-book-cnt form .form-label {
+    font-size: 20px !important;
+  }
 }
 
 .ms-book-cnt form .form-elem-grid {
@@ -2361,6 +2405,15 @@ ul {
   margin-right: 8px;
 }
 
+@media screen and (max-width: 585px) {
+  .ms-book-cnt form .radio-container .radio-wrap:first-child {
+    margin-right: 20px;
+  }
+  .ms-book-cnt form .radio-container .radio-wrap:last-child {
+    margin-right: 8px;
+  }
+}
+
 .ms-book-cnt form .radio-wrap {
   display: flex;
   align-items: center;
@@ -2370,6 +2423,12 @@ ul {
 .ms-book-cnt form .radio-wrap span {
   margin-right: 12px;
   font-size: 22px;
+}
+
+@media screen and (max-width: 585px) {
+  .ms-book-cnt form .radio-wrap span {
+    font-size: 20px !important;
+  }
 }
 
 .ms-book-cnt form .form-radio {
@@ -2449,9 +2508,15 @@ ul {
   padding: 12.2px !important;
 }
 
+@media (max-width: 603.99px) {
+  .ms-book-cnt form .form-elem-btn {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+
 .ms-book-cnt form .form-elem-btn .form-btn {
   cursor: pointer;
-  width: 400px;
   height: 40px;
   font-size: 26px;
   color: #9cd600;
@@ -2486,6 +2551,12 @@ ul {
 .ms-book-cnt form select option:hover {
   background-color: #e4e4e4;
   color: #000;
+}
+
+@media screen and (max-width: 585px) {
+  .ms-book-cnt form select option {
+    font-size: 20px !important;
+  }
 }
 
 .ms-book-2 {
@@ -2564,6 +2635,12 @@ ul {
   margin-right: 8px;
 }
 
+@media screen and (max-width: 585px) {
+  .ms-book-2 .treatment-list .treatment-item-l {
+    width: 100%;
+  }
+}
+
 .ms-book-2 .treatment-list .treatment-item-r {
   width: 83px;
 }
@@ -2583,6 +2660,10 @@ ul {
   display: none;
 }
 
+.ms-book-3-cnt {
+  text-align: center !important;
+}
+
 .ms-book-3 .submit-top-text {
   color: #612e9e;
   font-size: 26px;
@@ -2595,7 +2676,7 @@ ul {
 }
 
 .ms-book-3 .submit-btm-text {
-  width: 870px;
+  max-width: 870px;
   margin-right: auto;
   margin-left: auto;
   font-size: 22px;
