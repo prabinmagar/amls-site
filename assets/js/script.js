@@ -124,7 +124,6 @@ $(document).ready(function(){
                 }
             });
         });
-
         const treatmentItems = $('.treatment-item');
         jQuery.each(treatmentItems, function(idx, treatmentItem){
             let totalSelectionCount = 0;
