@@ -265,11 +265,10 @@
                     font-size: 28px;
                     @include tracking(30);
                     position: relative;
-                    line-height: 1.35;
+                    // line-height: 1.35;
 
                     @include breakpoint-down(mob){
                         @include ptcon(75);
-
                     }
 
 
