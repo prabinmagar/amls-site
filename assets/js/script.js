@@ -108,7 +108,7 @@ $(document).ready(function(){
 
         const stepsOptions = $('.steps-active');
         jQuery.each(stepsOptions, function(idx, stepOption){
-            console.log(stepOption);
+            // console.log(stepOption);
             $(stepOption).parent().parent().change(function(){
                 if($(this).find('option:selected').attr('class') == "steps-active"){
                     let rightOptions = $(stepOption).parent().parent().parent().next();
