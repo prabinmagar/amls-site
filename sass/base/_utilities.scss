@@ -214,6 +214,10 @@ $tajawal: 'Tajawal-Medium';
     //     transform: scale(0.80);
     // }
 
+    @media screen and (max-width: 420px){
+        transform: scale(0.80);
+    }
+
 }
 
 .ui-widget-book{

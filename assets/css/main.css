@@ -497,6 +497,12 @@ body {
   }
 }
 
+@media screen and (max-width: 420px) {
+  .ui-widget-types {
+    transform: scale(0.8);
+  }
+}
+
 @media screen and (max-width: 1320px) {
   .ui-widget-book {
     transform: scale(0.95);
