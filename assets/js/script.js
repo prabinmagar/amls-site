@@ -113,13 +113,21 @@ $(document).ready(function(){
                 if($(this).find('option:selected').attr('class') == "steps-active"){
                     let rightOptions = $(stepOption).parent().parent().parent().next();
                     rightOptions.html(`
-                        <div class = "treatment-item-r" style = "padding-left: 0">
-                            <select name = "" class = "form-control">
-                                <option selected disabled>Steps</option>
-                                <option value ="8">8</option>
-                                <option value = "12">12</option>
-                            </select>
-                        </div>
+                        <select name = "" class = "form-control">
+                            <option selected disabled>Steps</option>
+                            <option value ="8">8</option>
+                            <option value = "12">12</option>
+                        </select>   
+                    `);
+                } else {
+                    let rightOptions = $(stepOption).parent().parent().parent().next();
+                    rightOptions.html(`
+                        <select name = "" class = "form-control">
+                            <option selected disabled>Mins</option>
+                            <option value = "60">60</option>
+                            <option value = "90">90</option>
+                            <option value = "120">120</option>
+                        </select> 
                     `);
                 }
             });
