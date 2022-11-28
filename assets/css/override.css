@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'BlissExtBol';
+    src: url("../fonts/Bliss-ExtraBold.bmap");
+  }
+  
+  @font-face {
+    font-family: 'Helvetica';
+    src: url("../fonts/Helvetica.ttc");
+  }
+  
+  @font-face {
+    font-family: 'Sinhala MN';
+    src: url("../fonts/Sinhala MN.ttc");
+  }
+  
+  @font-face {
+    font-family: 'Tajawal';
+    src: url("../fonts/Tajawal-Medium.eot");
+    src: url("../fonts/Tajawal-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Tajawal-Medium.woff2") format("woff2"), url("../fonts/Tajawal-Medium.woff") format("woff"), url("../fonts/Tajawal-Medium.ttf") format("truetype"), url("../fonts/Tajawal-Medium.svg#Tajawal-Medium") format("svg");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'BlissBold';
+    src: url("../fonts/Bliss-Bold.eot");
+    src: url("../fonts/Bliss-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Bliss-Bold.woff2") format("woff2"), url("../fonts/Bliss-Bold.woff") format("woff"), url("../fonts/Bliss-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'BlissRegular';
+    src: url("../fonts/BlissRegular.eot");
+    src: url("../fonts/BlissRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/BlissRegular.woff2") format("woff2"), url("../fonts/BlissRegular.woff") format("woff"), url("../fonts/BlissRegular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'BlissMedium';
+    src: url("../fonts/BlissMedium.eot");
+    src: url("../fonts/BlissMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/BlissMedium.woff2") format("woff2"), url("../fonts/BlissMedium.woff") format("woff"), url("../fonts/BlissMedium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url("../fonts/MyriadPro-Bold.eot");
+    src: url("../fonts/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Bold.woff2") format("woff2"), url("../fonts/MyriadPro-Bold.woff") format("woff"), url("../fonts/MyriadPro-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url("../fonts/MyriadPro-Regular.eot");
+    src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  .ms-menu-cnt .menu-lang-list li:nth-child(5) a {
+    font-family: "Myriad Pro Regular" !important;
+    letter-spacing: 1px;
+    font-size: 26px;
+}
+    .ms-menu-cnt .menu-lang-list li:nth-child(7) a{
+        font-family: 'Tajawal' !important;
+        letter-spacing: 0;
+}
+  
+
+@media (max-width: 603.99px){
+
+    .hdr-banner-btns .hdr-banner-btn{
+        margin-bottom:40px !important;
+    }
+
+    .hdr-banner-btn{
+        width:300px !important
+    }
+    .hdr-banner {
+        height: 708px;
+    }
+
+    .ms-types-cards .ms-types-card .card-head{
+        padding-top: 30px;
+        padding-bottom: 35px;
+    }
+
+    .ms-types-cards .ms-types-card .card-body{
+        height:240px !important;
+    }
+
+    .ms-types-cards .ms-types-card .card-head h3 {
+        line-height: 1.15;
+    }
+    .ms-types-cards .ms-types-card .card-list li{
+        margin-bottom:10px;
+    }
+
+    .ui-widget-types .ms-types-btn{
+        width:320px !important;
+    }
+    .ms-service-cnt{
+        margin-top:0;
+        margin-bottom: 0;
+    }
+    .ms-menu-cnt .menu-lang-list li.divider{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .ms-menu-cnt{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .ms-sig{
+        padding-top: 50px;
+    }
+    .ms-sig .ms-sig-cards{
+        margin-top: 50px;
+    }
+
+    .ms-sig .ms-sig-cards .sig-card .card-title{
+        margin-top:20px;
+    }
+    .hdr-banner-btn{
+        border: 1px solid #fff !important;
+    }
+
+    .ms-prebook{
+        padding-top: 50px;
+    }
+
+    .ms-ours-cnt .ours-top-text{
+        margin-bottom: 50px;
+    }
+    .ms-ours, .ms-selection, .ms-loc{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .ms-selection-cnt .selection-top-text{
+        margin-bottom: 50px;
+    }
+
+    .ms-loc-cnt .loc-list .loc-item:nth-child(1){
+        margin-bottom: 50px;
+    }
+
+    .ftr{
+        margin-bottom: 75px;
+    }
+
+    
+}
