@@ -3,23 +3,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Mansalva&display=swap");
 @font-face {
   font-family: 'BlissExtBol';
-  src: url("/assets/fonts/Bliss-ExtraBold.bmap");
+  src: url("../fonts/Bliss-ExtraBold.bmap");
 }
 
 @font-face {
   font-family: 'Helvetica';
-  src: url("/assets/fonts/Helvetica.ttc");
+  src: url("../fonts/Helvetica.ttc");
 }
 
 @font-face {
   font-family: 'Sinhala MN';
-  src: url("/assets/fonts/Sinhala MN.ttc");
+  src: url("../fonts/Sinhala MN.ttc");
 }
 
 @font-face {
   font-family: 'Tajawal';
-  src: url("/assets/fonts/Tajawal-Medium.eot");
-  src: url("/assets/fonts/Tajawal-Medium.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Tajawal-Medium.woff2") format("woff2"), url("/assets/fonts/Tajawal-Medium.woff") format("woff"), url("/assets/fonts/Tajawal-Medium.ttf") format("truetype"), url("/assets/fonts/Tajawal-Medium.svg#Tajawal-Medium") format("svg");
+  src: url("../fonts/Tajawal-Medium.eot");
+  src: url("../fonts/Tajawal-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Tajawal-Medium.woff2") format("woff2"), url("../fonts/Tajawal-Medium.woff") format("woff"), url("../fonts/Tajawal-Medium.ttf") format("truetype"), url("../fonts/Tajawal-Medium.svg#Tajawal-Medium") format("svg");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
   font-family: 'BlissBold';
-  src: url("/assets/fonts/Bliss-Bold.eot");
-  src: url("/assets/fonts/Bliss-Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Bliss-Bold.woff2") format("woff2"), url("/assets/fonts/Bliss-Bold.woff") format("woff"), url("/assets/fonts/Bliss-Bold.ttf") format("truetype");
+  src: url("../fonts/Bliss-Bold.eot");
+  src: url("../fonts/Bliss-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Bliss-Bold.woff2") format("woff2"), url("../fonts/Bliss-Bold.woff") format("woff"), url("../fonts/Bliss-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -36,8 +36,8 @@
 
 @font-face {
   font-family: 'BlissRegular';
-  src: url("/assets/fonts/BlissRegular.eot");
-  src: url("/assets/fonts/BlissRegular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/BlissRegular.woff2") format("woff2"), url("/assets/fonts/BlissRegular.woff") format("woff"), url("/assets/fonts/BlissRegular.ttf") format("truetype");
+  src: url("../fonts/BlissRegular.eot");
+  src: url("../fonts/BlissRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/BlissRegular.woff2") format("woff2"), url("../fonts/BlissRegular.woff") format("woff"), url("../fonts/BlissRegular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -45,8 +45,8 @@
 
 @font-face {
   font-family: 'BlissMedium';
-  src: url("/assets/fonts/BlissMedium.eot");
-  src: url("/assets/fonts/BlissMedium.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/BlissMedium.woff2") format("woff2"), url("/assets/fonts/BlissMedium.woff") format("woff"), url("/assets/fonts/BlissMedium.ttf") format("truetype");
+  src: url("../fonts/BlissMedium.eot");
+  src: url("../fonts/BlissMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/BlissMedium.woff2") format("woff2"), url("../fonts/BlissMedium.woff") format("woff"), url("../fonts/BlissMedium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -54,8 +54,8 @@
 
 @font-face {
   font-family: 'Myriad Pro Bold';
-  src: url("/assets/fonts/MyriadPro-Bold.eot");
-  src: url("/assets/fonts/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/MyriadPro-Bold.woff2") format("woff2"), url("/assets/fonts/MyriadPro-Bold.woff") format("woff"), url("/assets/fonts/MyriadPro-Bold.ttf") format("truetype");
+  src: url("../fonts/MyriadPro-Bold.eot");
+  src: url("../fonts/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Bold.woff2") format("woff2"), url("../fonts/MyriadPro-Bold.woff") format("woff"), url("../fonts/MyriadPro-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -63,8 +63,8 @@
 
 @font-face {
   font-family: 'Myriad Pro Regular';
-  src: url("/assets/fonts/MyriadPro-Regular.eot");
-  src: url("/assets/fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/MyriadPro-Regular.woff2") format("woff2"), url("/assets/fonts/MyriadPro-Regular.woff") format("woff"), url("/assets/fonts/MyriadPro-Regular.ttf") format("truetype");
+  src: url("../fonts/MyriadPro-Regular.eot");
+  src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
