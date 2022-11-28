@@ -12,9 +12,21 @@ $(document).ready(function(){
     let sliderCountValue = 1;
     setInterval(function(){
         if(sliderCountValue > 3) sliderCountValue = 1;
-        $(hdrBanner).css('background', `url("../../assets/images/banner-img-${sliderCountValue}.png") center/cover no-repeat`);
+        // $(hdrBanner).css('background', `url("../../assets/images/banner-img-${sliderCountValue}.png") center/cover no-repeat`);
+        $video = $('.video-wrapper video');
+
+        if(sliderCountValue == 4){
+            videoSrc = $('source', $video).attr('src', `/assets/videos/video-${sliderCountValue}.mpeg`);
+            videoSrc = $('source', $video).attr('type', `video/mpeg`);
+
+        } else {
+            videoSrc = $('source', $video).attr('src', `/assets/videos/video-${sliderCountValue}.webm`);
+        }
+
+        $video[0].load();
+        $video[0].play();
         sliderCountValue++;
-    }, 3000);
+    }, 5000);
 
     const radioElems = $('.ms-book .radio-elem-1 .form-radio');
     jQuery.each(radioElems, function(idx, radioElem){
@@ -76,7 +88,7 @@ $(document).ready(function(){
                             <option value="">Cannabis (Cannabidiol) Massage</option>
                             <option value="">Aromatherapy Gold Massage</option>
                             <option value="">Four Hands Massage</option>
-                            <option value = "">Facial Deep Skin Cleansing</option>
+                            <option value = "" class = "steps-active">Facial Deep Skin Cleansing</option>
                             <option value="">Full-Body Scrubs</option>
                         </optgroup>
                     </select>
@@ -93,6 +105,25 @@ $(document).ready(function(){
             `);
             $(treatmentListContainer).append(tempDiv);
         }
+
+        const stepsOptions = $('.steps-active');
+        jQuery.each(stepsOptions, function(idx, stepOption){
+            console.log(stepOption);
+            $(stepOption).parent().parent().change(function(){
+                if($(this).find('option:selected').attr('class') == "steps-active"){
+                    let rightOptions = $(stepOption).parent().parent().parent().next();
+                    rightOptions.html(`
+                        <div class = "treatment-item-r">
+                            <select name = "" class = "form-control">
+                                <option selected disabled>Steps</option>
+                                <option value = "8">8</option>
+                                <option value = "12">12</option>
+                            </select>
+                        </div>
+                    `);
+                }
+            });
+        });
 
         const treatmentItems = $('.treatment-item');
         jQuery.each(treatmentItems, function(idx, treatmentItem){
@@ -136,7 +167,7 @@ $(function() {
 $('.grid').imagesLoaded( function() {
     $('.grid').masonry({
         itemSelector: '.grid-item',
-        columnWidth: 200
+        // columnWidth: 200
     });
 });
 

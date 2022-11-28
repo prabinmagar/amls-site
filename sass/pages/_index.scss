@@ -1,4 +1,3 @@
-
 .cntr{
     max-width: 1366px;
     margin: 0 auto;
@@ -33,21 +32,44 @@
 }
 .hdr-banner{
     height: 640px;
-    background: url('../../assets/images/banner-img-1.png') center/cover no-repeat;
-    overflow: hidden;
+    // background: url('../../assets/images/banner-img-1.png') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden!important;
     
     /* ### mobile stylings ### */
     @include breakpoint-down(mob){
         height: 1012px;
+    }
+
+    .video-wrapper{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        height: 640px;
+        margin-top: 188px;
+
+        @include breakpoint-down(mob){
+            height: 1012px;
+        }
+
+        video{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
     }
 }
 .hdr-banner-btns{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 10;
 
     /* ### mobile stylings ### */
     @include breakpoint-down(mob){
@@ -1483,6 +1505,10 @@
             font-family: $bliss-md;
             margin-bottom: 4px;
         }
+
+        @include breakpoint-down(mob){
+            width: auto;
+        }
     }
 }
 
@@ -1528,7 +1554,7 @@
 }
 
 .grid-item { 
-    // width: 200px;
+    width: auto;
 }
 
 // changes stylings
