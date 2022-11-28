@@ -1636,6 +1636,7 @@
                 @include breakpoint-down(mob){
                     padding-right: 0!important;
                     padding-left: 0!important;
+                    width: 100%!important;
                 }
 
                 .form-btn{
@@ -1650,12 +1651,13 @@
                     border: 1.5px solid $clr-white!important;
 
                     @include breakpoint-down(mob){
-                        height: 50px;
+                        height: 67px;
                         padding-right: 20px;
                         padding-left: 20px;
-                        border-radius: 30px;
-                        width: 100%!important;
+                        border-radius: 40px;
                         font-size: 20px!important;
+                        margin-left: -18px!important;
+                        margin-right: -18px!important;
                     }
                 }
 
