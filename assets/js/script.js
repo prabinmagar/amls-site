@@ -18,7 +18,6 @@ $(document).ready(function(){
         if(sliderCountValue == 4){
             videoSrc = $('source', $video).attr('src', `/assets/videos/video-${sliderCountValue}.mpeg`);
             videoSrc = $('source', $video).attr('type', `video/mpeg`);
-
         } else {
             videoSrc = $('source', $video).attr('src', `/assets/videos/video-${sliderCountValue}.webm`);
         }

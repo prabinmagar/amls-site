@@ -9,18 +9,6 @@
     }
 }
 
-
-// header part just for test 
-/*
-.header{
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    z-index: 999;
-}
-*/
-
 .hdr-top{
     height: 188px; 
     display: flex;
@@ -32,7 +20,6 @@
 }
 .hdr-banner{
     height: 640px;
-    // background: url('../../assets/images/banner-img-1.png') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,6 +74,7 @@
         flex-direction: column;
     }
 }
+
 .hdr-banner-btn{
     width: 348.309px!important;
     height: 100px;
@@ -381,6 +369,10 @@
         margin-top: 26px;
         margin-bottom: 25px;
 
+        @media screen and (max-width){
+            transform: scale(0.7);
+        }
+
         .service-top-text{
             font-size: 35px;
             color: $clr-purple;
@@ -451,7 +443,15 @@
                 color: $clr-purple;
                 font-family: $bliss-md;
                 @include tracking(160);
-                
+
+                &:nth-child(5){
+                    font-family: $my-reg;
+                }
+
+                &:nth-child(7){
+                    font-family: $tajawal;
+                }
+
                 &.divider{
                     width: 1px;
                     height: 24px;
@@ -502,7 +502,7 @@
     .sig-top-text{
         font-size: 36px;
         text-transform: uppercase;
-        text-align: center;
+        text-align: center!important;
         color: $clr-purple;
         font-family: $sinhala;
         @include tracking(40);
@@ -510,9 +510,13 @@
         /* ### mobile stylings ### */
         @include breakpoint-down(mob){
             @include ptcon(90);
-            width: 415px;
-            margin-right: auto;
-            margin-left: auto;
+            max-width: 415px;
+            margin-right: auto!important;
+            margin-left: auto!important;
+        }
+
+        @media screen and (max-width: 420px){
+            transform: scale(0.90);
         }
     }
 
@@ -712,6 +716,10 @@
             @include breakpoint-down(lg){
                 @include ptcon(90);
             }
+
+            @media screen and (max-width: 420px){
+                transform: scale(0.90);
+            }
         }
         .prebook-mid-text{
             margin-top: 51px;
@@ -865,6 +873,10 @@
                 margin-right: auto;
                 margin-left: auto;
             }
+
+            @media screen and (max-width: 420px){
+                transform: scale(0.90);
+            }
         }
     }
 }
@@ -903,7 +915,12 @@
                 margin-right: auto;
                 margin-left: auto;
             }
+
+            @media screen and (max-width: 420px){
+                transform: scale(0.90);
+            }
         }
+        
         .selection-list{
             display: grid;
             grid-template-columns: repeat(3, 1fr);

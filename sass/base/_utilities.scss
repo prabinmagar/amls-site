@@ -117,6 +117,7 @@ $tajawal: 'Tajawal-Medium';
     margin-right: 0!important;
     padding-right: 0!important;
 }
+
 .ui-widget-banner-btns{
     background-color: transparent!important;
     border: none!important;
@@ -144,14 +145,6 @@ $tajawal: 'Tajawal-Medium';
     @include breakpoint-down(mob){
         transform: scale(1);
     }
-
-    // @media screen and (max-width: 585px){
-    //     transform: scale(0.85);
-    // }
-
-    // @media screen and (max-width: 420px){
-    //     transform: scale(0.80);
-    // }
 }
 
 .ui-widget-types{
@@ -203,21 +196,6 @@ $tajawal: 'Tajawal-Medium';
             width: 100%;
         }
     }
-
-    // @media screen and (max-width: 415px){
-    //     .card-list{
-    //         margin-left: -4px!important;
-    //     }
-    // }
-
-    // @media screen and (max-width: 420px){
-    //     transform: scale(0.80);
-    // }
-
-    @media screen and (max-width: 420px){
-        transform: scale(0.80);
-    }
-
 }
 
 .ui-widget-book{
@@ -249,14 +227,6 @@ $tajawal: 'Tajawal-Medium';
         transform: scale(1);
         margin-right: -16px;
     }
-
-    // @media screen and (max-width: 585px){
-    //     transform: scale(0.85);
-    // }
-
-    // @media screen and (max-width: 420px){
-    //     transform: scale(0.65);
-    // }
 }
 
 .ui-widget-service-2, .ui-widget-service{
@@ -288,10 +258,6 @@ $tajawal: 'Tajawal-Medium';
         transform: scale(1);
     }
 
-    @media screen and (max-width: 585px){
-        transform: scale(0.80);
-    }
-
     @media screen and (max-width: 420px){
         transform: scale(0.65);
     }
@@ -320,41 +286,11 @@ $tajawal: 'Tajawal-Medium';
     @media screen and (max-width: 678px){
         transform: scale(0.53);
     }
+
     @include breakpoint-down(mob){
         transform: scale(1);
     }
 }
-
-// .ui-widget-service-2{
-//     @media screen and (max-width: 1320px){
-//         transform: scale(0.95);
-//     }
-
-//     @media screen and (max-width: 1080px){
-//         transform: scale(0.85);
-//     }
-
-//     @media screen and (max-width: 992px){
-//         transform: scale(0.75);
-//     }
-
-//     @media screen and (max-width: 850px){
-//         transform: scale(0.65);
-//     }
-//     @media screen and (max-width: 768px){
-//         transform: scale(0.6);
-//     }
-
-//     @media screen and (max-width: 678px){
-//         transform: scale(0.53);
-//     }
-//     @include breakpoint-down(mob){
-//         transform: scale(1);
-//     }
-//     @media screen and (max-width: 400px){
-//         transform: scale(0.65);
-//     }
-// }
 
 .ui-widget-prebook{
     @media screen and (max-width: 1320px){
@@ -383,10 +319,6 @@ $tajawal: 'Tajawal-Medium';
     @include breakpoint-down(mob){
         transform: scale(1);
     }
-
-    // @media screen and (max-width: 585px){
-    //     transform: scale(0.85);
-    // }
 }
 
 .ui-widget-selection{
@@ -413,6 +345,7 @@ $tajawal: 'Tajawal-Medium';
     @media screen and (max-width: 678px){
         transform: scale(0.53);
     }
+
     @include breakpoint-down(mob){
         transform: scale(1);
     }
@@ -442,9 +375,11 @@ $tajawal: 'Tajawal-Medium';
     @media screen and (max-width: 678px){
         transform: scale(0.53);
     }
+
     @include breakpoint-down(mob){
         transform: scale(1);
     }
+    
 }
 
 .ui-widget-ftr{
@@ -471,9 +406,11 @@ $tajawal: 'Tajawal-Medium';
     @media screen and (max-width: 678px){
         transform: scale(0.53);
     }
+
     @include breakpoint-down(mob){
         transform: scale(1);
     }
+   
 }
 
 .ui-widget-ms{
@@ -500,13 +437,11 @@ $tajawal: 'Tajawal-Medium';
     @media screen and (max-width: 678px){
         transform: scale(0.53);
     }
+
     @include breakpoint-down(mob){
         transform: scale(1);
     }
-    // @media screen and (max-width: 400px){
-    //     transform: scale(0.65);
-    //     width: 100%;
-    // }
+    
 }
 
 .ui-icon{
