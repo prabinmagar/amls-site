@@ -2317,7 +2317,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 15px;
+  padding-left: 13px;
   margin-bottom: 21px;
   overflow: hidden;
   /* ### mobile stylings ### */
@@ -2348,7 +2348,7 @@ ul {
 
 @media (max-width: 603.99px) {
   .ms-book-cnt form .form-elem {
-    width: 100% !important;
+    width: 110% !important;
     height: 47px;
     border-radius: 30px;
   }
@@ -2531,8 +2531,12 @@ ul {
 
 @media (max-width: 603.99px) {
   .ms-book-cnt form .form-elem-btn .form-btn {
-    height: 67px;
+    height: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
     border-radius: 30px;
+    width: 100% !important;
+    font-size: 20px !important;
   }
 }
 
