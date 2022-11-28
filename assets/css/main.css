@@ -899,6 +899,10 @@ body {
   }
 }
 
+.ui-icon {
+  display: none !important;
+}
+
 .btn:focus {
   outline: 0;
   box-shadow: none;
