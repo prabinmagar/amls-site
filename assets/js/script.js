@@ -116,7 +116,7 @@ $(document).ready(function(){
                         <div class = "treatment-item-r">
                             <select name = "" class = "form-control">
                                 <option selected disabled>Steps</option>
-                                <option value = "8">8</option>
+                                <option value ="8">8</option>
                                 <option value = "12">12</option>
                             </select>
                         </div>
