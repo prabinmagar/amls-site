@@ -39,7 +39,7 @@
     
     /* ### mobile stylings ### */
     @include breakpoint-down(mob){
-        height: 1012px;
+        height: 760px;
     }
 
     .video-wrapper{
@@ -55,7 +55,7 @@
         margin-top: 188px;
 
         @include breakpoint-down(mob){
-            height: 1012px;
+            height: 1020px;
         }
 
         video{
@@ -83,9 +83,15 @@
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         .hdr-banner-btn{
-            margin-bottom: 60px!important;
+            margin-bottom: 50px!important;
+
+            &:first-child{
+                margin-top: 30px;
+            }
+
+
             &:last-child{
-                margin-bottom: 0!important;
+                margin-bottom: 60px!important;
             }
         }
     }

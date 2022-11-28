@@ -949,7 +949,7 @@ ul {
 
 @media (max-width: 603.99px) {
   .hdr-banner {
-    height: 1012px;
+    height: 760px;
   }
 }
 
@@ -967,7 +967,7 @@ ul {
 
 @media (max-width: 603.99px) {
   .hdr-banner .video-wrapper {
-    height: 1012px;
+    height: 1020px;
   }
 }
 
@@ -991,10 +991,13 @@ ul {
     flex-wrap: wrap;
   }
   .hdr-banner-btns .hdr-banner-btn {
-    margin-bottom: 60px !important;
+    margin-bottom: 50px !important;
+  }
+  .hdr-banner-btns .hdr-banner-btn:first-child {
+    margin-top: 30px;
   }
   .hdr-banner-btns .hdr-banner-btn:last-child {
-    margin-bottom: 0 !important;
+    margin-bottom: 60px !important;
   }
 }
 
