@@ -799,8 +799,8 @@
 }
 
 .ms-prebook{
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(97, 46, 158, 0.9)), to(rgba(97, 46, 158, 0.9))), url('../../assets/images/prebook-img.jpg') center/cover no-repeat;
     background: -o-linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)), url('../../assets/images/prebook-img.jpg') center/cover no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(97, 46, 158, 0.9)), to(rgba(97, 46, 158, 0.9))), url('../../assets/images/prebook-img.jpg') center/cover no-repeat;
     background: linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)), url('../../assets/images/prebook-img.jpg') center/cover no-repeat;
     background-attachment: fixed;
     min-height: 530px;
@@ -1025,8 +1025,8 @@
 .ms-selection{
     padding-top: 82px;
     padding-bottom: 34.3px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(97, 46, 158, 0.9)), to(rgba(97, 46, 158, 0.9))),  url('../../assets/images/selection.jpg') center/cover no-repeat;
     background: -o-linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)),  url('../../assets/images/selection.jpg') center/cover no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(97, 46, 158, 0.9)), to(rgba(97, 46, 158, 0.9))),  url('../../assets/images/selection.jpg') center/cover no-repeat;
     background: linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)),  url('../../assets/images/selection.jpg') center/cover no-repeat;
     background-attachment: fixed;
 
@@ -1661,7 +1661,7 @@
                     color: $clr-lime;
                     background-color: $clr-white!important;
                     border-radius: 20px;
-                    font-family: $bliss-md;
+                    font-family: $bliss-bold;
                     width: 526px;
                     border: 1.5px solid $clr-white!important;
 
@@ -1929,8 +1929,11 @@
 }
 
 .gallery-grid{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 
     .img-item{
         width: 10%;
@@ -1938,7 +1941,8 @@
         img{
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            -o-object-fit: cover;
+               object-fit: cover;
         }
     }
 
