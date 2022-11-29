@@ -1743,8 +1743,9 @@
                 -webkit-box-pack: center;
                     -ms-flex-pack: center;
                         justify-content: center;
-                margin-right: 0;
+                margin-left: -20px;
                 margin-bottom: 20px;
+                width: 110%!important;
             }
 
             &:nth-child(even){

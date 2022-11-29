@@ -398,6 +398,10 @@ body {
   display: none;
 }
 
+select {
+  background-color: #fff;
+}
+
 .px-custom {
   padding-right: 3px;
   padding-left: 3px;
@@ -2614,8 +2618,9 @@ ul {
 @media (max-width: 603.99px) {
   .ms-book-2 .treatment-list .treatment-item {
     justify-content: center;
-    margin-right: 0;
+    margin-left: -20px;
     margin-bottom: 20px;
+    width: 110% !important;
   }
 }
 
