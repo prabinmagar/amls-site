@@ -1332,12 +1332,14 @@
     font-size: 22px;
     font-family: $bliss-md;
     text-align: center;
+    line-height: 1.4;
 }
 
 // booking form
 .ms-book{
     padding-bottom: 66.5px;
     min-height: 640px;
+    position: relative;
 
     &-cnt{
         padding-top: 75.3px;
@@ -1445,6 +1447,7 @@
                     width: 110%!important;
                     height: 47px;
                     border-radius: 30px;
+                    margin-bottom: 13px!important;
                 }
             }
             .form-control{
@@ -1663,11 +1666,11 @@
                     border: 1.5px solid $clr-white!important;
 
                     @include breakpoint-down(mob){
-                        height: 67px;
-                        padding-right: 20px;
-                        padding-left: 20px;
+                        height: 60px;
+                        padding-right: 15px;
+                        padding-left: 15px;
                         border-radius: 40px;
-                        font-size: 20px!important;
+                        font-size: 21px!important;
                         margin-left: -18px!important;
                         margin-right: -18px!important;
                     }
@@ -1697,6 +1700,17 @@
                 }
             }
         }
+    }
+}
+
+.ms-book-cnt{
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+
+    @media screen and (max-width: 585px){
+        padding-right: 0;
+        padding-left: 0;
     }
 }
 
@@ -1745,7 +1759,7 @@
                     -ms-flex-pack: center;
                         justify-content: center;
                 margin-left: -20px;
-                margin-bottom: 20px;
+                margin-bottom: 13px;
                 width: 110%!important;
             }
 
@@ -1878,18 +1892,6 @@
     }
 }
 
-// js scripts related
-.show-booking{
-    .ms-types{
-        // transform: translateX(-100%);
-        display: none;
-    }
-    .ms-book{
-        // transform: translateX(-100%);
-        display: block;
-    }
-}
-
 .grid-item { 
     width: auto;
 }
@@ -1907,7 +1909,24 @@
     }
 }
 
+.close-form-btn{
+    position: absolute; 
+    right: 0;
+    top: 10%;
+    font-size: 28px;
+    color: $clr-white;
+    cursor: pointer;
 
+    @include breakpoint-down(mob){
+        right: 5%;
+        top: 5%;
+    }
+
+    @media screen and (max-width: 420px){
+        right: 0%;
+        top: 0%;
+    }
+}
 
 .gallery-grid{
     display: flex;

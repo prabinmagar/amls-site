@@ -1,13 +1,4 @@
 $(document).ready(function(){
-    const hdrBanner = $('.hdr-banner');
-    const bookingBtn = $('.booking-btn');
-    const bookingSection = $('#slideSection');
-
-    // slide show of the booking form
-    $(bookingBtn).click(function(){
-        $(bookingSection).addClass('show-booking');
-    });
-
     // change background on every 3s
     // let sliderCountValue = 1;
     // setInterval(function(){
@@ -61,9 +52,26 @@ $(document).ready(function(){
         }
     });
 
+    // booking btns
+    $('.booking-btn').click(function(){
+        $('.ms-types').css('display', 'none');
+        $('.ms-book-1').css('display', 'block');
+    })
+
     $('.details-btn').click(function(){
-        $('.ms-book').css('display', 'none');
+        $('.ms-book-1').css('display', 'none');
         $('.ms-book-2').css('display', 'block');
+    });
+
+    $('.submit-btn').click(function(){
+        $('.ms-book-2').css('display', 'none');
+        $('.ms-book-3').css('display', 'block');
+    });
+
+    // jquery close btn
+    $('.close-form-btn').click(function(){
+        $('.ms-book-3').css('display', 'none');
+        $('.ms-types').css('display', 'block');
     });
 
     // no of booking section
@@ -167,13 +175,6 @@ $(document).ready(function(){
                 }
             });
         });
-    });
-
-    
-
-    $('.submit-btn').click(function(){
-        $('.ms-book-2').css('display', 'none');
-        $('.ms-book-3').css('display', 'block');
     });
 });
 

@@ -2260,11 +2260,13 @@ ul {
   font-size: 22px;
   font-family: "BlissMedium";
   text-align: center;
+  line-height: 1.4;
 }
 
 .ms-book {
   padding-bottom: 66.5px;
   min-height: 640px;
+  position: relative;
 }
 
 .ms-book-cnt {
@@ -2366,6 +2368,7 @@ ul {
     width: 110% !important;
     height: 47px;
     border-radius: 30px;
+    margin-bottom: 13px !important;
   }
 }
 
@@ -2547,11 +2550,11 @@ ul {
 
 @media (max-width: 603.99px) {
   .ms-book-cnt form .form-elem-btn .form-btn {
-    height: 67px;
-    padding-right: 20px;
-    padding-left: 20px;
+    height: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
     border-radius: 40px;
-    font-size: 20px !important;
+    font-size: 21px !important;
     margin-left: -18px !important;
     margin-right: -18px !important;
   }
@@ -2579,6 +2582,19 @@ ul {
 @media screen and (max-width: 585px) {
   .ms-book-cnt form select option {
     font-size: 20px !important;
+  }
+}
+
+.ms-book-cnt {
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+@media screen and (max-width: 585px) {
+  .ms-book-cnt {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -2620,7 +2636,7 @@ ul {
   .ms-book-2 .treatment-list .treatment-item {
     justify-content: center;
     margin-left: -20px;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
     width: 110% !important;
   }
 }
@@ -2750,14 +2766,6 @@ ul {
   transition: all ease-in-out 300ms;
 }
 
-.show-booking .ms-types {
-  display: none;
-}
-
-.show-booking .ms-book {
-  display: block;
-}
-
 .grid-item {
   width: auto;
 }
@@ -2774,6 +2782,29 @@ ul {
 
 .change-selected select {
   background-color: #e4e4e4 !important;
+}
+
+.close-form-btn {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 603.99px) {
+  .close-form-btn {
+    right: 5%;
+    top: 5%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .close-form-btn {
+    right: 0%;
+    top: 0%;
+  }
 }
 
 .gallery-grid {
