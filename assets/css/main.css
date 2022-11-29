@@ -971,6 +971,16 @@ ul {
   }
 }
 
+.hdr-banner .video-wrapper .video-item {
+  height: 640px;
+}
+
+@media (max-width: 603.99px) {
+  .hdr-banner .video-wrapper .video-item {
+    height: 760px;
+  }
+}
+
 .hdr-banner .video-wrapper video {
   height: 100%;
   width: 100%;

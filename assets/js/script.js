@@ -9,23 +9,34 @@ $(document).ready(function(){
     });
 
     // change background on every 3s
-    let sliderCountValue = 1;
-    setInterval(function(){
-        if(sliderCountValue > 3) sliderCountValue = 1;
-        // $(hdrBanner).css('background', `url("../../assets/images/banner-img-${sliderCountValue}.png") center/cover no-repeat`);
-        $video = $('.video-wrapper video');
+    // let sliderCountValue = 1;
+    // setInterval(function(){
+    //     if(sliderCountValue > 3) sliderCountValue = 1;
+    //     $video = $('.video-wrapper video');
 
-        if(sliderCountValue == 4){
-            videoSrc = $('source', $video).attr('src', `/assets/videos/video-${sliderCountValue}.mpeg`);
-            videoSrc = $('source', $video).attr('type', `video/mpeg`);
-        } else {
-            videoSrc = $('source', $video).attr('src', `/assets/videos/video-${sliderCountValue}.webm`);
-        }
+    //     if(sliderCountValue == 4){
+    //         videoSrc = $('source', $video).attr('src', `/assets/videos/video-${sliderCountValue}.mpeg`);
+    //         videoSrc = $('source', $video).attr('type', `video/mpeg`);
+    //     } else {
+    //         videoSrc = $('source', $video).attr('src', `/assets/videos/video-${sliderCountValue}.webm`);
+    //     }
 
-        $video[0].load();
-        $video[0].play();
-        sliderCountValue++;
-    }, 5000);
+    //     $video.fadeOut(500, function(){
+    //         $video.fadeIn(500);
+    //         $video[0].load();
+    //         $video[0].play();
+    //         sliderCountValue++;
+    //     });
+    // }, 5000);
+
+    $('.video-wrapper').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
 
     const radioElems = $('.ms-book .radio-elem-1 .form-radio');
     jQuery.each(radioElems, function(idx, radioElem){

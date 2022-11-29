@@ -58,11 +58,22 @@
             height: 760px;
         }
 
+        .video-item{
+            height: 640px;
+            @include breakpoint-down(mob){
+                height: 760px;
+            }
+        }
+
         video{
             height: 100%;
             width: 100%;
             -o-object-fit: cover;
                object-fit: cover;
+
+            @include breakpoint-down(mob){
+                // height: 760px;
+            }
         }
     }
 }
