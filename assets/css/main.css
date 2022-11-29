@@ -2774,4 +2774,20 @@ ul {
 .change-selected select {
   background-color: #e4e4e4 !important;
 }
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-grid .img-item {
+  width: 12.5%;
+  height: 200px;
+}
+
+.gallery-grid .img-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /*# sourceMappingURL=main.css.map */
