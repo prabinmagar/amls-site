@@ -1897,27 +1897,13 @@ ul {
   margin-left: auto;
 }
 
-@media (max-width: 991.99px) {
-  .ms-book-cnt form .form-elem.center {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-}
-
 .ms-book-cnt form .form-elem.mb-13 {
   margin-bottom: 13px !important;
 }
 
-@media (max-width: 991.99px) {
-  .ms-book-cnt form .form-elem {
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-  }
-}
-
 @media (max-width: 603.99px) {
   .ms-book-cnt form .form-elem {
-    width: 110% !important;
+    width: 100% !important;
     height: 47px;
     border-radius: 30px;
     margin-bottom: 13px !important;
@@ -2143,10 +2129,9 @@ ul {
   position: relative;
 }
 
-@media screen and (max-width: 585px) {
+@media (max-width: 603.99px) {
   .ms-book-cnt {
-    padding-right: 0;
-    padding-left: 0;
+    width: 100% !important;
   }
 }
 
