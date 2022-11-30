@@ -111,481 +111,481 @@ select{
     width: 325px!important;
 }
 
-#resizable { 
-    width: 100%; 
-    height: 100%; 
-    background-color: transparent;
-    border: none!important;
-}
-.ui-widget-content{
-    overflow-x: hidden;
-    margin-right: 0!important;
-    padding-right: 0!important;
-}
+// #resizable { 
+//     width: 100%; 
+//     height: 100%; 
+//     background-color: transparent;
+//     border: none!important;
+// }
+// .ui-widget-content{
+//     overflow-x: hidden;
+//     margin-right: 0!important;
+//     padding-right: 0!important;
+// }
 
-.ui-widget-banner-btns{
-    background-color: transparent!important;
-    border: none!important;
+// .ui-widget-banner-btns{
+//     background-color: transparent!important;
+//     border: none!important;
 
-    @media screen and (max-width: 1320px){
-        -webkit-transform: scale(0.95);
-            -ms-transform: scale(0.95);
-                transform: scale(0.95);
-    }
+//     @media screen and (max-width: 1320px){
+//         -webkit-transform: scale(0.95);
+//             -ms-transform: scale(0.95);
+//                 transform: scale(0.95);
+//     }
 
-    @media screen and (max-width: 1080px){
-        -webkit-transform: scale(0.85);
-            -ms-transform: scale(0.85);
-                transform: scale(0.85);
-    }
+//     @media screen and (max-width: 1080px){
+//         -webkit-transform: scale(0.85);
+//             -ms-transform: scale(0.85);
+//                 transform: scale(0.85);
+//     }
 
-    @media screen and (max-width: 992px){
-        -webkit-transform: scale(0.75);
-            -ms-transform: scale(0.75);
-                transform: scale(0.75);
-    }
+//     @media screen and (max-width: 992px){
+//         -webkit-transform: scale(0.75);
+//             -ms-transform: scale(0.75);
+//                 transform: scale(0.75);
+//     }
 
-    @media screen and (max-width: 850px){
-        -webkit-transform: scale(0.65);
-            -ms-transform: scale(0.65);
-                transform: scale(0.65);
-    }
+//     @media screen and (max-width: 850px){
+//         -webkit-transform: scale(0.65);
+//             -ms-transform: scale(0.65);
+//                 transform: scale(0.65);
+//     }
 
-    @media screen and (max-width: 678px){
-        -webkit-transform: scale(0.6);
-            -ms-transform: scale(0.6);
-                transform: scale(0.6);
-    }
+//     @media screen and (max-width: 678px){
+//         -webkit-transform: scale(0.6);
+//             -ms-transform: scale(0.6);
+//                 transform: scale(0.6);
+//     }
 
-    @include breakpoint-down(mob){
-        -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-                transform: scale(1);
-    }
-}
+//     @include breakpoint-down(mob){
+//         -webkit-transform: scale(1);
+//             -ms-transform: scale(1);
+//                 transform: scale(1);
+//     }
+// }
 
-.ui-widget-types{
-    @media screen and (max-width: 1320px){
-        -webkit-transform: scale(0.90);
-            -ms-transform: scale(0.90);
-                transform: scale(0.90);
-    }
+// .ui-widget-types{
+//     @media screen and (max-width: 1320px){
+//         -webkit-transform: scale(0.90);
+//             -ms-transform: scale(0.90);
+//                 transform: scale(0.90);
+//     }
 
-    @media screen and (max-width: 1080px){
-        -webkit-transform: scale(0.85);
-            -ms-transform: scale(0.85);
-                transform: scale(0.85);
-    }
+//     @media screen and (max-width: 1080px){
+//         -webkit-transform: scale(0.85);
+//             -ms-transform: scale(0.85);
+//                 transform: scale(0.85);
+//     }
 
-    @media screen and (max-width: 992px){
-        -webkit-transform: scale(0.75);
-            -ms-transform: scale(0.75);
-                transform: scale(0.75);
-    }
+//     @media screen and (max-width: 992px){
+//         -webkit-transform: scale(0.75);
+//             -ms-transform: scale(0.75);
+//                 transform: scale(0.75);
+//     }
 
-    @media screen and (max-width: 850px){
-        -webkit-transform: scale(0.65);
-            -ms-transform: scale(0.65);
-                transform: scale(0.65);
-    }
+//     @media screen and (max-width: 850px){
+//         -webkit-transform: scale(0.65);
+//             -ms-transform: scale(0.65);
+//                 transform: scale(0.65);
+//     }
 
-    @media screen and (max-width: 768px){
-        -webkit-transform: scale(0.6);
-            -ms-transform: scale(0.6);
-                transform: scale(0.6);
-    }
+//     @media screen and (max-width: 768px){
+//         -webkit-transform: scale(0.6);
+//             -ms-transform: scale(0.6);
+//                 transform: scale(0.6);
+//     }
 
-    @media screen and (max-width: 678px){
-        -webkit-transform: scale(0.53);
-            -ms-transform: scale(0.53);
-                transform: scale(0.53);
-    }
+//     @media screen and (max-width: 678px){
+//         -webkit-transform: scale(0.53);
+//             -ms-transform: scale(0.53);
+//                 transform: scale(0.53);
+//     }
 
-    @include breakpoint-down(mob){
-        -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-                transform: scale(1);
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
+//     @include breakpoint-down(mob){
+//         -webkit-transform: scale(1);
+//             -ms-transform: scale(1);
+//                 transform: scale(1);
+//         padding-left: 0;
+//         padding-right: 0;
+//     }
+// }
 
-.ui-widget-book{
-    @media screen and (max-width: 1320px){
-        -webkit-transform: scale(0.95);
-            -ms-transform: scale(0.95);
-                transform: scale(0.95);
-    }
+// .ui-widget-book{
+//     @media screen and (max-width: 1320px){
+//         -webkit-transform: scale(0.95);
+//             -ms-transform: scale(0.95);
+//                 transform: scale(0.95);
+//     }
 
-    @media screen and (max-width: 1080px){
-        -webkit-transform: scale(0.85);
-            -ms-transform: scale(0.85);
-                transform: scale(0.85);
-    }
+//     @media screen and (max-width: 1080px){
+//         -webkit-transform: scale(0.85);
+//             -ms-transform: scale(0.85);
+//                 transform: scale(0.85);
+//     }
 
-    @media screen and (max-width: 992px){
-        -webkit-transform: scale(0.7);
-            -ms-transform: scale(0.7);
-                transform: scale(0.7);
-    }
+//     @media screen and (max-width: 992px){
+//         -webkit-transform: scale(0.7);
+//             -ms-transform: scale(0.7);
+//                 transform: scale(0.7);
+//     }
 
-    @media screen and (max-width: 850px){
-        -webkit-transform: scale(0.65);
-            -ms-transform: scale(0.65);
-                transform: scale(0.65);
-    }
+//     @media screen and (max-width: 850px){
+//         -webkit-transform: scale(0.65);
+//             -ms-transform: scale(0.65);
+//                 transform: scale(0.65);
+//     }
 
-    @media screen and (max-width: 768px){
-        -webkit-transform: scale(0.6);
-            -ms-transform: scale(0.6);
-                transform: scale(0.6);
-    }
+//     @media screen and (max-width: 768px){
+//         -webkit-transform: scale(0.6);
+//             -ms-transform: scale(0.6);
+//                 transform: scale(0.6);
+//     }
 
-    @media screen and (max-width: 678px){
-        -webkit-transform: scale(0.53);
-            -ms-transform: scale(0.53);
-                transform: scale(0.53);
-    }
+//     @media screen and (max-width: 678px){
+//         -webkit-transform: scale(0.53);
+//             -ms-transform: scale(0.53);
+//                 transform: scale(0.53);
+//     }
 
-    @include breakpoint-down(mob){
-        -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-                transform: scale(1);
-        margin-right: -16px;
-    }
+//     @include breakpoint-down(mob){
+//         -webkit-transform: scale(1);
+//             -ms-transform: scale(1);
+//                 transform: scale(1);
+//         margin-right: -16px;
+//     }
 
-    @media screen and (max-width: 585px){
-        -webkit-transform: scale(0.8);
-            -ms-transform: scale(0.8);
-                transform: scale(0.8);
-    }
+//     @media screen and (max-width: 585px){
+//         -webkit-transform: scale(0.8);
+//             -ms-transform: scale(0.8);
+//                 transform: scale(0.8);
+//     }
 
-    @media screen and (max-width: 420px){
-        margin-right: -32px!important;
-    }
-}
+//     @media screen and (max-width: 420px){
+//         margin-right: -32px!important;
+//     }
+// }
 
-.ui-widget-service-2, .ui-widget-service{
-    @media screen and (max-width: 1320px){
-        -webkit-transform: scale(0.95);
-            -ms-transform: scale(0.95);
-                transform: scale(0.95);
-    }
+// .ui-widget-service-2, .ui-widget-service{
+//     @media screen and (max-width: 1320px){
+//         -webkit-transform: scale(0.95);
+//             -ms-transform: scale(0.95);
+//                 transform: scale(0.95);
+//     }
 
-    @media screen and (max-width: 1080px){
-        -webkit-transform: scale(0.85);
-            -ms-transform: scale(0.85);
-                transform: scale(0.85);
-    }
+//     @media screen and (max-width: 1080px){
+//         -webkit-transform: scale(0.85);
+//             -ms-transform: scale(0.85);
+//                 transform: scale(0.85);
+//     }
 
-    @media screen and (max-width: 992px){
-        -webkit-transform: scale(0.75);
-            -ms-transform: scale(0.75);
-                transform: scale(0.75);
-    }
+//     @media screen and (max-width: 992px){
+//         -webkit-transform: scale(0.75);
+//             -ms-transform: scale(0.75);
+//                 transform: scale(0.75);
+//     }
 
-    @media screen and (max-width: 850px){
-        -webkit-transform: scale(0.65);
-            -ms-transform: scale(0.65);
-                transform: scale(0.65);
-    }
+//     @media screen and (max-width: 850px){
+//         -webkit-transform: scale(0.65);
+//             -ms-transform: scale(0.65);
+//                 transform: scale(0.65);
+//     }
 
-    @media screen and (max-width: 768px){
-        -webkit-transform: scale(0.6);
-            -ms-transform: scale(0.6);
-                transform: scale(0.6);
-    }
+//     @media screen and (max-width: 768px){
+//         -webkit-transform: scale(0.6);
+//             -ms-transform: scale(0.6);
+//                 transform: scale(0.6);
+//     }
 
-    @media screen and (max-width: 678px){
-        -webkit-transform: scale(0.53);
-            -ms-transform: scale(0.53);
-                transform: scale(0.53);
-    }
+//     @media screen and (max-width: 678px){
+//         -webkit-transform: scale(0.53);
+//             -ms-transform: scale(0.53);
+//                 transform: scale(0.53);
+//     }
 
-    @include breakpoint-down(mob){
-        -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-                transform: scale(1);
-    }
+//     @include breakpoint-down(mob){
+//         -webkit-transform: scale(1);
+//             -ms-transform: scale(1);
+//                 transform: scale(1);
+//     }
 
-    // @media screen and (max-width: 585px){
-    //     -webkit-transform: scale(0.75);
-    //         -ms-transform: scale(0.75);
-    //             transform: scale(0.75);
-    // }
+//     // @media screen and (max-width: 585px){
+//     //     -webkit-transform: scale(0.75);
+//     //         -ms-transform: scale(0.75);
+//     //             transform: scale(0.75);
+//     // }
 
-    // @media screen and (max-width: 420px){
-    //     -webkit-transform: scale(0.65);
-    //         -ms-transform: scale(0.65);
-    //             transform: scale(0.65);
-    // }
-}
+//     // @media screen and (max-width: 420px){
+//     //     -webkit-transform: scale(0.65);
+//     //         -ms-transform: scale(0.65);
+//     //             transform: scale(0.65);
+//     // }
+// }
 
-.ui-widget-sig{
-    @media screen and (max-width: 1320px){
-        -webkit-transform: scale(0.95);
-            -ms-transform: scale(0.95);
-                transform: scale(0.95);
-    }
+// .ui-widget-sig{
+//     @media screen and (max-width: 1320px){
+//         -webkit-transform: scale(0.95);
+//             -ms-transform: scale(0.95);
+//                 transform: scale(0.95);
+//     }
 
-    @media screen and (max-width: 1080px){
-        -webkit-transform: scale(0.85);
-            -ms-transform: scale(0.85);
-                transform: scale(0.85);
-    }
+//     @media screen and (max-width: 1080px){
+//         -webkit-transform: scale(0.85);
+//             -ms-transform: scale(0.85);
+//                 transform: scale(0.85);
+//     }
 
-    @media screen and (max-width: 992px){
-        -webkit-transform: scale(0.75);
-            -ms-transform: scale(0.75);
-                transform: scale(0.75);
-    }
+//     @media screen and (max-width: 992px){
+//         -webkit-transform: scale(0.75);
+//             -ms-transform: scale(0.75);
+//                 transform: scale(0.75);
+//     }
 
-    @media screen and (max-width: 850px){
-        -webkit-transform: scale(0.65);
-            -ms-transform: scale(0.65);
-                transform: scale(0.65);
-    }
-    @media screen and (max-width: 768px){
-        -webkit-transform: scale(0.6);
-            -ms-transform: scale(0.6);
-                transform: scale(0.6);
-    }
+//     @media screen and (max-width: 850px){
+//         -webkit-transform: scale(0.65);
+//             -ms-transform: scale(0.65);
+//                 transform: scale(0.65);
+//     }
+//     @media screen and (max-width: 768px){
+//         -webkit-transform: scale(0.6);
+//             -ms-transform: scale(0.6);
+//                 transform: scale(0.6);
+//     }
 
-    @media screen and (max-width: 678px){
-        -webkit-transform: scale(0.53);
-            -ms-transform: scale(0.53);
-                transform: scale(0.53);
-    }
+//     @media screen and (max-width: 678px){
+//         -webkit-transform: scale(0.53);
+//             -ms-transform: scale(0.53);
+//                 transform: scale(0.53);
+//     }
 
-    @include breakpoint-down(mob){
-        -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-                transform: scale(1);
-    }
-}
+//     @include breakpoint-down(mob){
+//         -webkit-transform: scale(1);
+//             -ms-transform: scale(1);
+//                 transform: scale(1);
+//     }
+// }
 
-.ui-widget-prebook{
-    @media screen and (max-width: 1320px){
-        -webkit-transform: scale(0.95);
-            -ms-transform: scale(0.95);
-                transform: scale(0.95);
-    }
+// .ui-widget-prebook{
+//     @media screen and (max-width: 1320px){
+//         -webkit-transform: scale(0.95);
+//             -ms-transform: scale(0.95);
+//                 transform: scale(0.95);
+//     }
 
-    @media screen and (max-width: 1080px){
-        -webkit-transform: scale(0.85);
-            -ms-transform: scale(0.85);
-                transform: scale(0.85);
-    }
+//     @media screen and (max-width: 1080px){
+//         -webkit-transform: scale(0.85);
+//             -ms-transform: scale(0.85);
+//                 transform: scale(0.85);
+//     }
 
-    @media screen and (max-width: 992px){
-        -webkit-transform: scale(0.75);
-            -ms-transform: scale(0.75);
-                transform: scale(0.75);
-    }
+//     @media screen and (max-width: 992px){
+//         -webkit-transform: scale(0.75);
+//             -ms-transform: scale(0.75);
+//                 transform: scale(0.75);
+//     }
 
-    @media screen and (max-width: 850px){
-        -webkit-transform: scale(0.65);
-            -ms-transform: scale(0.65);
-                transform: scale(0.65);
-    }
+//     @media screen and (max-width: 850px){
+//         -webkit-transform: scale(0.65);
+//             -ms-transform: scale(0.65);
+//                 transform: scale(0.65);
+//     }
 
-    @media screen and (max-width: 768px){
-        -webkit-transform: scale(0.6);
-            -ms-transform: scale(0.6);
-                transform: scale(0.6);
-    }
+//     @media screen and (max-width: 768px){
+//         -webkit-transform: scale(0.6);
+//             -ms-transform: scale(0.6);
+//                 transform: scale(0.6);
+//     }
 
-    @media screen and (max-width: 678px){
-        -webkit-transform: scale(0.53);
-            -ms-transform: scale(0.53);
-                transform: scale(0.53);
-    }
-    @include breakpoint-down(mob){
-        -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-                transform: scale(1);
-    }
-}
+//     @media screen and (max-width: 678px){
+//         -webkit-transform: scale(0.53);
+//             -ms-transform: scale(0.53);
+//                 transform: scale(0.53);
+//     }
+//     @include breakpoint-down(mob){
+//         -webkit-transform: scale(1);
+//             -ms-transform: scale(1);
+//                 transform: scale(1);
+//     }
+// }
 
-.ui-widget-selection{
-    @media screen and (max-width: 1320px){
-        -webkit-transform: scale(0.95);
-            -ms-transform: scale(0.95);
-                transform: scale(0.95);
-    }
+// .ui-widget-selection{
+//     @media screen and (max-width: 1320px){
+//         -webkit-transform: scale(0.95);
+//             -ms-transform: scale(0.95);
+//                 transform: scale(0.95);
+//     }
 
-    @media screen and (max-width: 1080px){
-        -webkit-transform: scale(0.85);
-            -ms-transform: scale(0.85);
-                transform: scale(0.85);
-    }
+//     @media screen and (max-width: 1080px){
+//         -webkit-transform: scale(0.85);
+//             -ms-transform: scale(0.85);
+//                 transform: scale(0.85);
+//     }
 
-    @media screen and (max-width: 992px){
-        -webkit-transform: scale(0.75);
-            -ms-transform: scale(0.75);
-                transform: scale(0.75);
-    }
+//     @media screen and (max-width: 992px){
+//         -webkit-transform: scale(0.75);
+//             -ms-transform: scale(0.75);
+//                 transform: scale(0.75);
+//     }
 
-    @media screen and (max-width: 850px){
-        -webkit-transform: scale(0.65);
-            -ms-transform: scale(0.65);
-                transform: scale(0.65);
-    }
+//     @media screen and (max-width: 850px){
+//         -webkit-transform: scale(0.65);
+//             -ms-transform: scale(0.65);
+//                 transform: scale(0.65);
+//     }
 
-    @media screen and (max-width: 768px){
-        -webkit-transform: scale(0.6);
-            -ms-transform: scale(0.6);
-                transform: scale(0.6);
-    }
+//     @media screen and (max-width: 768px){
+//         -webkit-transform: scale(0.6);
+//             -ms-transform: scale(0.6);
+//                 transform: scale(0.6);
+//     }
 
-    @media screen and (max-width: 678px){
-        -webkit-transform: scale(0.53);
-            -ms-transform: scale(0.53);
-                transform: scale(0.53);
-    }
+//     @media screen and (max-width: 678px){
+//         -webkit-transform: scale(0.53);
+//             -ms-transform: scale(0.53);
+//                 transform: scale(0.53);
+//     }
 
-    @include breakpoint-down(mob){
-        -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-                transform: scale(1);
-    }
-}
+//     @include breakpoint-down(mob){
+//         -webkit-transform: scale(1);
+//             -ms-transform: scale(1);
+//                 transform: scale(1);
+//     }
+// }
 
-.ui-widget-loc{
-    @media screen and (max-width: 1320px){
-        -webkit-transform: scale(0.95);
-            -ms-transform: scale(0.95);
-                transform: scale(0.95);
-    }
+// .ui-widget-loc{
+//     @media screen and (max-width: 1320px){
+//         -webkit-transform: scale(0.95);
+//             -ms-transform: scale(0.95);
+//                 transform: scale(0.95);
+//     }
 
-    @media screen and (max-width: 1080px){
-        -webkit-transform: scale(0.85);
-            -ms-transform: scale(0.85);
-                transform: scale(0.85);
-    }
+//     @media screen and (max-width: 1080px){
+//         -webkit-transform: scale(0.85);
+//             -ms-transform: scale(0.85);
+//                 transform: scale(0.85);
+//     }
 
-    @media screen and (max-width: 992px){
-        -webkit-transform: scale(0.75);
-            -ms-transform: scale(0.75);
-                transform: scale(0.75);
-    }
+//     @media screen and (max-width: 992px){
+//         -webkit-transform: scale(0.75);
+//             -ms-transform: scale(0.75);
+//                 transform: scale(0.75);
+//     }
 
-    @media screen and (max-width: 850px){
-        -webkit-transform: scale(0.65);
-            -ms-transform: scale(0.65);
-                transform: scale(0.65);
-    }
+//     @media screen and (max-width: 850px){
+//         -webkit-transform: scale(0.65);
+//             -ms-transform: scale(0.65);
+//                 transform: scale(0.65);
+//     }
 
-    @media screen and (max-width: 768px){
-        -webkit-transform: scale(0.6);
-            -ms-transform: scale(0.6);
-                transform: scale(0.6);
-    }
+//     @media screen and (max-width: 768px){
+//         -webkit-transform: scale(0.6);
+//             -ms-transform: scale(0.6);
+//                 transform: scale(0.6);
+//     }
 
-    @media screen and (max-width: 678px){
-        -webkit-transform: scale(0.53);
-            -ms-transform: scale(0.53);
-                transform: scale(0.53);
-    }
+//     @media screen and (max-width: 678px){
+//         -webkit-transform: scale(0.53);
+//             -ms-transform: scale(0.53);
+//                 transform: scale(0.53);
+//     }
 
-    @include breakpoint-down(mob){
-        -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-                transform: scale(1);
-    }
+//     @include breakpoint-down(mob){
+//         -webkit-transform: scale(1);
+//             -ms-transform: scale(1);
+//                 transform: scale(1);
+//     }
     
-}
+// }
 
-.ui-widget-ftr{
-    @media screen and (max-width: 1320px){
-        -webkit-transform: scale(0.95);
-            -ms-transform: scale(0.95);
-                transform: scale(0.95);
-    }
+// .ui-widget-ftr{
+//     @media screen and (max-width: 1320px){
+//         -webkit-transform: scale(0.95);
+//             -ms-transform: scale(0.95);
+//                 transform: scale(0.95);
+//     }
 
-    @media screen and (max-width: 1080px){
-        -webkit-transform: scale(0.85);
-            -ms-transform: scale(0.85);
-                transform: scale(0.85);
-    }
+//     @media screen and (max-width: 1080px){
+//         -webkit-transform: scale(0.85);
+//             -ms-transform: scale(0.85);
+//                 transform: scale(0.85);
+//     }
 
-    @media screen and (max-width: 992px){
-        -webkit-transform: scale(0.75);
-            -ms-transform: scale(0.75);
-                transform: scale(0.75);
-    }
+//     @media screen and (max-width: 992px){
+//         -webkit-transform: scale(0.75);
+//             -ms-transform: scale(0.75);
+//                 transform: scale(0.75);
+//     }
 
-    @media screen and (max-width: 850px){
-        -webkit-transform: scale(0.65);
-            -ms-transform: scale(0.65);
-                transform: scale(0.65);
-    }
+//     @media screen and (max-width: 850px){
+//         -webkit-transform: scale(0.65);
+//             -ms-transform: scale(0.65);
+//                 transform: scale(0.65);
+//     }
 
-    @media screen and (max-width: 768px){
-        -webkit-transform: scale(0.6);
-            -ms-transform: scale(0.6);
-                transform: scale(0.6);
-    }
+//     @media screen and (max-width: 768px){
+//         -webkit-transform: scale(0.6);
+//             -ms-transform: scale(0.6);
+//                 transform: scale(0.6);
+//     }
 
-    @media screen and (max-width: 678px){
-        -webkit-transform: scale(0.53);
-            -ms-transform: scale(0.53);
-                transform: scale(0.53);
-    }
+//     @media screen and (max-width: 678px){
+//         -webkit-transform: scale(0.53);
+//             -ms-transform: scale(0.53);
+//                 transform: scale(0.53);
+//     }
 
-    @include breakpoint-down(mob){
-        -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-                transform: scale(1);
-    }
+//     @include breakpoint-down(mob){
+//         -webkit-transform: scale(1);
+//             -ms-transform: scale(1);
+//                 transform: scale(1);
+//     }
    
-}
+// }
 
-.ui-widget-ms{
-    @media screen and (max-width: 1320px){
-        -webkit-transform: scale(0.95);
-            -ms-transform: scale(0.95);
-                transform: scale(0.95);
-    }
+// .ui-widget-ms{
+//     @media screen and (max-width: 1320px){
+//         -webkit-transform: scale(0.95);
+//             -ms-transform: scale(0.95);
+//                 transform: scale(0.95);
+//     }
 
-    @media screen and (max-width: 1080px){
-        -webkit-transform: scale(0.85);
-            -ms-transform: scale(0.85);
-                transform: scale(0.85);
-    }
+//     @media screen and (max-width: 1080px){
+//         -webkit-transform: scale(0.85);
+//             -ms-transform: scale(0.85);
+//                 transform: scale(0.85);
+//     }
 
-    @media screen and (max-width: 992px){
-        -webkit-transform: scale(0.75);
-            -ms-transform: scale(0.75);
-                transform: scale(0.75);
-    }
+//     @media screen and (max-width: 992px){
+//         -webkit-transform: scale(0.75);
+//             -ms-transform: scale(0.75);
+//                 transform: scale(0.75);
+//     }
 
-    @media screen and (max-width: 850px){
-        -webkit-transform: scale(0.65);
-            -ms-transform: scale(0.65);
-                transform: scale(0.65);
-    }
+//     @media screen and (max-width: 850px){
+//         -webkit-transform: scale(0.65);
+//             -ms-transform: scale(0.65);
+//                 transform: scale(0.65);
+//     }
 
-    @media screen and (max-width: 768px){
-        -webkit-transform: scale(0.6);
-            -ms-transform: scale(0.6);
-                transform: scale(0.6);
-    }
+//     @media screen and (max-width: 768px){
+//         -webkit-transform: scale(0.6);
+//             -ms-transform: scale(0.6);
+//                 transform: scale(0.6);
+//     }
 
-    @media screen and (max-width: 678px){
-        -webkit-transform: scale(0.53);
-            -ms-transform: scale(0.53);
-                transform: scale(0.53);
-    }
+//     @media screen and (max-width: 678px){
+//         -webkit-transform: scale(0.53);
+//             -ms-transform: scale(0.53);
+//                 transform: scale(0.53);
+//     }
 
-    @include breakpoint-down(mob){
-        -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-                transform: scale(1);
-    }
+//     @include breakpoint-down(mob){
+//         -webkit-transform: scale(1);
+//             -ms-transform: scale(1);
+//                 transform: scale(1);
+//     }
     
-}
+// }
 
-.ui-icon{
-    display: none!important;
-}
+// .ui-icon{
+//     display: none!important;
+// }

@@ -1,3 +1,22 @@
+@media(min-width: 604px){
+    body {
+        overflow-x: hidden;
+          min-width: 1366px;
+          width: auto !important;
+          width: 1366px;
+    
+    }
+}
+
+@media(max-width: 603px){
+    body {
+        overflow-x: hidden;
+          min-width: 603px;
+          width: auto !important;
+          width: 603px;
+    }
+}
+
 @font-face {
     font-family: 'BlissExtBol';
     src: url("../fonts/Bliss-ExtraBold.bmap");
