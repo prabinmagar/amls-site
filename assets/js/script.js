@@ -1,7 +1,7 @@
 $(document).ready(function(){
-//     $(window).bind('resize',function(){
-//         window.location.href = window.location.href;
-//    });
+    $(window).bind('resize',function(){
+        window.location.href = window.location.href;
+   });
     // change background on every 3s
     // let sliderCountValue = 1;
     // setInterval(function(){
