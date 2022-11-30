@@ -207,25 +207,6 @@ select{
                 transform: scale(1);
         padding-left: 0;
         padding-right: 0;
-
-        .card-list{
-            // margin-left: -12px;
-        }
-
-        .ms-types-btn{
-            width: 360px;
-            margin-right: auto;
-            margin-left: auto;
-            // padding-right: 12px;
-        }
-
-        .ms-types-card{
-            width: 100%!important;
-        }
-
-        .card-head{
-            width: 100%;
-        }
     }
 }
 
@@ -327,17 +308,17 @@ select{
                 transform: scale(1);
     }
 
-    @media screen and (max-width: 585px){
-        -webkit-transform: scale(0.75);
-            -ms-transform: scale(0.75);
-                transform: scale(0.75);
-    }
+    // @media screen and (max-width: 585px){
+    //     -webkit-transform: scale(0.75);
+    //         -ms-transform: scale(0.75);
+    //             transform: scale(0.75);
+    // }
 
-    @media screen and (max-width: 420px){
-        -webkit-transform: scale(0.65);
-            -ms-transform: scale(0.65);
-                transform: scale(0.65);
-    }
+    // @media screen and (max-width: 420px){
+    //     -webkit-transform: scale(0.65);
+    //         -ms-transform: scale(0.65);
+    //             transform: scale(0.65);
+    // }
 }
 
 .ui-widget-sig{

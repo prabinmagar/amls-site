@@ -39,7 +39,7 @@
     
     /* ### mobile stylings ### */
     @include breakpoint-down(mob){
-        height: 640px;
+        height: 652px;
     }
 
     .video-wrapper{
@@ -297,6 +297,10 @@
                         z-index: 10;
                     }
                 }
+
+                @include breakpoint-down(mob){
+                    height: 130px!important;
+                }
             }
             .card-body{
                 position: relative;
@@ -355,10 +359,10 @@
 
                 li{
                     font-size: 22px;
-                    margin-bottom: 16px;
+                    margin-bottom: 18px;
                     text-align: center;
                     font-family: $bliss-reg;
-                    @include tracking(-10);
+                    @include tracking(-15);
 
                     @include breakpoint-down(lg){
                         @include ptcon(58);
@@ -404,7 +408,7 @@
             color: $clr-white;
             background-color: $clr-lime!important;
             border-radius: 20px;
-            font-family: $bliss-md;
+            font-family: $bliss-reg;
             cursor: pointer;
 
             /* ### mobile stylings ### */
@@ -432,6 +436,22 @@
             display: none;
         }
     }
+
+    @include breakpoint-down(mob){
+        .ms-types-btn{
+            width: 360px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .ms-types-card{
+            width: 100%!important;
+        }
+
+        .card-head{
+            width: 100%;
+        }
+    }
 }
 
 .ms-service{
@@ -450,10 +470,9 @@
         margin-top: 26px;
         margin-bottom: 25px;
 
-        @media screen and (max-width){
-            -webkit-transform: scale(0.7);
-                -ms-transform: scale(0.7);
-                    transform: scale(0.7);
+        @include breakpoint-down(mob){
+            padding-top: 20px;
+            padding-bottom: 18px;
         }
 
         .service-top-text{
@@ -464,6 +483,7 @@
 
             @include breakpoint-down(mob){
                 @include ptcon(60);
+                font-size: 30px;
             }
         }
         .service-img{
@@ -496,6 +516,7 @@
                 /* ### mobile stylings ### */
                 @include breakpoint-down(mob){
                     @include ptcon(38);
+                    font-size: 18px;
                 }
             }
         }
@@ -510,6 +531,11 @@
         margin-top: 44px;
         margin-bottom: 35px;
 
+        @include breakpoint-down(mob){
+            padding-top: 26px;
+            padding-bottom: 26px;
+        }
+
         .menu-top-text{
             font-size: 35px;
             color: $clr-purple;
@@ -519,6 +545,7 @@
             /* ### mobile stylings ### */
             @include breakpoint-down(mob){
                 @include ptcon(60);
+                font-size: 30px;
             }
         }
 
@@ -564,6 +591,7 @@
                 /* ### mobile stylings ### */
                 @include breakpoint-down(mob){
                     @include ptcon(38);
+                    font-size: 18px;
                 }
             }
         }
@@ -590,8 +618,8 @@
 
     /* ### mobile stylings ### */
     @include breakpoint-down(mob){
-        padding-top: 83px;
-        padding-bottom: 64px;
+        padding-top: 60px;
+        padding-bottom: 42px;
     }
 
     .sig-top-text{
@@ -638,7 +666,7 @@
             @include breakpoint-down(mob){
                 margin-right: auto;
                 margin-left: auto;
-                margin-bottom: 47px;
+                margin-bottom: 30px;
             }
 
             .card-img{
@@ -681,14 +709,16 @@
                     width: 310px;
                     margin-right: auto;
                     margin-left: auto;
-                    font-size: 20px;
+                    font-size: 20.5px;
                     @include lh(24px, 20px);
                     font-family: $bliss-reg;
                     @include tracking(10);
+                    color: $clr-black;
 
                     /* ### mobile stylings ### */
                     @include breakpoint-down(mob){
                         @include ptcon(55);
+                        margin-top: -12px;
                     }
                 }
             }
@@ -802,7 +832,7 @@
     background: -o-linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)), url('../../assets/images/prebook-img.jpg') center/cover no-repeat;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(97, 46, 158, 0.9)), to(rgba(97, 46, 158, 0.9))), url('../../assets/images/prebook-img.jpg') center/cover no-repeat;
     background: linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)), url('../../assets/images/prebook-img.jpg') center/cover no-repeat;
-    background-attachment: fixed;
+    // background-attachment: fixed;
     min-height: 530px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -840,14 +870,14 @@
             }
         }
         .prebook-mid-text{
-            margin-top: 51px;
+            margin-top: 38px;
             margin-bottom: 30px;
             text-align: center;
             color: $clr-lime;
             font-size: 22px;
             @include tracking(10);
             font-family: $bliss-bold;
-            line-height: 1.58;
+            line-height: 1.4;
             max-width: 1051px;
             margin-right: auto;
             margin-left: auto;
@@ -1028,7 +1058,7 @@
     background: -o-linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)),  url('../../assets/images/selection.jpg') center/cover no-repeat;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(97, 46, 158, 0.9)), to(rgba(97, 46, 158, 0.9))),  url('../../assets/images/selection.jpg') center/cover no-repeat;
     background: linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)),  url('../../assets/images/selection.jpg') center/cover no-repeat;
-    background-attachment: fixed;
+    // background-attachment: fixed;
 
     /* ### mobile stylings ### */
     @include breakpoint-down(mob){
