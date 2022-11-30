@@ -534,11 +534,11 @@ ul {
   .hdr-banner-btns .hdr-banner-btn {
     margin-bottom: 50px !important;
   }
-  .hdr-banner-btns .hdr-banner-btn:first-child {
-    margin-top: 30px;
-  }
-  .hdr-banner-btns .hdr-banner-btn:last-child {
-    margin-bottom: 60px !important;
+}
+
+@media (max-width: 603.99px) and (max-width: 603.99px) {
+  .hdr-banner-btns .hdr-banner-btn {
+    margin-bottom: 30px !important;
   }
 }
 
