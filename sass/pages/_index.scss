@@ -1983,3 +1983,17 @@
 select{
     border-radius: 20px!important;
 }
+
+// placeholder remover
+.ms-book-cnt { 
+    form {
+        .placeholder-one, .placeholder-two {
+                &:focus {
+                    &::placeholder {
+                        color: transparent!important;
+                    }
+            }
+        }
+         
+    }
+}

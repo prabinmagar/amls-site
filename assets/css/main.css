@@ -2381,4 +2381,8 @@ ul {
 select {
   border-radius: 20px !important;
 }
+
+.ms-book-cnt form .placeholder-one:focus::placeholder, .ms-book-cnt form .placeholder-two:focus::placeholder {
+  color: transparent !important;
+}
 /*# sourceMappingURL=main.css.map */

@@ -46,6 +46,7 @@ $(document).ready(function(){
             }
         });
     });
+    
 
     const locationOpt = $('#locationOpt');
     let isLocSelected = false;
