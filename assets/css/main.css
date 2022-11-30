@@ -2385,4 +2385,20 @@ select {
 .ms-book-cnt form .placeholder-one:focus::placeholder, .ms-book-cnt form .placeholder-two:focus::placeholder {
   color: transparent !important;
 }
+
+@media (max-width: 603.99px) {
+  .thep-one {
+    display: none;
+  }
+}
+
+.thep-two {
+  display: none;
+}
+
+@media (max-width: 603.99px) {
+  .thep-two {
+    display: block;
+  }
+}
 /*# sourceMappingURL=main.css.map */

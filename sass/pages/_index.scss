@@ -1997,3 +1997,16 @@ select{
          
     }
 }
+
+.thep-one{
+    @include breakpoint-down(mob){
+        display: none;
+    }
+}
+
+.thep-two{
+    display: none;
+    @include breakpoint-down(mob){
+        display: block;
+    }
+}
