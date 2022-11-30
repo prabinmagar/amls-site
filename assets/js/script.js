@@ -1,4 +1,7 @@
 $(document).ready(function(){
+//     $(window).bind('resize',function(){
+//         window.location.href = window.location.href;
+//    });
     // change background on every 3s
     // let sliderCountValue = 1;
     // setInterval(function(){
@@ -19,6 +22,8 @@ $(document).ready(function(){
     //         sliderCountValue++;
     //     });
     // }, 5000);
+
+    $
 
     $('.video-wrapper').slick({
         autoplay: true,

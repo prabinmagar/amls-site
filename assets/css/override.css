@@ -10,10 +10,8 @@
 
 @media(max-width: 603px){
     body {
-        overflow-x: hidden;
           min-width: 603px;
           width: auto !important;
-          width: 603px;
     }
 }
 

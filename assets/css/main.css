@@ -1927,7 +1927,7 @@ ul {
   color: #612e9e;
 }
 
-@media screen and (max-width: 585px) {
+@media (max-width: 603.99px) {
   .ms-book-cnt form .form-control {
     font-size: 20px !important;
   }
@@ -1937,7 +1937,7 @@ ul {
   font-size: 22px;
 }
 
-@media screen and (max-width: 585px) {
+@media (max-width: 603.99px) {
   .ms-book-cnt form .form-label {
     font-size: 20px !important;
   }
@@ -1963,7 +1963,7 @@ ul {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 585px) {
+@media (max-width: 603.99px) {
   .ms-book-cnt form .radio-container .radio-wrap:first-child {
     margin-right: 20px;
   }
@@ -1983,7 +1983,7 @@ ul {
   font-size: 22px;
 }
 
-@media screen and (max-width: 585px) {
+@media (max-width: 603.99px) {
   .ms-book-cnt form .radio-wrap span {
     font-size: 20px !important;
   }
@@ -2063,13 +2063,10 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12.2px !important;
 }
 
 @media (max-width: 603.99px) {
   .ms-book-cnt form .form-elem-btn {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
     width: 100% !important;
   }
 }
@@ -2092,9 +2089,8 @@ ul {
     padding-right: 15px;
     padding-left: 15px;
     border-radius: 40px;
-    font-size: 21px !important;
-    margin-left: -18px !important;
-    margin-right: -18px !important;
+    font-size: 20px !important;
+    width: 100% !important;
   }
 }
 
@@ -2117,7 +2113,7 @@ ul {
   color: #000;
 }
 
-@media screen and (max-width: 585px) {
+@media (max-width: 603.99px) {
   .ms-book-cnt form select option {
     font-size: 20px !important;
   }
@@ -2172,9 +2168,8 @@ ul {
 @media (max-width: 603.99px) {
   .ms-book-2 .treatment-list .treatment-item {
     justify-content: center;
-    margin-left: -20px;
     margin-bottom: 13px;
-    width: 110% !important;
+    width: 100% !important;
   }
 }
 
@@ -2213,7 +2208,7 @@ ul {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 585px) {
+@media (max-width: 603.99px) {
   .ms-book-2 .treatment-list .treatment-item-l {
     width: 100%;
   }
@@ -2294,7 +2289,6 @@ ul {
 
 .slide-section .ms-book {
   display: none;
-  width: 100vw;
   transition: all ease-in-out 300ms;
 }
 
@@ -2370,18 +2364,6 @@ ul {
 @media (max-width: 767.99px) {
   .gallery-grid .img-item {
     width: 25%;
-  }
-}
-
-@media (max-width: 575.99px) {
-  .gallery-grid .img-item {
-    width: 33.3333%;
-  }
-}
-
-@media (max-width: 479.99px) {
-  .gallery-grid .img-item {
-    width: 50%;
   }
 }
 

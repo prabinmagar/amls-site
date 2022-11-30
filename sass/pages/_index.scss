@@ -1510,7 +1510,7 @@
                     }
                 }
 
-                @media screen and (max-width: 585px){
+                @include breakpoint-down(mob){
                     font-size: 20px!important;
                 }
             }
@@ -1518,7 +1518,7 @@
             .form-label{
                 font-size: 22px;
 
-                @media screen and (max-width: 585px){
+                @include breakpoint-down(mob){
                     font-size: 20px!important;
                 }
             }
@@ -1555,7 +1555,7 @@
                         margin-right: 8px;
                     }
 
-                    @media screen and (max-width: 585px){
+                    @include breakpoint-down(mob){
                         &:first-child{
                             margin-right: 20px;
                         }
@@ -1579,7 +1579,7 @@
                     margin-right: 12px;
                     font-size: 22px;
 
-                    @media screen and (max-width: 585px){
+                    @include breakpoint-down(mob){
                         font-size: 20px!important;
                     }
                 }
@@ -1660,11 +1660,8 @@
                 -webkit-box-pack: center;
                     -ms-flex-pack: center;
                         justify-content: center;
-                padding: 12.2px!important;
 
                 @include breakpoint-down(mob){
-                    padding-right: 0!important;
-                    padding-left: 0!important;
                     width: 100%!important;
                 }
 
@@ -1684,9 +1681,8 @@
                         padding-right: 15px;
                         padding-left: 15px;
                         border-radius: 40px;
-                        font-size: 21px!important;
-                        margin-left: -18px!important;
-                        margin-right: -18px!important;
+                        font-size: 20px!important;
+                        width: 100%!important;
                     }
                 }
 
@@ -1708,7 +1704,7 @@
                         color: $clr-black;
                     }
 
-                    @media screen and (max-width: 585px){
+                    @include breakpoint-down(mob){
                         font-size: 20px!important;
                     }
                 }
@@ -1772,9 +1768,8 @@
                 -webkit-box-pack: center;
                     -ms-flex-pack: center;
                         justify-content: center;
-                margin-left: -20px;
                 margin-bottom: 13px;
-                width: 110%!important;
+                width: 100%!important;
             }
 
             &:nth-child(even){
@@ -1817,7 +1812,7 @@
                 width: 440px;
                 margin-right: 8px;
 
-                @media screen and (max-width: 585px){
+                @include breakpoint-down(mob){
                     width: 100%;
                 }
             }
@@ -1894,9 +1889,7 @@
     }
 
     .ms-book{
-        // transform: translateX(100%);
         display: none;
-        width: 100vw;
         @include transition-default;
     }
 }
@@ -1970,16 +1963,6 @@
     @include breakpoint-down(md){
         .img-item{
             width: 25%;
-        }
-    }
-    @include breakpoint-down(sm){
-        .img-item{
-            width: 33.3333%;
-        }
-    }
-    @include breakpoint-down(xs){
-        .img-item{
-            width: 50%;
         }
     }
 }
