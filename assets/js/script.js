@@ -52,20 +52,74 @@ $(document).ready(function(){
         }
     });
 
-    // booking btns
+    // booking btns and validation
+    let name = $('.fname');
+    let email = $('.femail');
+    let whatsapp = $('.fwhatsapp');
+    let bookday = $('.fbook-day');
+    let booktime = $('.fbook-time');
+    let location = $('.flocation');
+
+    let bookingno = $('.fbooking-no');
+    let treatment = $('.ftreatment');
+    let MinsOrSteps = $('.fminsOrSteps');
+
+    // #####################################
+    const showErrorMsg = (inputContainer) => {
+        const formElem = $(inputContainer).parent();
+        const msgElem = $("<span class = 'error-msg'>This field is required*</span>");
+        $(formElem).append(msgElem);
+    }
+
+    const hideErrorMsg = () => {
+        $('.error-msg').prev().next().remove();
+    }
+
+    const validateText = (inputText) => {
+        if(inputText.val().trim().length > 0){
+            return true;
+        } else {
+            showErrorMsg(inputText);
+            setTimeout(() => {
+                hideErrorMsg(inputText);
+            }, 1000);
+            return false;
+        }
+    }
+
+    const validateDropdown = (dropdown) => {
+        if($(dropdown).find('option:selected') && $(dropdown).find('option:selected').is(":enabled")){
+            return true;
+        } else {
+            showErrorMsg(dropdown);
+            return false;
+        }
+    }
+
+    // ############################################3
+
     $('.booking-btn').click(function(){
         $('.ms-types').css('display', 'none');
         $('.ms-book-1').css('display', 'block');
     })
 
     $('.details-btn').click(function(){
-        $('.ms-book-1').css('display', 'none');
-        $('.ms-book-2').css('display', 'block');
+        if(validateText(name) && validateText(email) && validateText(whatsapp) && validateDropdown(bookday) && validateDropdown(booktime) && validateDropdown(location)){
+            $('.ms-book-1').css('display', 'none');
+            $('.ms-book-2').css('display', 'block');
+        }
     });
 
     $('.submit-btn').click(function(){
-        $('.ms-book-2').css('display', 'none');
-        $('.ms-book-3').css('display', 'block');
+        if(validateDropdown(bookingno)){
+            let treatmentItemsCount = $('.treatment-item').length;
+            let totalSelectionCount = $('.selection-active').length;
+
+            if(totalSelectionCount == (2 * treatmentItemsCount)){
+                $('.ms-book-2').css('display', 'none');
+                $('.ms-book-3').css('display', 'block');
+            }
+        }        
     });
 
     // jquery close btn
@@ -85,7 +139,7 @@ $(document).ready(function(){
             const tempDiv = $('<div>', { "class" : "treatment-item"});
             $(tempDiv).html(`
                 <div class = "treatment-item-l">
-                    <select name = "" class = "form-control">
+                    <select name = "" class = "form-control fcustomer">
                             <option selected disabled>Customer ${i + 1} treatment</option>
                         <optgroup label="CLASSIC EVERYDAY MASSAGE">
                             <option value = "">Traditional Thai Massage</option>
@@ -113,7 +167,7 @@ $(document).ready(function(){
                 </div>
                 
                 <div class = "treatment-item-r">
-                    <select name = "" class = "form-control">
+                    <select name = "" class = "form-control fminsOrSteps">
                         <option selected disabled>Mins</option>
                         <option value = "60">60</option>
                         <option value = "90">90</option>
@@ -150,6 +204,7 @@ $(document).ready(function(){
                 }
             });
         });
+
         const treatmentItems = $('.treatment-item');
         jQuery.each(treatmentItems, function(idx, treatmentItem){
             let totalSelectionCount = 0;
@@ -188,6 +243,8 @@ $('.grid').imagesLoaded( function() {
         // columnWidth: 200
     });
 });
+
+
 
 
 
