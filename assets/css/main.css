@@ -1412,8 +1412,8 @@ ul {
 }
 
 .ms-prebook {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(97, 46, 158, 0.9)), to(rgba(97, 46, 158, 0.9))), url("../../assets/images/prebook-img.jpg") center/cover no-repeat;
   background: -o-linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)), url("../../assets/images/prebook-img.jpg") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(97, 46, 158, 0.9)), to(rgba(97, 46, 158, 0.9))), url("../../assets/images/prebook-img.jpg") center/cover no-repeat;
   background: linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)), url("../../assets/images/prebook-img.jpg") center/cover no-repeat;
   min-height: 530px;
   display: -webkit-box;
@@ -1660,8 +1660,8 @@ ul {
 .ms-selection {
   padding-top: 82px;
   padding-bottom: 34.3px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(97, 46, 158, 0.9)), to(rgba(97, 46, 158, 0.9))), url("../../assets/images/selection.jpg") center/cover no-repeat;
   background: -o-linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)), url("../../assets/images/selection.jpg") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(97, 46, 158, 0.9)), to(rgba(97, 46, 158, 0.9))), url("../../assets/images/selection.jpg") center/cover no-repeat;
   background: linear-gradient(rgba(97, 46, 158, 0.9), rgba(97, 46, 158, 0.9)), url("../../assets/images/selection.jpg") center/cover no-repeat;
   /* ### mobile stylings ### */
 }
