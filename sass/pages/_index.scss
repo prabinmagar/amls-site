@@ -1908,21 +1908,11 @@
 
 .close-form-btn{
     position: absolute; 
-    right: 0;
-    top: 10%;
+    right: 40px;
+    top: 40px;
     font-size: 28px;
     color: $clr-white;
     cursor: pointer;
-
-    @include breakpoint-down(mob){
-        right: 5%;
-        top: 5%;
-    }
-
-    @media screen and (max-width: 420px){
-        right: 0%;
-        top: 0%;
-    }
 }
 
 .gallery-grid{
