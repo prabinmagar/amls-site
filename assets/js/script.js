@@ -1,30 +1,6 @@
 $(document).ready(function(){
-//     $(window).bind('resize',function(){
-//         window.location.href = window.location.href;
-//    });
-    // change background on every 3s
-    // let sliderCountValue = 1;
-    // setInterval(function(){
-    //     if(sliderCountValue > 3) sliderCountValue = 1;
-    //     $video = $('.video-wrapper video');
 
-    //     if(sliderCountValue == 4){
-    //         videoSrc = $('source', $video).attr('src', `/assets/videos/video-${sliderCountValue}.mpeg`);
-    //         videoSrc = $('source', $video).attr('type', `video/mpeg`);
-    //     } else {
-    //         videoSrc = $('source', $video).attr('src', `/assets/videos/video-${sliderCountValue}.webm`);
-    //     }
-
-    //     $video.fadeOut(500, function(){
-    //         $video.fadeIn(500);
-    //         $video[0].load();
-    //         $video[0].play();
-    //         sliderCountValue++;
-    //     });
-    // }, 5000);
-
-    $
-
+    
     $('.video-wrapper').slick({
         autoplay: true,
         autoplaySpeed: 5000,
