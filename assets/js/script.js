@@ -86,11 +86,22 @@ $(document).ready(function(){
     })
 
     $('.details-btn').click(function(){
-        if(validateText(name) && validateText(email) && validateText(whatsapp) && validateDropdown(bookday) && validateDropdown(booktime) && validateDropdown(location)){
-            $('.ms-book-1').css('display', 'none');
-            $('.ms-book-2').css('display', 'block');
+        if($(location).find('option:selected') && $(location).find('option:selected').is(":enabled")){
+            if(validateText(name) && validateText(email) && validateText(whatsapp) && validateDropdown(bookday) && validateDropdown(booktime)){
+                $('.ms-book-1').css('display', 'none');
+                $('.ms-book-2').css('display', 'block');
+            }
+        } else {
+            alert("donwload pdf");
         }
     });
+
+    // $('.details-btn').click(function(){
+    //     if(validateText(name) && validateText(email) && validateText(whatsapp) && validateDropdown(bookday) && validateDropdown(booktime) && validateDropdown(location)){
+    //         $('.ms-book-1').css('display', 'none');
+    //         $('.ms-book-2').css('display', 'block');
+    //     }
+    // });
 
     $('.submit-btn').click(function(){
         if(validateDropdown(bookingno)){
@@ -128,22 +139,22 @@ $(document).ready(function(){
                             <option value="">Aromatherapy Oil Massage</option>
                         </optgroup>
                         <optgroup label="CLASSIC EVERYDAY MASSAGE">
-                            <option value = "">Neck, Shoulders and Back Massage</option>
+                            <option value = "" class = "vals-60-90">Neck, Shoulders and Back Massage</option>
                             <option value="">Aromatherapy Sport Massage</option>
                         </optgroup>
                         <optgroup label="CLASSIC EVERYDAY MASSAGE">
                             <option value="">After Sun Aromatherapy Massage</option>
                             <option value="">Slimming Massage</option>
                             <option value="">Warm Candle Oil Massage</option>
-                            <option value = "">Herbal Pack Aromatherapy Massage</option>
-                            <option value="">Hot Stones Aromatherapy Massage</option>
+                            <option value = "" class = "vals-90-120">Herbal Pack Aromatherapy Massage</option>
+                            <option value="" class = "vals-90-120">Hot Stones Aromatherapy Massage</option>
                         </optgroup>
                         <optgroup label="OTHER LUXURIOUS TREATMENTS">
                             <option value="">Cannabis (Cannabidiol) Massage</option>
                             <option value="">Aromatherapy Gold Massage</option>
                             <option value="">Four Hands Massage</option>
                             <option value = "" class = "steps-active">Facial Deep Skin Cleansing</option>
-                            <option value="">Full-Body Scrubs</option>
+                            <option value="" class = "vals-60-90">Full-Body Scrubs</option>
                         </optgroup>
                     </select>
                 </div>
@@ -164,6 +175,7 @@ $(document).ready(function(){
         jQuery.each(stepsOptions, function(idx, stepOption){
             // console.log(stepOption);
             $(stepOption).parent().parent().change(function(){
+                // show steps instead of mins
                 if($(this).find('option:selected').attr('class') == "steps-active"){
                     let rightOptions = $(stepOption).parent().parent().parent().next();
                     rightOptions.html(`
@@ -182,6 +194,30 @@ $(document).ready(function(){
                             <option value = "90">90</option>
                             <option value = "120">120</option>
                         </select> 
+                    `);
+                }
+
+                // show only 60 and 90 mins options
+                if($(this).find('option:selected').attr('class') == "vals-60-90"){
+                    let rightOptions = $(stepOption).parent().parent().parent().next();
+                    rightOptions.html(`
+                        <select name = "" class = "form-control fminsOrSteps">
+                            <option selected disabled>Mins</option>
+                            <option value = "60">60</option>
+                            <option value = "90">90</option>
+                        </select>  
+                    `);
+                }
+
+                // show only 90 and 120 mins options
+                if($(this).find('option:selected').attr('class') == "vals-90-120"){
+                    let rightOptions = $(stepOption).parent().parent().parent().next();
+                    rightOptions.html(`
+                        <select name = "" class = "form-control fminsOrSteps">
+                            <option selected disabled>Mins</option>
+                            <option value = "90">90</option>
+                            <option value = "120">120</option>
+                        </select>  
                     `);
                 }
             });
