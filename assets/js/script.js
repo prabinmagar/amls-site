@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+    $('.js-example-basic-single').select2();
     
     $('.video-wrapper').slick({
         autoplay: true,
@@ -282,6 +282,7 @@ const selectFunction = (selectedValue) => {
 $(function() {
     $( "#resizable" ).resizable();
 });
+
 
 
 
