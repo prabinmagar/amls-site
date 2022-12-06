@@ -136,7 +136,7 @@ $(document).ready(function(){
             const tempDiv = $('<div>', { "class" : "treatment-item"});
             $(tempDiv).html(`
                 <div class = "treatment-item-l">
-                    <select name = "" class = "form-control fcustomer">
+                    <select name = "" class = "form-control js-example-basic-single fcustomer">
                             <option selected disabled>Customer ${i + 1} treatment</option>
                         <optgroup label="CLASSIC EVERYDAY MASSAGE">
                             <option value = "" >Traditional Thai Massage</option>
@@ -164,7 +164,7 @@ $(document).ready(function(){
                 </div>
                 
                 <div class = "treatment-item-r">
-                    <select name = "" class = "form-control fminsOrSteps">
+                    <select name = "" class = "form-control fminsOrSteps ">
                         <option selected disabled>Mins</option>
                         <option value = "60">60</option>
                         <option value = "90">90</option>
