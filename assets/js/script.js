@@ -128,6 +128,10 @@ $(document).ready(function(){
         let noOfBookingOpt = $(this).children("option:selected").val();
         treatmentListContainer.html("");
 
+        // 
+        let selectedValue = $('.test-val');
+        // 
+
         for(let i = 0; i < noOfBookingOpt; i++){
             const tempDiv = $('<div>', { "class" : "treatment-item"});
             $(tempDiv).html(`
@@ -135,7 +139,7 @@ $(document).ready(function(){
                     <select name = "" class = "form-control fcustomer">
                             <option selected disabled>Customer ${i + 1} treatment</option>
                         <optgroup label="CLASSIC EVERYDAY MASSAGE">
-                            <option value = "">Traditional Thai Massage</option>
+                            <option value = "" >Traditional Thai Massage</option>
                             <option value="">Aromatherapy Oil Massage</option>
                         </optgroup>
                         <optgroup label="CLASSIC EVERYDAY MASSAGE">
@@ -147,7 +151,7 @@ $(document).ready(function(){
                             <option value="">Slimming Massage</option>
                             <option value="">Warm Candle Oil Massage</option>
                             <option value = "" class = "vals-90-120">Herbal Pack Aromatherapy Massage</option>
-                            <option value="" class = "vals-90-120">Hot Stones Aromatherapy Massage</option>
+                            <option value="" class = "vals-90-120 hot-stone">Hot Stones Aromatherapy Massage</option>
                         </optgroup>
                         <optgroup label="OTHER LUXURIOUS TREATMENTS">
                             <option value="">Cannabis (Cannabidiol) Massage</option>
@@ -170,6 +174,8 @@ $(document).ready(function(){
             `);
             $(treatmentListContainer).append(tempDiv);
         }
+
+        selectFunction(selectedValue.val());
 
         const stepsOptions = $('.steps-active');
         jQuery.each(stepsOptions, function(idx, stepOption){
@@ -194,30 +200,6 @@ $(document).ready(function(){
                             <option value = "90">90</option>
                             <option value = "120">120</option>
                         </select> 
-                    `);
-                }
-
-                // show only 60 and 90 mins options
-                if($(this).find('option:selected').attr('class') == "vals-60-90"){
-                    let rightOptions = $(stepOption).parent().parent().parent().next();
-                    rightOptions.html(`
-                        <select name = "" class = "form-control fminsOrSteps">
-                            <option selected disabled>Mins</option>
-                            <option value = "60">60</option>
-                            <option value = "90">90</option>
-                        </select>  
-                    `);
-                }
-
-                // show only 90 and 120 mins options
-                if($(this).find('option:selected').attr('class') == "vals-90-120"){
-                    let rightOptions = $(stepOption).parent().parent().parent().next();
-                    rightOptions.html(`
-                        <select name = "" class = "form-control fminsOrSteps">
-                            <option selected disabled>Mins</option>
-                            <option value = "90">90</option>
-                            <option value = "120">120</option>
-                        </select>  
                     `);
                 }
             });
@@ -248,8 +230,54 @@ $(document).ready(function(){
                 }
             });
         });
+
+        jQuery.each($('.treatment-list .treatment-item-l select'), function(idx, selectItem){
+            if($(selectItem).change(function(){
+                // show only 60 and 90 mins options
+                if($(selectItem).find('option:selected').hasClass("vals-60-90")) { 
+                    findSixtyNinty($(selectItem)); 
+                }
+                // show only 90 and 120 mins options
+                if($(selectItem).find('option:selected').hasClass("vals-90-120"))
+                {
+                    findNintyOneTwenty(selectItem);
+                } 
+            }));
+        });
     });
 });
+
+function findSixtyNinty(selectItem){
+    let rightOptions = $(selectItem).parent().next();
+    rightOptions.html(`
+        <select name = "" class = "form-control fminsOrSteps">
+            <option selected disabled>Mins</option>
+            <option value = "60">60</option>
+            <option value = "90">90</option>
+        </select>  
+    `);
+}
+
+function findNintyOneTwenty(selectItem){
+    let rightOptions = $(selectItem).parent().next();
+    rightOptions.html(`
+        <select name = "" class = "form-control fminsOrSteps">
+            <option selected disabled>Mins</option>
+            <option value = "90">90</option>
+            <option value = "120">120</option>
+        </select>  
+    `);
+}
+
+const selectFunction = (selectedValue) => {
+    jQuery.each($('.treatment-list .treatment-item-l option'), function(idx, optionItem){
+        if($(optionItem).hasClass(selectedValue)){
+            $(optionItem).attr('selected', true);
+            findSixtyNinty($(optionItem).parent().parent());
+            findNintyOneTwenty($(optionItem).parent().parent());
+        }
+    });
+}
 
 $(function() {
     $( "#resizable" ).resizable();
